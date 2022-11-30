@@ -8,7 +8,6 @@ Mastering Cirtical Skills in Data Structures 20.0 hours
 
 Mastering Cirtical Skills for Coding Interviews 17.5 hours
 
-Mastering 4 critical skills using C++
 C++ Algorithms 2: More 10.0 hours
 
 ### Located under Coding Minutes
