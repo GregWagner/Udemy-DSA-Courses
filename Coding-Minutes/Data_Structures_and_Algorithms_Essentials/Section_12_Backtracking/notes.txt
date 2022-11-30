@@ -1,0 +1,15 @@
+Problem Types
+- Decision Problems - check for feasible solution (yes or no)
+- Optimisation Problems - find best solution
+- Enumeration Problems - find all solutions
+
+Examples:
+1) Rat in a maze
+2) N-Queens
+3) Sudoku Solver
+4) Knight's Tour
+
+- Backtracking step always occurs after the recusion call
+    // base case
+    // recusrive step
+    // backtracking step

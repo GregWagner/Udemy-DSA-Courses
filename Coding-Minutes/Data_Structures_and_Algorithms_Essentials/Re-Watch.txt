@@ -1,0 +1,58 @@
+17-19   Subarry Sum
+        Exercise 3 lower bound
+        Exercise 4 sorted pair sum
+        Exercise 5 k-rotate
+32-33   Counting Sort
+        Exercise 9 Chopsticks
+        Exercise 10 Defense Kingdom
+38      Shortest Path
+47      Sprial Print
+48-49   Sorted Array Search (Staircase Search)
+50      Mango Trees (2D Prefix Sum)
+        Exercise 18 Pascals Triangle
+        Exercise 19 Submatrix sum
+76      Update a bit
+77      Clear last n bits
+78      Clear range of bits
+79      Replace bits
+80      Is n a power of 2
+82      Count bits hack
+83      Fast Exponention
+84      Convert to binary
+        Exercise 27 Subset Sum Queries
+93      Bubble Sort Recursively
+99      Exercise 31 Binary Strings
+100     Exercise 32 Friends Party
+101     Merge Sort
+106     Rotated Array Search
+        Exercise 34 2D Merge
+110-111 Finding Subsets (Pretty much all of backtracking)
+113     Permutations
+119     Sudoku Solver
+
+128     Merge Sort Analysis
+129     Time Complexity For Recursive Problems
+149     Reverse Link List
+        Coding Exercise 40
+156     Insert at bottom of stack
+157     Reverse a stack
+158     Stock span
+163     Implement Stack with 2 Queues
+170     Level Order Print
+175-177 Diameter of a binary tree
+182     Delete node BST
+184     Print in range
+192     Remove min/max Code - do homework
+195/196 Nearby Cars
+205     Hashing Code - implement erase() and isPresent()
+207     Webinar - watch this
+221     Topograpical Ordering using BFS (may not be working)
+224/225 Dijkshatra's algorithm
+227     Do top down counting coins
+221/232 Knapsack problem
+
+233-236 Wines (may be included in next course)
+
+Also:
+Redo all the exercises from scratch!!!
+Read notes in section_08 directory
