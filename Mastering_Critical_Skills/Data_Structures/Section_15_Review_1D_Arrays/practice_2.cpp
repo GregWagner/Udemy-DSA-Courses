@@ -38,17 +38,17 @@ void problem_2() {
         std::cin >> n;
     }
 
-    std::vector<int> a(150, 0);
+    std::vector<int> frequency(151, 0);
     for (int i {}; i < n; ++i) {
         int value {};
         std::cin >> value;
-        ++a[value];
+        ++frequency[value];
     }
-    int maxCount { a[0] };
+    int maxCount { frequency[0] };
     int maxValue {};
-    for (size_t i { 1 }; i < a.size(); ++i) {
-        if (a[i] > maxCount) {
-            maxCount = a[i];
+    for (size_t i { 1 }; i < frequency.size(); ++i) {
+        if (frequency[i] > maxCount) {
+            maxCount = frequency[i];
             maxValue = i;
         }
     }

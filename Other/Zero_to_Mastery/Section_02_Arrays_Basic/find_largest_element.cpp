@@ -15,7 +15,7 @@ int main() {
     }
 
     int largest { arr[0] };
-    for (int i { 1 }; i < numberOfElements; ++i) {
+    for (size_t i { 1 }; i < numberOfElements; ++i) {
         largest = arr[i] > largest ? arr[i] : largest;
     }
     std::cout << "Largest element was " << largest << ".\n";

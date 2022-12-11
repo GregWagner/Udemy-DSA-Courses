@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+// find the 2 maximum numbers
 void problem_1() {
     size_t n {};
     std::cout << "Enter the size of the array: ";
@@ -20,6 +21,7 @@ void problem_1() {
     std::cout << a[0] << ' ' << a[1] << '\n';
 }
 
+// find the max sum of 2 numbers
 void problem_2() {
     size_t n {};
     std::cout << "Enter the size of the array: ";

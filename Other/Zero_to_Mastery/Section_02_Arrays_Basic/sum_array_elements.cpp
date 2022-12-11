@@ -7,16 +7,16 @@ int main() {
     int numberOfElements {};
     std::cout << "Enter the number of elements: ";
     std::cin >> numberOfElements;
-    int *arr = new int[numberOfElements];
+    int* arr = new int[numberOfElements];
 
     std::cout << "Enter each arr element:\n";
-    for (int i {}; i < numberOfElements; ++i) {
-        std::cin >> arr[i]; 
+    for (size_t i {}; i < numberOfElements; ++i) {
+        std::cin >> arr[i];
     }
 
     int sum {};
-    for (int i {}; i < numberOfElements; ++i) {
-       sum += arr[i]; 
+    for (size_t i {}; i < numberOfElements; ++i) {
+        sum += arr[i];
     }
 
     std::cout << "The sum of the array is " << sum << ".\n";
