@@ -1,0 +1,4 @@
+C:\Users\theGr\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.7571.171\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/theGr/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.7571.171/bin/ninja/win/ninja.exe -G Ninja -S C:\Users\theGr\Projects\Udemy-DSA-Courses\Mastering_Critical_Skills\Data_Structures\Section_16_Char_Arrays -B C:\Users\theGr\Projects\Udemy-DSA-Courses\Mastering_Critical_Skills\Data_Structures\Section_16_Char_Arrays\cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Data_Structures/Section_16_Char_Arrays/cmake-build-debug
