@@ -28,25 +28,24 @@ std::pair<int, int> calculatePosition(const std::string& route) {
 void printFinalPosition(std::pair<int, int> position) {
     std::ostringstream output;
 
-    int xPosition { position.first };
-    int yPosition { position.second };
+    int x_position { position.first };
+    int y_position { position.second };
 
-    bool goingNorth = yPosition > 0;
-    while (yPosition--) {
-        output << (goingNorth ? 'N' : 'S');
+    bool going_north = y_position > 0;
+    while (y_position--) {
+        output << (going_north ? 'N' : 'S');
     }
 
-    bool goingEast = xPosition > 0;
-    while (xPosition--) {
-        output << (goingEast ? 'E' : 'W');
+    bool going_east = x_position > 0;
+    while (x_position--) {
+        output << (going_east ? 'E' : 'W');
     }
     std::cout << output.str() << '\n';
 }
 
 int main() {
-    std::string route;
-    std::cin >> route;
+    std::string route = "SNNNEWE";
 
-    auto finalPosition = calculatePosition(route);
-    printFinalPosition(finalPosition);
+    auto final_position = calculatePosition(route);
+    printFinalPosition(final_position);
 }

@@ -23,7 +23,6 @@ std::string compressString(std::string s) {
         }
         output << s[i] << count;
     }
-
     return (n < output.str().length() ? s : output.str());
 }
 

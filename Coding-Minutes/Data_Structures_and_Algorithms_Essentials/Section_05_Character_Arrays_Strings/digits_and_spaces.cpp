@@ -14,7 +14,7 @@ int main() {
     while (ch != '\n') {
         if (ch >= '0' && ch <= '9') {
             ++digits;
-        } else if (ch == ' ' || ch == '\n') {
+        } else if (ch == ' ' || ch == '\t') {
             ++spaces;
         } else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
             ++alpha;
