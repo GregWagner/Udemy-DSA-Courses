@@ -18,6 +18,7 @@ std::pair<int, int> search(int a[][4], int n, int m, int key) {
         return { -1, -1 };
     }
 
+    // start from last column in first row
     int row {};
     int col { m - 1 };
 
@@ -33,10 +34,10 @@ std::pair<int, int> search(int a[][4], int n, int m, int key) {
 
 int main() {
     int a[][4] = {
-        {10,  20, 30, 40},
-        { 15, 25, 35, 45},
-        { 27, 29, 37, 48},
-        { 32, 33, 39, 50}
+        {10, 20, 30, 40},
+        {15, 25, 35, 45},
+        {27, 29, 37, 48},
+        {32, 33, 39, 50}
     };
     auto answer = search(a, 4, 4, 33);
     std::cout << answer.first << ' ' << answer.second << '\n';

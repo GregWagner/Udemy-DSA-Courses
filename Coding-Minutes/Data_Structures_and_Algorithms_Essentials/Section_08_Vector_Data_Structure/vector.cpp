@@ -7,7 +7,7 @@ class Vector {
     T* arr {};
 
 public:
-    Vector(int max_size_ = 1)
+    explicit Vector(int max_size_ = 1)
         : max_size { max_size_ }
         , arr { new T[max_size] } {
     }
