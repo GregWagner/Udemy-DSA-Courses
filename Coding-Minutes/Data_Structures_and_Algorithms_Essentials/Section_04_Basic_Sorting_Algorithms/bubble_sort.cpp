@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+// optimaized bubble sort
 template <typename T>
 void bubbleSort(std::vector<T>& a) {
     bool swap_made { true };
@@ -20,8 +21,8 @@ void bubbleSort(std::vector<T>& a) {
 template <typename T>
 void bubbleSort1(std::vector<T>& a) {
     size_t n = a.size();
-    for (size_t i { 1 }; i < n - 1; ++i) {
-        for (size_t j {}; j < n - i; ++j) {
+    for (size_t times { 1 }; times < n - 1; ++times) {
+        for (size_t j {}; j < n - times; ++j) {
             if (a[j] > a[j + 1]) {
                 std::swap(a[j], a[j + 1]);
             }
@@ -39,6 +40,6 @@ void print(const std::vector<T>& a) {
 
 int main() {
     std::vector<int> a { 6, 2, 7, 4, 8, 1, 3 };
-    bubbleSort1(a);
+    bubbleSort(a);
     print(a);
 }

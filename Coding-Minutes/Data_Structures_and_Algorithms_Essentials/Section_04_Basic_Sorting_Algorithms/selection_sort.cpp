@@ -21,7 +21,6 @@ void selectionSort(std::vector<T>& a) {
         }
         // put smallest in correct spot
         std::swap(a[i], a[smallest_position]);
-        //      print(a);
     }
 }
 
