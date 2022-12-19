@@ -1,15 +1,16 @@
 #include <iostream>
 #include <vector>
 
+const in NOT_FOUND {-1};
+
 template <typename T>
 int linear_search(const std::vector<T>& a, T key) {
-    int answer { -1 };
     for (size_t index {}; index < a.size(); ++index) {
         if (a[index] == key) {
             return static_cast<int>(index);
         }
     }
-    return answer;
+    return NOT_FOUND;
 }
 
 int main() {
@@ -21,7 +22,7 @@ int main() {
 
     auto index = linear_search(a, key);
 
-    if (index == -1) {
+    if (index == NOT_FOUND) {
         std::cout << key << " was NOT found\n";
     } else {
         std::cout << key << " is present at index " << index << '\n';
