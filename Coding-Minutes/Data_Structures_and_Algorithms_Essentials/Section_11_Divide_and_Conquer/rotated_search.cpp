@@ -4,11 +4,14 @@
  * element.
  *
  * Use modified binary search
+ * Find midpoint and if
+ *      a[start] < a[mid] then the midpoint is on line 1
+ *      a[mid] <= a[end] then the midpoint is on line 2
  */
 #include <iostream>
 #include <vector>
 
-int rotated_search(std::vector<int>& nums, int target) {
+int rotated_search(const std::vector<int>& nums, int target) {
     int start {};
     int end = nums.size() - 1;
     while (start <= end) {

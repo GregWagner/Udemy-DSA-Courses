@@ -40,9 +40,12 @@ Secttion 11 - Divide and Conquer
 101     Merge Sort
 106     Rotated Array Search
         Exercise 34 2D Merge
+
+Section 12 - Backtracking
 110-111 Finding Subsets (Pretty much all of backtracking)
 113     Permutations
 119     Sudoku Solver
+
 
 128     Merge Sort Analysis
 129     Time Complexity For Recursive Problems
