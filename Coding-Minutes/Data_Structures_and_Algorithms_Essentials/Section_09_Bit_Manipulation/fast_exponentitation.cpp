@@ -1,4 +1,5 @@
 /*
+ * Fast exponention
  * a^n
  * convert n to binary representation
  * For example 8^5 = 8^101

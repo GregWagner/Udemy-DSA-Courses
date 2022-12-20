@@ -30,10 +30,12 @@ Section 9 - Bit Manipulation
 84      Convert to binary
         Exercise 27 Subset Sum Queries
 
-
-93      Bubble Sort Recursively
+Section 10  - Recursion Basics
+96      Bubble Sort Recursively
 99      Exercise 31 Binary Strings
 100     Exercise 32 Friends Party
+
+Secttion 11 - Divide and Conquer
 101     Merge Sort
 106     Rotated Array Search
         Exercise 34 2D Merge

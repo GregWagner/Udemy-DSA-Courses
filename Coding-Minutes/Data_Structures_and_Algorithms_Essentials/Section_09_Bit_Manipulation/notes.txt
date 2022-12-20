@@ -2,9 +2,9 @@ check if odd                    (x & 1) == 1
 check if even                   (x & 1) == 0
 
 get the ith bit                 n & (1<<i)
-clear the ith bit               n & (~(1<<i))
 set the ith bit                 n | (1<<i)
-update the ith bit              clear the bit, then OR that in with the
+clear the ith bit               n & (~(1<<i))
+update the ith bit              clear the bit, then OR that in with
                                 orginal value
 
 clear last i bits               n & (-1<<i)
