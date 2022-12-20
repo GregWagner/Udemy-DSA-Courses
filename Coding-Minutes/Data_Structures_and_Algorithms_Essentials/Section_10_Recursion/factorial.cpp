@@ -1,6 +1,6 @@
 #include <iostream>
 
-long long fact(long long n) {
+int64_t fact(int64_t n) {
     if (n <= 1) {
         return 1;
     }

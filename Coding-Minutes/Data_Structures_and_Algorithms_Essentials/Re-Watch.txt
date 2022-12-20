@@ -31,6 +31,7 @@ Section 9 - Bit Manipulation
         Exercise 27 Subset Sum Queries
 
 Section 10  - Recursion Basics
+95      Power function optimized
 96      Bubble Sort Recursively
 99      Exercise 31 Binary Strings
 100     Exercise 32 Friends Party

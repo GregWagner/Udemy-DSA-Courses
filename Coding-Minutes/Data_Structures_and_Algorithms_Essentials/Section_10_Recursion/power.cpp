@@ -13,9 +13,9 @@ int power(int a, int n) {
      * return a * power(a, n - 1);
      */
 
-    int subProblem { power(a, n / 2) };
-    subProblem *= subProblem;
-    return n & 1 ? a * subProblem : subProblem;
+    int sub_problem { power(a, n / 2) };
+    sub_problem *= sub_problem;
+    return n & 1 ? a * sub_problem : sub_problem;
 }
 
 int main() {

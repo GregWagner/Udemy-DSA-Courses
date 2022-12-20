@@ -13,8 +13,8 @@ int firstOccurance(int a[], int n, int key) {
         return 0;
     }
 
-    int subIndex = firstOccurance(a + 1, n - 1, key);
-    return subIndex == -1 ? -1 : subIndex + 1;
+    int sub_index = firstOccurance(a + 1, n - 1, key);
+    return sub_index == -1 ? -1 : sub_index + 1;
 }
 
 int main() {

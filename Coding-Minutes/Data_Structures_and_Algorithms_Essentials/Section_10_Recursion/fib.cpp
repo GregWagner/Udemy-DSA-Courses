@@ -1,6 +1,7 @@
+#include <cstdint>
 #include <iostream>
 
-long long fib(long long n) {
+uint64_t fib(uint64_t n) {
     if (n <= 1) {
         return n;
     }

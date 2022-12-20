@@ -10,12 +10,12 @@ int lastOccurance(int a[], int n, int key) {
         return -1;
     }
 
-    int subIndex = lastOccurance(a + 1, n - 1, key);
-    if (subIndex == -1) {
-        // key not found in subproblem - check
+    int sub_index = lastOccurance(a + 1, n - 1, key);
+    if (sub_index == -1) {
+        // key not found in subproblem - check the first element
         return a[0] == key ? 0 : -1;
     }
-    return subIndex + 1;
+    return sub_index + 1;
 }
 
 int main() {
