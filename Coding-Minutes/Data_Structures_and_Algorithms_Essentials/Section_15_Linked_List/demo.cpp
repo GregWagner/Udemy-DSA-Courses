@@ -1,12 +1,13 @@
 #include <iostream>
 
+// forward declarations
 class List;
 
 class Node {
 public:
-    Node(int d)
-        : data(d)
-        , next(nullptr) {
+    explicit Node(int d)
+        : data{d}
+        , next{nullptr} {
     }
 
     ~Node() {
@@ -24,6 +25,7 @@ private:
     Node* next;
 };
 
+
 class List {
 public:
     List()
@@ -32,12 +34,12 @@ public:
     }
 
     ~List() {
-        Node* currentNode = head;
-        while (currentNode != nullptr) {
-            head = currentNode->next;
-            currentNode->next = nullptr;
-            delete currentNode;
-            currentNode = head;
+        Node* currrent_node = head;
+        while (currrent_node != nullptr) {
+            head = currrent_node->next;
+            currrent_node->next = nullptr;
+            delete currrent_node;
+            currrent_node = head;
         }
         head = tail = nullptr;
     }
@@ -47,10 +49,10 @@ public:
     }
 
     void print() const {
-        Node* currentNode = head;
-        while (currentNode != nullptr) {
-            std::cout << currentNode->getData() << " -> ";
-            currentNode = currentNode->next;
+        Node* currrent_node = head;
+        while (currrent_node != nullptr) {
+            std::cout << currrent_node->getData() << " -> ";
+            currrent_node = currrent_node->next;
         }
         std::cout << "null\n";
     }
@@ -91,27 +93,27 @@ public:
             head = nullptr;
             return head;
         }
-        Node* previousNode {};
-        Node* currentNode = head;
-        while (currentNode->next) {
-            previousNode = currentNode;
-            currentNode = currentNode->next;
+        Node* previous_node {};
+        Node* currrent_node = head;
+        while (currrent_node->next) {
+            previous_node = currrent_node;
+            currrent_node = currrent_node->next;
         }
-        delete previousNode->next;
-        previousNode->next = nullptr;
-        tail = previousNode;
+        delete previous_node->next;
+        previous_node->next = nullptr;
+        tail = previous_node;
         return head;
     }
 
     void pop_back() {
-        Node* previousNode {};
-        Node* currentNode = head;
-        while (currentNode->next) {
-            previousNode = currentNode;
-            currentNode = currentNode->next;
+        Node* previous_node {};
+        Node* currrent_node = head;
+        while (currrent_node->next) {
+            previous_node = currrent_node;
+            currrent_node = currrent_node->next;
         }
-        delete previousNode->next;
-        previousNode->next = nullptr;
+        delete previous_node->next;
+        previous_node->next = nullptr;
     }
 
     void insert(int data, int position) {
@@ -119,17 +121,17 @@ public:
             push_front(data);
             return;
         }
-        Node* currentNode = head;
+        Node* currrent_node = head;
         for (int index { 1 }; index <= position - 1; ++index) {
-            if (currentNode->next == nullptr) {
+            if (currrent_node->next == nullptr) {
                 std::cerr << "Invald insertation position.\n";
                 return;
             }
-            currentNode = currentNode->next;
+            currrent_node = currrent_node->next;
         }
         Node* node = new Node(data);
-        node->next = currentNode->next;
-        currentNode->next = node;
+        node->next = currrent_node->next;
+        currrent_node->next = node;
     }
 
     void remove(int position) {
@@ -137,40 +139,40 @@ public:
             std::cerr << "List is empty\n";
             return;
         }
-        Node* currentNode = head;
+        Node* currrent_node = head;
         int index { 1 };
-        while (index < position - 1 && currentNode->next) {
-            currentNode = currentNode->next;
+        while (index < position - 1 && currrent_node->next) {
+            currrent_node = currrent_node->next;
             ++index;
         }
-        if (currentNode->next == nullptr) {
+        if (currrent_node->next == nullptr) {
             std::cerr << "Trying to delete a node not in list\n";
             return;
         }
-        Node* tempNode = currentNode->next;
-        currentNode->next = tempNode->next;
-        delete tempNode;
+        Node* temp_node = currrent_node->next;
+        currrent_node->next = temp_node->next;
+        delete temp_node;
     }
 
     bool search(int key) const {
-        Node* currentNode = head;
-        while (currentNode != nullptr) {
+        Node* currrent_node = head;
+        while (currrent_node != nullptr) {
             if (head->getData() == key) {
                 return true;
             }
-            currentNode = head->next;
+            currrent_node = head->next;
         }
         return false;
     }
 
-    bool searchRecursive(Node* currentNode, int key) const {
-        if (currentNode == nullptr) {
+    bool searchRecursive(Node* currrent_node, int key) const {
+        if (currrent_node == nullptr) {
             return false;
         }
-        if (currentNode->getData() == key) {
+        if (currrent_node->getData() == key) {
             return true;
         }
-        return searchRecursive(currentNode->next, key);
+        return searchRecursive(currrent_node->next, key);
     }
 
     int recursiveSearch(int key) {
@@ -178,29 +180,29 @@ public:
     }
 
     void reverse() {
-        Node* currentNode = head;
-        Node* previousNode = {};
-        while (currentNode != nullptr) {
-            Node* nextNode = currentNode->next;
-            currentNode->next = previousNode;
-            previousNode = currentNode;
-            currentNode = nextNode;
+        Node* currrent_node = head;
+        Node* previous_node = {};
+        while (currrent_node != nullptr) {
+            Node* next_node = currrent_node->next;
+            currrent_node->next = previous_node;
+            previous_node = currrent_node;
+            currrent_node = next_node;
         }
-        head = previousNode;
+        head = previous_node;
     }
 
 private:
     Node* head;
     Node* tail;
 
-    int searchHelper(Node* currentNode, int key) {
-        if (currentNode == nullptr) {
+    int searchHelper(Node* currrent_node, int key) {
+        if (currrent_node == nullptr) {
             return -1;
         }
-        if (currentNode->getData() == key) {
+        if (currrent_node->getData() == key) {
             return 0;
         }
-        int index = searchHelper(currentNode->next, key);
+        int index = searchHelper(currrent_node->next, key);
         return (index == -1 ? -1 : index + 1);
     }
 };

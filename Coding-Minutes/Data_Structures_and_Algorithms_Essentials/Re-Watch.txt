@@ -46,14 +46,20 @@ Section 12 - Backtracking
 113     Permutations
 119     Sudoku Solver
 
-
+Section 13 - Space Time Complexity
 128     Merge Sort Analysis
 129     Time Complexity For Recursive Problems
+
+Section 15 Linked List
 149     Reverse Link List
         Coding Exercise 40
+
+Section 16 - Stacks
 156     Insert at bottom of stack
 157     Reverse a stack
 158     Stock span
+
+Section 17 - Queues
 163     Implement Stack with 2 Queues
 170     Level Order Print
 175-177 Diameter of a binary tree
