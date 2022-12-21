@@ -27,6 +27,7 @@ int gridWays(int current_row, int current_col, int target_x, int target_y) {
     if (current_row >= target_x || current_col >= target_y) {
         return 0;
     }
+
     return gridWays(current_row + 1, current_col, target_y, target_x)
         + gridWays(current_row, current_col + 1, target_y, target_x);
 }

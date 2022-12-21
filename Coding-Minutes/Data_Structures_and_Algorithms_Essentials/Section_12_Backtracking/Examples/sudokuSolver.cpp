@@ -37,7 +37,7 @@ bool isSafe(int mat[][9], int i, int j, int number, int n = 9) {
     return true;
 }
 
-bool solveSodoku(int mat[][9], int row, int col, int n = 9) {
+bool solve_sodoku(int mat[][9], int row, int col, int n = 9) {
     // if done with all rows (base case)
     if (row == n) {
         return true;
@@ -45,12 +45,12 @@ bool solveSodoku(int mat[][9], int row, int col, int n = 9) {
 
     // go to the next row if we are at the last column (1st recursive case)
     if (col == n) {
-        return solveSodoku(mat, row + 1, 0);
+        return solve_sodoku(mat, row + 1, 0);
     }
 
     // skip if the col is already filled (2nd recursive case)
     if (mat[row][col] != 0) {
-        return solveSodoku(mat, row, col + 1);
+        return solve_sodoku(mat, row, col + 1);
     }
 
     // at this point we are at a cell that needs to be filled.
@@ -58,7 +58,7 @@ bool solveSodoku(int mat[][9], int row, int col, int n = 9) {
     for (int number { 1 }; number <= n; ++number) {
         if (isSafe(mat, row, col, number)) {
             mat[row][col] = number;
-            if (solveSodoku(mat, row, col + 1)) {
+            if (solve_sodoku(mat, row, col + 1)) {
                 return true;
             }
         }
@@ -72,17 +72,16 @@ bool solveSodoku(int mat[][9], int row, int col, int n = 9) {
 int main() {
     int mat[9][9] {
         {5,  3, 0, 0, 7, 0, 0, 0, 0},
-        { 6, 0, 0, 1, 9, 5, 0, 0, 0},
-        { 0, 9, 8, 0, 0, 0, 0, 6, 0},
-        { 8, 0, 0, 0, 6, 0, 0, 0, 3},
-        { 4, 0, 0, 8, 0, 3, 0, 0, 1},
-        { 7, 0, 0, 0, 2, 0, 0, 0, 6},
-        { 0, 6, 0, 0, 0, 0, 2, 8, 0},
-        { 0, 0, 0, 4, 1, 9, 0, 0, 5},
-        { 0, 0, 0, 0, 8, 0, 0, 7, 9}
-    };
+        {6, 0, 0, 1, 9, 5, 0, 0, 0},
+        {0, 9, 8, 0, 0, 0, 0, 6, 0},
+        {8, 0, 0, 0, 6, 0, 0, 0, 3},
+        {4, 0, 0, 8, 0, 3, 0, 0, 1},
+        {7, 0, 0, 0, 2, 0, 0, 0, 6},
+        {0, 6, 0, 0, 0, 0, 2, 8, 0},
+        {0, 0, 0, 4, 1, 9, 0, 0, 5},
+        {0, 0, 0, 0, 8, 0, 0, 7, 9}};
 
-    if (!solveSodoku(mat, 0, 0)) {
+    if (!solve_sodoku(mat, 0, 0)) {
         std::cout << "No solution exists!\n";
     } else {
         printSolution(mat);

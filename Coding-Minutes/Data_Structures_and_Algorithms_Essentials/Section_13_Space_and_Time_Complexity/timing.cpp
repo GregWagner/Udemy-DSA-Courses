@@ -20,5 +20,5 @@ int main() {
 
     auto time = end_time - start_time;
     std::cout << "It took " << time << " clicks ("
-              << ((float)time) / CLOCKS_PER_SEC << " seconds)\n";
+              << static_cast<float>(time) / CLOCKS_PER_SEC << " seconds)\n";
 }

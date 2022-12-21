@@ -6,21 +6,21 @@
 #include <vector>
 
 void findSubsets(char* input, char* output, std::vector<std::string>& list,
-    int i = 0, int j = 0) {
+    int input_index = 0, int output_index = 0) {
     // base case
-    if (input[i] == '\0') {
-        output[j] = '\0';
+    if (input[input_index] == '\0') {
+        output[output_index] = '\0';
         list.emplace_back(output);
         return;
     }
 
     // include the ith letter in the output
-    output[j] = input[i];
-    findSubsets(input, output, list, i + 1, j + 1);
+    output[output_index] = input[input_index];
+    findSubsets(input, output, list, input_index + 1, output_index + 1);
 
     // backtracking case
-    // exclude the ith letter in the output (overwrite output[j])
-    findSubsets(input, output, list, i + 1, j);
+    // exclude the ith letter in the output (overwrite output[output_index])
+    findSubsets(input, output, list, input_index + 1, output_index);
 }
 
 int main() {

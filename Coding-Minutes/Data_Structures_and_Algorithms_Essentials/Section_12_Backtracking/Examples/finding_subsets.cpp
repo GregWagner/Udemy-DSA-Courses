@@ -12,23 +12,24 @@
  */
 #include <iostream>
 
-void findSubsets(char* input, char* output, int i = 0, int j = 0) {
+void findSubsets(char* input, char* output, int input_index = 0, int output_index = 0) {
     // base case
-    if (input[i] == '\0') {
-        output[j] = '\0';
+    if (input[input_index] == '\0') {
+        output[output_index] = '\0';
         std::cout << output << '\n';
         return;
     }
 
+
     // recursive cases
     // include the ith letter in the output so move the index for
     // both the input and output arrays
-    output[j] = input[i];
-    findSubsets(input, output, i + 1, j + 1);
+    output[output_index] = input[input_index];
+    findSubsets(input, output, input_index + 1, output_index + 1);
 
     // backtracking step
-    // exclude the ith letter in the output (overwrite output[j])
-    findSubsets(input, output, i + 1, j);
+    // exclude the ith letter in the output (overwrite output[output_index])
+    findSubsets(input, output, input_index + 1, output_index);
 }
 
 int main() {
