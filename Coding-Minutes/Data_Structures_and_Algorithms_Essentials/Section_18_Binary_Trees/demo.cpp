@@ -3,7 +3,7 @@
 
 class Node {
 public:
-    Node(int data)
+    explicit Node(int data)
         : data { data } {
     }
 

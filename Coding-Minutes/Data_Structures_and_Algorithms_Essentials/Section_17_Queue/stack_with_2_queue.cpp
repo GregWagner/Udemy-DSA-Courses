@@ -1,3 +1,7 @@
+/*
+ * Implement a Stack class which uses 2 queues internally
+ * as a data structure.
+ */
 #include <iostream>
 #include <queue>
 

@@ -1,9 +1,13 @@
+/*
+ * Insert at rear + 1
+ * Remove from front
+ */
 #include <iostream>
 
 class Queue {
 public:
-    Queue(int defaultSize = 5)
-        : maxSize(defaultSize)
+    explicit Queue(int defaultSize = 5)
+        : maxSize {defaultSize}
         , rear { defaultSize - 1 } {
         arr = new int[maxSize];
     }
