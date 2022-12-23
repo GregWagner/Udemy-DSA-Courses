@@ -1,6 +1,7 @@
 #ifndef HASHTABLE_H
 #define HASHTABLE_H
 
+#include <ctime>
 #include <iostream>
 
 template <typename T>
@@ -8,8 +9,7 @@ class Node {
 public:
     Node(const std::string& key, T value)
         : key { key }
-        , value { value }
-        , next {} {
+        , value { value } {
     }
 
     ~Node() {
@@ -18,15 +18,14 @@ public:
 
     std::string key;
     T value;
-    Node* next;
+    Node* next {};
 };
 
 template <typename T>
 class Hashtable {
 public:
-    Hashtable(int default_size = 7)
-        : currentSize {}
-        , tableSize { default_size } {
+    explicit Hashtable(int default_size = 7)
+        : tableSize { default_size } {
         table = new Node<T>*[tableSize];
         clearTable();
     }
@@ -72,6 +71,7 @@ public:
     }
 
     void erase(std::string& key) {
+        // todo
     }
 
     void print() {
@@ -91,7 +91,7 @@ private:
     int currentSize {};
     int tableSize {};
 
-    int hashFunc(std::string key) {
+    int hashFunc(const std::string &key) {
         int index {};
         int power { 1 };
         for (auto ch : key) {
@@ -119,6 +119,7 @@ private:
         // copy elements from old table to new
         for (int i {}; i < oldTableSize; ++i) {
             Node<T>* temp = oldTable[i];
+            ++currentSize;
             while (temp != nullptr) {
                 insert(temp->key, temp->value);
                 temp = temp->next;
