@@ -6,8 +6,8 @@
 template <typename T>
 class Heap {
 public:
-    Heap(int defaultSize = 10) {
-        v.resize(defaultSize + 1);
+    explicit Heap(int defaultSize = 10) {
+        v.reserve(defaultSize + 1);
         v.push_back(-1); // index 0 not used
     }
 
@@ -19,6 +19,7 @@ public:
         // perculate up to correct place
         int index { v.size() - 1 };
         int parent { index / 2 };
+        // while the child is smaller than then the parent
         while (index > 1 && v[index] < v[parent]) {
             std::swap(v[index], v[parent]);
             index = parent;

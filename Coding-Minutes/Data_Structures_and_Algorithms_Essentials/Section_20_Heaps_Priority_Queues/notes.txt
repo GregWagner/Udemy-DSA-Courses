@@ -1,10 +1,15 @@
-        Unsorted    Sorted      
-        Array       Array       List        BST         Heap
-Push    O(1)        O(n)        O(n)        O(n)        O(log n)
-Pop get O(n)        O(1)        O(1)        O(n)        O(log n)
-Get max O(n)        O(1)        O(1)        O(n)        O(1)
+                Unsorted    Sorted      
+                Array       Array       List        BST         Heap
+Push            O(1)        O(n)        O(n)        O(n)        O(log n)
+Pop (remove)    O(n)        O(1)        O(1)        O(n)        O(log n)
+Get             O(n)        O(1)        O(1)        O(n)        O(1)
 
 Heap as tree
       i
     /   \
   2*i   2*i+1
+
+  * Binary tree
+  * Complete Binary tree (CBT)
+  * Heap Order Property
+        Parent must be greater or equal to children
