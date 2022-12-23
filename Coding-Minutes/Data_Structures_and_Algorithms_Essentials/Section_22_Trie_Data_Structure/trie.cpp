@@ -5,7 +5,7 @@
 
 class Node {
 public:
-    Node(char data)
+    explicit Node(char data)
         : data { data } {
     }
 
