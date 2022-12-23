@@ -68,7 +68,9 @@ Section 18 - Binary Trees
 
 Section 19 - Binary Search Tree
 182     Delete node BST
+183     Delete node code
 184     Print in range
+185     Root to Leaf node
 
 Section 20 - Heaps/Priorityy Queue
 192     Remove min/max Code - do homework

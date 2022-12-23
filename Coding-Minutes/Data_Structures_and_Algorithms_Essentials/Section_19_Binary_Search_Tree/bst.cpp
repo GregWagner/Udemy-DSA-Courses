@@ -4,13 +4,11 @@
 class Node {
 public:
     int value;
-    Node* left;
-    Node* right;
+    Node* left {};
+    Node* right {};
 
-    Node(int value)
-        : value { value }
-        , left {}
-        , right {} {
+    explicit Node(int value)
+        : value { value } {
     }
 };
 
@@ -84,7 +82,7 @@ Node* deleteNode(Node* root, int key) {
 
             // Case 3: Two Children
         } else {
-            // find smallest node in the right subtree
+            // find smallest node in the right subtree (the next value in-order)
             Node* temp = findSmallestNode(root->right);
             root->value = temp->value;
             root->right = deleteNode(root->right, temp->value);
