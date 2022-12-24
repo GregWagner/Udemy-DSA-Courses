@@ -1,6 +1,7 @@
 Practice Problems on Other Platforms
 
 Section 2 : Array and Vectors
+-----------------------------
 (i)    Pair Sum ->
 https://leetcode.com/problems/two-sum/
 
@@ -31,7 +32,9 @@ https://leetcode.com/problems/maximum-subarray/
 (X) Product Array -> 
   https://leetcode.com/problems/product-of-array-except-self/
 
+
 Section 3 : String Problems
+---------------------------
 (i)    String Key Sort ->
 https://leetcode.com/problems/largest-number/
 
@@ -50,7 +53,9 @@ https://leetcode.com/problems/string-compression/
 (vi)    String Normalisation->
  https://leetcode.com/problems/detect-capital/
 
+
 Section 4 : Sliding Window:
+---------------------------
 
 (i)    Unique Substring->
 https://leetcode.com/problems/longest-substring-without-repeating-characters/
@@ -64,7 +69,9 @@ https://leetcode.com/problems/sliding-window-maximum/
 (iv)    Count subarrays with Target sum ->
  https://leetcode.com/problems/subarray-sum-equals-k/
 
+
 Section 5 : Sorting and Searching:
+----------------------------------
 (i)    Merge Sort-> 
 https://leetcode.com/problems/sort-an-array/
 
@@ -92,7 +99,9 @@ https://leetcode.com/problems/search-a-2d-matrix/
 (ix)    Sorting subarray ->
 https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
 
+
 Section 6 : Binary Search:
+--------------------------
 (i)Search in Rotated sorted array-> https://leetcode.com/problems/search-in-rotated-sorted-array/
 
  (ii)Square root ->
@@ -101,7 +110,9 @@ Section 6 : Binary Search:
 (iii) Angry Birds->
  https://leetcode.com/problems/magnetic-force-between-two-balls/
 
+
 Section 7 : Recursion:
+----------------------
 Permutations(similar)
 https://leetcode.com/problems/permutations/
 
@@ -123,7 +134,9 @@ https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1
 Longest Path
 https://practice.geeksforgeeks.org/problems/longest-path-in-a-matrix3019/1
 
+
 Section 8 : Linked list
+-----------------------
 Create/design 
 https://leetcode.com/problems/design-linked-list/
 
@@ -136,7 +149,9 @@ https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 Detect cycle in Linked list 
 https://leetcode.com/problems/linked-list-cycle/
 
+
 Section 9 : Stacks and Queue
+----------------------------
 First non repeating character
 https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1
 
@@ -146,7 +161,9 @@ Simplify Path
 Stock Span
 https://leetcode.com/problems/online-stock-span/
 
+
 Section 10 : Binary Trees:
+--------------------------
 Nodes at distance k (similar)
 https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/
 
@@ -156,7 +173,9 @@ https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1
 Siblings Swap/flip
 https://leetcode.com/problems/flip-equivalent-binary-trees/
 
+
 Section 11 : BST
+----------------
 Search element 
 https://practice.geeksforgeeks.org/problems/search-a-node-in-bst/1
 
@@ -166,15 +185,18 @@ https://leetcode.com/problems/validate-binary-search-tree/
 Lowest common ancestor
 https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1
 
+
 Section 12 Priority Queue
+-------------------------
 Running Median
 https://leetcode.com/problems/find-median-from-data-stream/
 
 Merge k sorted arrays 
 https://leetcode.com/problems/merge-k-sorted-lists/
-  
-Section 13 : Hashing
 
+
+Section 13 : Hashing
+--------------------
 Minimum Bars : (similar ques)
 https://leetcode.com/problems/word-break-ii/  
 
@@ -184,10 +206,14 @@ https://leetcode.com/problems/group-anagrams/
 Longest K sum subarray :
 https://leetcode.com/problems/subarray-sum-equals-k/
 
+
 Section 14 : Tries :
+--------------------
 https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/
 
+
 Section 15 : Graphs
+--------------------
 Snake and ladder game : 
 https://leetcode.com/problems/snakes-and-ladders/ 
 
@@ -197,11 +223,15 @@ https://leetcode.com/problems/max-area-of-island/
 Astronaut Pairs : 
 https://www.hackerrank.com/challenges/journey-to-the-moon/problem
 
+
 Section 16 :  1D DP
+-------------------
 Frog jump : 
 https://leetcode.com/problems/jump-game-ii/
 
+
 Section 17 :  2D DP
+-------------------
 Coin change 2 : 
 https://leetcode.com/problems/coin-change-2/
  
