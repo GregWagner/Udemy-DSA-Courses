@@ -11,7 +11,7 @@ int fib_recursive(int n) {
 
 // Topdown: recursive + memoisation
 // O(n)
-int fib_dp(int n, std::vector<int> dp) {
+int fib_dp(int n, std::vector<int> &dp) {
     if (n <= 1) {
         return n;
     }
@@ -24,8 +24,8 @@ int fib_dp(int n, std::vector<int> dp) {
 
 // Bottom Up
 int fib_dp1(int n) {
-    int first = 0;
-    int second = 1;
+    int first { 0 };
+    int second { 1 };
     int current { 1 };
     for (int i { 2 }; i <= n; ++i) {
         current = first + second;

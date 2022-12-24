@@ -3,11 +3,11 @@ Dynamic
 
 Overlapping Subproblems
 
-Top Down DP
+Top Down DP - memoization
 Starting building the big solution right away
 by explaining how you build it from smaller
 solutions.
 
-Bottom Up DP
+Bottom Up DP - iterative
 Start with small solutions and use the small
 solutions to build larger solutions.

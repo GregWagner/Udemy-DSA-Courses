@@ -89,6 +89,7 @@ Section 23 - Graphs Introduction
 
 Section 24 - Dynamic Programming Introudctions
 227     Do top down counting coins
+228-229 Longest Common Subsequence
 221/232 Knapsack problem
 233-236 Wines (may be included in next course)
 

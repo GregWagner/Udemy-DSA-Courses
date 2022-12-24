@@ -27,7 +27,7 @@ int minNumberOfCoinsForChange(int n, const std::vector<int>& coins) {
 }
 
 int main() {
-    std::vector<int> a { 1, 3, 7, 10 };
-    std::cout << minNumberOfCoinsForChange(8, a) << '\n';
-    std::cout << minNumberOfCoinsForChange(16, a) << '\n';
+    std::vector<int> coin_denom { 1, 3, 7, 10 };
+    std::cout << minNumberOfCoinsForChange(8, coin_denom) << '\n';
+    std::cout << minNumberOfCoinsForChange(16, coin_denom) << '\n';
 }

@@ -30,6 +30,7 @@
 
 // Top Down DP
 int wines(int dp[][10], int prices[], int left, int right, int year) {
+    // base case
     if (left > right) {
         return 0;
     }
@@ -76,7 +77,9 @@ int main() {
 
     std::cout << "Top Down:\n";
     std::cout << wines(dp, a, 0, n - 1, 1) << '\n';
+
 #if 0
+    // print out DP table
     for (int i {}; i < n; ++i) {
         for (int j {}; j < n; ++j) {
             std::cout << dp[i][j] << ' ';
@@ -84,6 +87,7 @@ int main() {
         std::cout << '\n';
     }
 #endif
+
     std::cout << "\nBottom Up:\n";
     std::cout << wines_bottom_up(a, n) << '\n';
 }

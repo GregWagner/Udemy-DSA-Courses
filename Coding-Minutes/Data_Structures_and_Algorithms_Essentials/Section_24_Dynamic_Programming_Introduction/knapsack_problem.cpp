@@ -39,6 +39,7 @@ int knapsack(int weights[], int prices[], int N, int W) {
 // Bottom Up DP
 int knapsackDP(int weights[], int prices[], int N, int W) {
     std::vector<std::vector<int>> dp(N + 1, std::vector<int>(W + 1));
+
     for (int n { 1 }; n <= N; ++n) {
         for (int w { 1 }; w <= W; ++w) {
             int include {};
