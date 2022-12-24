@@ -27,6 +27,7 @@
  *    For each number
  *       Use pairSum to find other numbers using 2 pointer approach
  *           (one at 1st and one at last)
+ *           to increase sum move left, to decrease sum move right
  *           This takes a total of O(n^2)\
  *   NOTE: You can't use this for the orginal pairSum since the sorting
  *   would be the bottleneck.
@@ -69,7 +70,7 @@ std::vector<std::vector<int>> triplets(std::vector<int>& a, int targetSum) {
 
 int main() {
     std::vector<int> a { 1, 2, 3, 4, 5, 6, 7, 8, 9, 15 };
-    int targetSum = 18;
+    int targetSum {18};
 
     auto p = triplets(a, targetSum);
 

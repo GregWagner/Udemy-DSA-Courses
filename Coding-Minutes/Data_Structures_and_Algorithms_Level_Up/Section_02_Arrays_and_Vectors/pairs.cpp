@@ -37,6 +37,7 @@ std::vector<int> pairSum(const std::vector<int>& a, int totalSum) {
     for (auto const& value : a) {
         // check if the number needed has already been added to the hash
         if (hash.find(totalSum - value) != hash.end()) {
+            // answer found
             results.push_back(value);
             results.push_back(totalSum - value);
             break;
@@ -48,7 +49,7 @@ std::vector<int> pairSum(const std::vector<int>& a, int totalSum) {
 
 int main() {
     std::vector<int> a { 10, 5, 2, 3, -6, 9, 11 };
-    int totalSum = 4;
+    int totalSum {4};
 
     auto p = pairSum(a, totalSum);
     if (p.empty()) {

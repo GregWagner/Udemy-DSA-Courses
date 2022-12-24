@@ -90,7 +90,7 @@ int countMinimumSwaps(std::vector<int>& a) {
             node = ap[node].second; // orginal position
             ++cycle;
         }
-        // it take n-1 swaps
+        // it takes n-1 swaps to correct the nodes in this cycle
         answer += cycle - 1;
     }
     return answer;

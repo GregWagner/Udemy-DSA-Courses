@@ -1,1 +1,15 @@
+Section 2 - Arrays and Vectors
+------------------------------
+13-14   Pairs
+15-16   Triplets
+17-18   Mountains
+19-20   Longest Band
+21-22   Rains
+23-24   Subarray Sort
+25-26   Minimum Swaps
+
 Solution to Exercise 4 Section 2 (mine was O(n^2))
+
+Section 3 - String Problems
+---------------------------
+
