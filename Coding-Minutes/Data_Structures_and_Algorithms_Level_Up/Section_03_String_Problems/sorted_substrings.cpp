@@ -29,7 +29,10 @@ void subsequence(const std::string& s, const std::string& o,
 
     char ch = s[0];
     std::string reduced_input = s.substr(1);
+    // include current letter
     subsequence(reduced_input, o + ch, v);
+
+    // exclused current letter
     subsequence(reduced_input, o, v);
 }
 

@@ -12,4 +12,10 @@ Solution to Exercise 4 Section 2 (mine was O(n^2))
 
 Section 3 - String Problems
 ---------------------------
+35-36   String Sort
+37-38   Check Subsets
+39-40   Sort Subsequences
+
+Secction 4 - Bit Manipulation
+-----------------------------
 

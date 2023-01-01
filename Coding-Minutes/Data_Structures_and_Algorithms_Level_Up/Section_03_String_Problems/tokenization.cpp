@@ -11,6 +11,7 @@
 
 void usingSstream() {
     std::string input;
+    std::cout << "Enter a sentence: ";
     std::getline(std::cin, input);
 
     std::stringstream ss(input);
@@ -42,6 +43,8 @@ void usingStrtok() {
     }
 }
 
+
+// doing tokenization ourself
 char* mystrtok(char* str, char delimiter) {
     static char* input {};
     if (str) {
