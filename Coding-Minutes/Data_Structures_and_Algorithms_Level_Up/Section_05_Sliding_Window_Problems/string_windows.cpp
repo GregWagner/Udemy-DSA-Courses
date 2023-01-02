@@ -30,11 +30,11 @@
 std::string find_window(const std::string &s, const std::string &pattern) {
     const int MAX_COUNT {256};
     // using array as a frequencce map
-    std::vector<int> FP(MAX_COUNT, 0);
-    std::vector<int> FS(MAX_COUNT, 0);
+    std::vector<int> freq_pattern(MAX_COUNT, 0);
+    std::vector<int> freq_string(MAX_COUNT, 0);
 
     for (auto const &c : pattern) {
-        FP[c]++;
+        freq_pattern[c]++;
     }
 
     // sliding window algorithm
@@ -46,10 +46,10 @@ std::string find_window(const std::string &s, const std::string &pattern) {
     for (size_t i {}; i < s.size(); ++i) {
         char c = s[i];
         // expand the window by including current character
-        FS[c]++;
+        freq_string[c]++;
 
         // count how many characters have been matched till now
-        if (FP[c] != 0 && FS[c] <= FP[c]) {
+        if (freq_pattern[c] != 0 && freq_string[c] <= freq_pattern[c]) {
             ++count;
         }
 
@@ -59,8 +59,8 @@ std::string find_window(const std::string &s, const std::string &pattern) {
             // start contracing from the left to remove unneeded characters
             // Note: an unneeded character is either not in the pattern or
             //       the frequency is higher than required
-            while (FP[s[start]] == 0 || FS[s[start]] > FP[s[start]]) {
-                --FS[s[start]];
+            while (freq_pattern[s[start]] == 0 || freq_string[s[start]] > freq_pattern[s[start]]) {
+                --freq_string[s[start]];
                 ++start;
             }
             // at this poiint count is still equal to pattern.size() since
