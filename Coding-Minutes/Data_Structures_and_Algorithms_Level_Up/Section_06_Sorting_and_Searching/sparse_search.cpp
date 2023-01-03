@@ -12,7 +12,7 @@
 #include <iostream>
 #include <vector>
 
-int search(std::vector<std::string>& a, std::string key) {
+int search(std::vector<std::string>& a, const std::string &key) {
     int start {};
     int end = a.size() - 1;
 
@@ -24,11 +24,11 @@ int search(std::vector<std::string>& a, std::string key) {
         while (a[middle] == "") {
             --left;
             ++right;
-            if (left >= 0 && a[left] != "") {
+            if (left >= start && a[left] != "") {
                 middle = left;
                 break;
             }
-            if (right < a.size() && a[right] != "") {
+            if (right < end && a[right] != "") {
                 middle = right;
                 break;
             }

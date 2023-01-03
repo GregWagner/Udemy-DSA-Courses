@@ -35,9 +35,9 @@ int quickselect(std::vector<int>& a, int start, int end, int k) {
     int p = partition(a, start, end);
     if (p == k) {
         return a[p];
-    } else if (k < p) {
+    } 
+    if (k < p) {
         return quickselect(a, start, p - 1, k);
-
     }
     return quickselect(a, p + 1, end, k);
 }

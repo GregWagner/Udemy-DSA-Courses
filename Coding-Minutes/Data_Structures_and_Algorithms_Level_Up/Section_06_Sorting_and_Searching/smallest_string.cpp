@@ -25,7 +25,7 @@ int main() {
     std::vector<std::string> a {"a", "ab", "aba"};
     std::sort(a.begin(), a.end(), compare);
 
-    for (auto s : a) {
+    for (const auto &s : a) {
         std::cout << s;
     }
     std::cout << '\n';

@@ -16,8 +16,19 @@ Section 3 - String Problems
 37-38   Check Subsets
 39-40   Sort Subsequences
 
-Secction 4 - Bit Manipulation
+Section 4 - Bit Manipulation
 -----------------------------
 57-58   Housing and find the smallest window that contains the required sum
 59-60   Unique Substring
 61-62   String Window
+
+Section 5 - Sorting & Searching
+-------------------------------
+65-66   Inversion Count
+69-70   Quickselect
+71-72   Smallest String
+73-74   Sparse Search
+
+Section 6 - Binary Search
+-------------------------
+
