@@ -2,7 +2,7 @@
  * Fixed Sliding window
  * Find the sub-array (consecutive numbers) of k elements that
  * has the maximum sum.
- * hint: use slidding window
+ * hint: use sliding window
  */
 #include <iostream>
 #include <vector>

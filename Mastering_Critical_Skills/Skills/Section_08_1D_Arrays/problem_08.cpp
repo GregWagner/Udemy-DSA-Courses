@@ -1,5 +1,8 @@
 /*
  * Find most frequent number
+ * See his solution - he did a frequency array
+ * but shifted everything by 270 so everything is
+ * positive.
  */
 #include <iostream>
 #include <unordered_map>

@@ -4,5 +4,7 @@ Section 7, For loops Problemm 1 (my homework_14.cpp)
 Section 7, For loops Problemm 2 (my homework_15.cpp)
 
 Rewatch Video 78
+Rewatch Video 84
+Rewatch 95-97 (study these)
 
 Do all practice problems
