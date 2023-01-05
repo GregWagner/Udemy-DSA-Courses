@@ -6,14 +6,6 @@ int main() {
     std::cin >> a >> b >> c;
 
     int max { -1 };
-    if (a < 100) {
-        max = a;
-    } else if (b < 100) {
-        max = b;
-    } else if (c < 100) {
-        max = c;
-    }
-
     if (a < 100 && a > max) {
         max = a;
     }
