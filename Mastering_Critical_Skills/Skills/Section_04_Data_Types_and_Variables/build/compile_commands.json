@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/build",
+  "command": "/usr/bin/g++ -g -std=c++17 -o CMakeFiles/run_homework_01.dir/homework_01.cpp.o -c /mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_01.cpp",
+  "file": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_01.cpp"
+},
+{
+  "directory": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/build",
+  "command": "/usr/bin/g++ -g -std=c++17 -o CMakeFiles/run_homework_02.dir/homework_02.cpp.o -c /mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_02.cpp",
+  "file": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_02.cpp"
+},
+{
+  "directory": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/build",
+  "command": "/usr/bin/g++ -g -std=c++17 -o CMakeFiles/run_homework_03.dir/homework_03.cpp.o -c /mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_03.cpp",
+  "file": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_03.cpp"
+},
+{
+  "directory": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/build",
+  "command": "/usr/bin/g++ -g -std=c++17 -o CMakeFiles/run_homework_04.dir/homework_04.cpp.o -c /mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_04.cpp",
+  "file": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_04.cpp"
+},
+{
+  "directory": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/build",
+  "command": "/usr/bin/g++ -g -std=c++17 -o CMakeFiles/run_homework_05.dir/homework_05.cpp.o -c /mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_05.cpp",
+  "file": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_05.cpp"
+},
+{
+  "directory": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/build",
+  "command": "/usr/bin/g++ -g -std=c++17 -o CMakeFiles/run_homework_06.dir/homework_06.cpp.o -c /mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_06.cpp",
+  "file": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_06.cpp"
+},
+{
+  "directory": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/build",
+  "command": "/usr/bin/g++ -g -std=c++17 -o CMakeFiles/run_homework_07.dir/homework_07.cpp.o -c /mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_07.cpp",
+  "file": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_07.cpp"
+},
+{
+  "directory": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/build",
+  "command": "/usr/bin/g++ -g -std=c++17 -o CMakeFiles/run_homework_08.dir/homework_08.cpp.o -c /mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_08.cpp",
+  "file": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_04_Data_Types_and_Variables/homework_08.cpp"
+}
+]
