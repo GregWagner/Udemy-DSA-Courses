@@ -1,2 +1,8 @@
 Section 4, HW 2 Problem 2 (my homework_6.cpp)
 Section 5, HW 3 Hard Problem 1 (my homework_13.cpp)
+Section 7, For loops Problemm 1 (my homework_14.cpp)
+Section 7, For loops Problemm 2 (my homework_15.cpp)
+
+Rewatch Video 78
+
+Do all practice problems
