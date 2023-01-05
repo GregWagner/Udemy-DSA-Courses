@@ -1,0 +1,27 @@
+# ninja log v5
+4	478	6924717686619138	CMakeFiles/run_practice_02.dir/practice_02.cpp.obj	1f8ed9032fe43f51
+479	623	6924717688004409	run_practice_02.exe	9f15622caad89bff
+458	597	6924724149158736	run_practice_03.exe	89ce06157d886cc0
+5	457	6924724147816209	CMakeFiles/run_practice_03.dir/practice_03.cpp.obj	94faecc7a1593f7a
+0	417	6924733358270097	CMakeFiles/run_problem_01.dir/problem_01.cpp.obj	1e0f71606891f3ca
+418	559	6924733359645414	run_problem_01.exe	76cecfa099e2d7f8
+4	386	6924733538422221	CMakeFiles/run_problem_01.dir/problem_01.cpp.obj	1e0f71606891f3ca
+387	513	6924733539633424	run_problem_01.exe	76cecfa099e2d7f8
+4	375	6924733607729994	CMakeFiles/run_problem_01.dir/problem_01.cpp.obj	1e0f71606891f3ca
+376	500	6924733608925192	run_problem_01.exe	76cecfa099e2d7f8
+1	472	6924829788761107	CMakeFiles/run_problem_02.dir/problem_02.cpp.obj	f516e6fdd943ed17
+473	631	6924829790287001	run_problem_02.exe	1113ee2ac139352e
+5	377	6924830025402797	CMakeFiles/run_problem_02.dir/problem_02.cpp.obj	f516e6fdd943ed17
+378	519	6924830026758602	run_problem_02.exe	1113ee2ac139352e
+4	398	6924830239817472	CMakeFiles/run_problem_02.dir/problem_02.cpp.obj	f516e6fdd943ed17
+398	530	6924830241081923	run_problem_02.exe	1113ee2ac139352e
+4	385	6924830621495917	CMakeFiles/run_problem_02.dir/problem_02.cpp.obj	f516e6fdd943ed17
+386	514	6924830622735416	run_problem_02.exe	1113ee2ac139352e
+4	380	6924830771236442	CMakeFiles/run_problem_02.dir/problem_02.cpp.obj	f516e6fdd943ed17
+381	517	6924830772552177	run_problem_02.exe	1113ee2ac139352e
+4	396	6924830896014891	CMakeFiles/run_problem_02.dir/problem_02.cpp.obj	f516e6fdd943ed17
+397	535	6924830897315463	run_problem_02.exe	1113ee2ac139352e
+5	400	6924832209289806	CMakeFiles/run_problem_02.dir/problem_02.cpp.obj	f516e6fdd943ed17
+401	537	6924832210585436	run_problem_02.exe	1113ee2ac139352e
+5	444	6924832365196881	CMakeFiles/run_problem_02.dir/problem_02.cpp.obj	f516e6fdd943ed17
+445	586	6924832366555956	run_problem_02.exe	1113ee2ac139352e

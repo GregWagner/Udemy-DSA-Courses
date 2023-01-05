@@ -1,0 +1,7 @@
+C:/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Data_Structures/Section_16_Char_Arrays/cmake-build-debug/CMakeFiles/run_practice_01.dir
+C:/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Data_Structures/Section_16_Char_Arrays/cmake-build-debug/CMakeFiles/run_practice_02.dir
+C:/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Data_Structures/Section_16_Char_Arrays/cmake-build-debug/CMakeFiles/run_practice_03.dir
+C:/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Data_Structures/Section_16_Char_Arrays/cmake-build-debug/CMakeFiles/run_problem_01.dir
+C:/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Data_Structures/Section_16_Char_Arrays/cmake-build-debug/CMakeFiles/run_problem_02.dir
+C:/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Data_Structures/Section_16_Char_Arrays/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Data_Structures/Section_16_Char_Arrays/cmake-build-debug/CMakeFiles/rebuild_cache.dir
