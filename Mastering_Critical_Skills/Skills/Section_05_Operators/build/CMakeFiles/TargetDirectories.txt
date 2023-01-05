@@ -1,0 +1,16 @@
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_01.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_02.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_03.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_04.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_05.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_06.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_07.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_08.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_09.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_10.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_11.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_12.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_13.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/run_homework_14.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_05_Operators/build/CMakeFiles/rebuild_cache.dir
