@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/build",
+  "command": "/usr/bin/g++ -g -std=c++17 -o CMakeFiles/run_homework_01.dir/homework_01.cpp.o -c /mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/homework_01.cpp",
+  "file": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/homework_01.cpp"
+},
+{
+  "directory": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/build",
+  "command": "/usr/bin/g++ -g -std=c++17 -o CMakeFiles/run_homework_02.dir/homework_02.cpp.o -c /mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/homework_02.cpp",
+  "file": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/homework_02.cpp"
+},
+{
+  "directory": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/build",
+  "command": "/usr/bin/g++ -g -std=c++17 -o CMakeFiles/run_homework_03.dir/homework_03.cpp.o -c /mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/homework_03.cpp",
+  "file": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/homework_03.cpp"
+},
+{
+  "directory": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/build",
+  "command": "/usr/bin/g++ -g -std=c++17 -o CMakeFiles/run_homework_04.dir/homework_04.cpp.o -c /mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/homework_04.cpp",
+  "file": "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/homework_04.cpp"
+}
+]

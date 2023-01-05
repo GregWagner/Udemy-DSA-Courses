@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Variables",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "run_homework_01::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run_homework_01-Debug-080e9e5ff205ef2a07e7.json",
+					"name" : "run_homework_01",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run_homework_02::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run_homework_02-Debug-7c922f269875598635de.json",
+					"name" : "run_homework_02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run_homework_03::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run_homework_03-Debug-d2aa0a0328c13cfd8761.json",
+					"name" : "run_homework_03",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run_homework_04::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run_homework_04-Debug-5a3705a6428d71de748e.json",
+					"name" : "run_homework_04",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/build",
+		"source" : "/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

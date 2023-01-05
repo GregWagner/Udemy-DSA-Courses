@@ -1,0 +1,6 @@
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/build/CMakeFiles/run_homework_01.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/build/CMakeFiles/run_homework_02.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/build/CMakeFiles/run_homework_03.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/build/CMakeFiles/run_homework_04.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/theGr/Projects/Udemy-DSA-Courses/Mastering_Critical_Skills/Skills/Section_06_Selection/build/CMakeFiles/rebuild_cache.dir

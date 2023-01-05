@@ -1,0 +1,9 @@
+# ninja log v5
+3	272	1672878910485876200	CMakeFiles/run_homework_01.dir/homework_01.cpp.o	872b85b694564df
+305	560	1672878910770924500	run_homework_01	d1b0e9b2b28379c8
+3	240	1672879132312614500	CMakeFiles/run_homework_02.dir/homework_02.cpp.o	a891f03325abe0a5
+269	527	1672879511649092000	run_homework_03	3ae752ed0a5dd9e3
+247	502	1672879132582464000	run_homework_02	9542201a69a7cfaf
+4	261	1672879511380482800	CMakeFiles/run_homework_03.dir/homework_03.cpp.o	c38aefaf8908fd55
+2	264	1672879759036867900	CMakeFiles/run_homework_04.dir/homework_04.cpp.o	b491ccbbaed0ed16
+271	515	1672879759292621100	run_homework_04	dcbfbb01d8dacce2
