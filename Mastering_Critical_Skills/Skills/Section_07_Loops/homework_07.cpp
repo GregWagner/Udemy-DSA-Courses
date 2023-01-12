@@ -1,8 +1,8 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int n {};
-    std::cout << "Enter max nummber: ";
+    std::cout << "Enter max number: ";
     std::cin >> n;
 
     int i {};

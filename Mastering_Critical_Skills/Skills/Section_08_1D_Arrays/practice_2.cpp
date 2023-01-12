@@ -30,7 +30,7 @@ void problem_1() {
 
 // find most frequent number
 void problem_2() {
-    size_t n {};
+    int n {};
     std::cout << "Enter how many numbers: ";
     std::cin >> n;
     while (n < 0 || n > 150) {
@@ -53,7 +53,7 @@ void problem_2() {
         }
     }
     std::cout << "The number " << maxValue
-              << " occured " << maxCount << " times.\n";
+              << " occurred " << maxCount << " times.\n";
 }
 
 int main() {

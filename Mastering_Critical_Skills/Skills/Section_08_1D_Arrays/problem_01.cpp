@@ -1,10 +1,10 @@
 /*
- * Prinnt Yes if the array is increasing
+ * Print Yes if the array is increasing
  */
 #include <iostream>
 #include <vector>
 
-bool is_increasing_array(std::vector<int>& a) {
+auto is_increasing_array(std::vector<int>& a) -> bool {
 
     for (size_t i { 1 }; i < a.size(); ++i) {
         if (a[i - 1] > a[i]) {
@@ -14,7 +14,7 @@ bool is_increasing_array(std::vector<int>& a) {
     return true;
 }
 
-int main() {
+auto main() -> int {
     std::vector<int> a { 1, 2, 2, 5 };
     std::vector<int> b { 1, 0, 7, 8, 9 };
     std::vector<int> c { -10, 10 };

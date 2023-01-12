@@ -3,7 +3,7 @@
  */
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int n {};
     std::cout << "Enter a number: ";
     std::cin >> n;

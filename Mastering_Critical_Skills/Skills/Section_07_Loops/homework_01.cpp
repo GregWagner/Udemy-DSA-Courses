@@ -1,7 +1,8 @@
-#include <iostream>>
+#include <iostream>
 
-int main() {
-    int start {}, end {};
+auto main() -> int {
+    int start {};
+    int end {};
     std::cout << "Enter start and end of range: ";
     std::cin >> start >> end;
 

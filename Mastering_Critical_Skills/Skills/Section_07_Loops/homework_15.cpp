@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int count {};
     for (int x { 50 }; x <= 300; ++x) {
         int y_start { 70 };

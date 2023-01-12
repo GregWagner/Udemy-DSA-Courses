@@ -5,7 +5,7 @@
 #include <iostream>
 #include <vector>
 
-std::vector<int> find_three_min_values(const std::vector<int>& a) {
+auto find_three_min_values(const std::vector<int>& a) -> std::vector<int> {
     std::vector<int> answer(3, INT_MAX);
     for (const int& ele : a) {
         if (ele < answer[0]) {
@@ -22,7 +22,7 @@ std::vector<int> find_three_min_values(const std::vector<int>& a) {
     return answer;
 }
 
-int main() {
+auto main() -> int {
     std::vector<int> a { 4, 1, 3, 10, 8 };
     auto answer = find_three_min_values(a);
     std::cout << answer[0] << ", " << answer[1] << ", " << answer[2] << '\n';

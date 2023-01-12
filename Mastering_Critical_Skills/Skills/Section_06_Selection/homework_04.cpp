@@ -1,11 +1,15 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int x {};
     std::cout << "Enter the base number: ";
     std::cin >> x;
 
-    int a {}, b {}, c {}, d {}, e {};
+    int d {};
+    int e{};
+    int b{};
+    int c{};
+    int a{};
     std::cout << "Enter 5 more numbers: ";
     std::cin >> a >> b >> c >> d >> e;
 

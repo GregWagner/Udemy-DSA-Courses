@@ -1,11 +1,16 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int x {};
     std::cout << "Enter x: ";
     std::cin >> x;
 
-    int s1, e1, s2, e2, s3, e3;
+    int e3;
+    int s3;
+    int e2;
+    int s2;
+    int e1;
+    int s1;
     std::cout << "Enter 3 starting/ending internals: ";
     std::cin >> s1 >> e1 >> s2 >> e2 >> s3 >> e3;
 
@@ -19,5 +24,5 @@ int main() {
     if (x >= s3 && x <= e3) {
         ++interval_count;
     }
-    std::cout << x << " belons to " << interval_count << " intervals\n";
+    std::cout << x << " belongs to " << interval_count << " intervals\n";
 }

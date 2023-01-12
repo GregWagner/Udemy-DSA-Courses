@@ -3,12 +3,13 @@
  */
 #include <iostream>
 #include <vector>
-
+/*
 void solve(int n, int k) {
     
 }
+ */
 
-int main() {
+auto main() -> int {
     std::vector<int> a {1, 2, 3, 4, 5, 6, 7};
     std::vector<int> b {2, 4, 6, 1, 5, 3, 7};
     std::vector<int> c {3, 6, 2, 7, 5, 1, 4};

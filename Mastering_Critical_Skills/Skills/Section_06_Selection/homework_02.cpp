@@ -1,7 +1,9 @@
 #include <iostream>
 
-int main() {
-    int a {}, b {}, c {};
+auto main() -> int {
+    int a {};
+    int b{};
+    int c{};
     std::cout << "Enter three numbers: ";
     std::cin >> a >> b >> c;
 

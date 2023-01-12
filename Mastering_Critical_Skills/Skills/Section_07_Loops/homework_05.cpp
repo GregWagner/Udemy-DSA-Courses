@@ -1,7 +1,7 @@
 #include <iostream>
 
-int main() {
-    int n;
+auto main() -> int {
+    int n {};
     std::cout << "Enter the number of integers to read: ";
     std::cin >> n;
 

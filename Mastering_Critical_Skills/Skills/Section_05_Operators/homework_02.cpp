@@ -1,13 +1,16 @@
 #include <iostream>
 
-int main() {
-    int a = 1, b = 1, c;
+auto main() -> int {
+    int c;
+    int b = 1;
+    int a = 1;
 
     std::cout << (c = a + b, a = b, b = c,
         c = a + b, a = b, b = c,
         c = a + b, a = b, b = c,
         c = a + b, a = b, b = c)
-              << std::endl;
+              << '\n';
+    std::cout << a << ' ' << b << ' ' << c << '\n';
 }
 
 /*

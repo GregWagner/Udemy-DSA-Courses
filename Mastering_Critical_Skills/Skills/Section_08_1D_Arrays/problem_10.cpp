@@ -16,7 +16,7 @@ void print_unique_numbers(const std::vector<int> &a) {
     std::cout << '\n';
 }
 
-int main() {
+auto main() -> int {
     std::vector<int> a {1, 5, 5, 2, 5, 7, 2, 3, 3, 3, 5, 2, 7};
     print_unique_numbers(a);
 }

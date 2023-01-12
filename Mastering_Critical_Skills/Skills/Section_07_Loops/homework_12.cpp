@@ -1,7 +1,8 @@
 #include <iostream>
 
-int main() {
-    int n {}, m {};
+auto main() -> int {
+    int m {};
+    int n{};
     std::cout << "Enter n and m: ";
     std::cin >> n >> m;
 

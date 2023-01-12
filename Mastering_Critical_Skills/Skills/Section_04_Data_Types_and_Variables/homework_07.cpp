@@ -3,8 +3,9 @@
  */
 #include <iostream>
 
-int main() {
-    int a {}, b {};
+auto main() -> int {
+    int b {};
+    int a{};
     std::cout << "Enter a number: ";
     std::cin >> a;
 

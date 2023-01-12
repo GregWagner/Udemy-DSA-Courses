@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int rows {};
     std::cout << "Enter number of rows: ";
     std::cin >> rows;

@@ -21,7 +21,7 @@ void recmans_sequence(std::vector<int> &a) {
 }
 
 
-int main() {
+auto main() -> int {
     std::vector<int> a(200, 0);
     recmans_sequence(a);
 

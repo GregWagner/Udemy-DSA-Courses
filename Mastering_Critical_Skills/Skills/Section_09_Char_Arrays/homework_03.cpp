@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-bool is_substring(std::string& s1, size_t s1_index, std::string& s2, size_t s2_index = 0) {
+auto is_substring(std::string& s1, size_t s1_index, std::string& s2, size_t s2_index = 0) -> bool {
     for (size_t i { s2_index }; i < s2.size(); ++i) {
         if (s1[s1_index++] != s2[s2_index++]) {
             return false;
@@ -10,8 +10,9 @@ bool is_substring(std::string& s1, size_t s1_index, std::string& s2, size_t s2_i
     return true;
 }
 
-int main() {
-    std::string s1, s2;
+auto main() -> int {
+    std::string s1;
+    std::string s2;
     std::cout << "Enter 2 strings: ";
     std::cin >> s1 >> s2;
 

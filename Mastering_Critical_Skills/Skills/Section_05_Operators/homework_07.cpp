@@ -1,8 +1,11 @@
 #include <iostream>
 
-int main() {
-    int a1 {}, a2 {}, a3 {};
-    int b1 {}, b2 {};
+auto main() -> int {
+    int a3 {};
+    int a2 {};
+    int a1 {};
+    int b2 {};
+    int b1 {};
     std::cout << "Enter 5 numbers: ";
     std::cin >> a1 >> a2 >> a3 >> b1 >> b2;
 

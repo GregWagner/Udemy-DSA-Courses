@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int test_cases {};
     std::cout << "Enter the number of cases: ";
     std::cin >> test_cases;

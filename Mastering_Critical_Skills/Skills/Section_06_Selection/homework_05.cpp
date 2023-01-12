@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int input {};
 
     std::cout << "Enter 10 integers: ";

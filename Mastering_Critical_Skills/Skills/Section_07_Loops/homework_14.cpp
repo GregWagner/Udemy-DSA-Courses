@@ -1,8 +1,8 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int n {};
-    std::cout << "Enter an odd nummber: ";
+    std::cout << "Enter an odd number: ";
     std::cin >> n;
 
     int starting_spaces {};

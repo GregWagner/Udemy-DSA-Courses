@@ -1,11 +1,11 @@
 /*
- * Is Palindrom
+ * Is Palindrome
  * Determine if the array is a palindrome or not
  */
 #include <iostream>
 #include <vector>
 
-bool isPalindrome(const std::vector<int>& a) {
+auto isPalindrome(const std::vector<int>& a) -> bool {
     size_t start {};
     size_t last { a.size() - 1 };
     while (start < last) {
@@ -18,7 +18,7 @@ bool isPalindrome(const std::vector<int>& a) {
     return true;
 }
 
-int main() {
+auto main() -> int {
     std::cout << std::boolalpha;
     std::vector<int> a { 1, 3, 2, 3, 1 };
     std::cout << (isPalindrome(a)) << '\n';

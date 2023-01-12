@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-int main() {
+auto main() -> int {
     std::string s;
     std::cout << "Enter a string: ";
     std::cin >> s;

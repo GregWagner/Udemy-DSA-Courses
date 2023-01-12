@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int n {};
     char c {};
     std::cout << "Enter count and a character: ";

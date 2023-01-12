@@ -1,6 +1,6 @@
 #include <iostream>
 
-int sum_of_digits(int n) {
+auto sum_of_digits(int n) -> int {
     int sum {};
     while (n) {
         sum += n % 10;

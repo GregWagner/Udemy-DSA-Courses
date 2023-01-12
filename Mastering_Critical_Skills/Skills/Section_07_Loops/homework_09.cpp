@@ -1,7 +1,7 @@
 #include <climits>
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int test_cases {};
     std::cout << "Enter number of test cases: ";
     std::cin >> test_cases;

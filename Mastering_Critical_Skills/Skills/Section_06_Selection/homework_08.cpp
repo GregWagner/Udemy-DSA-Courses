@@ -1,7 +1,10 @@
 #include <iostream>
 
-int main() {
-    int s1, e1, s2, e2;
+auto main() -> int {
+    int e2 {};
+    int s2 {};
+    int e1 {};
+    int s1 {};
     std::cout << "Enter 2 start/end intervals: ";
     std::cin >> s1 >> e1 >> s2 >> e2;
 

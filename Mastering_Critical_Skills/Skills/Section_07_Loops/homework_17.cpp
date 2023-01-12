@@ -1,7 +1,7 @@
 #include <cmath>
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int n {};
     std::cout << "Enter an integer < 500: ";
     std::cin >> n;

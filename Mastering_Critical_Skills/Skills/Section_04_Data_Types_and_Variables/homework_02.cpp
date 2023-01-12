@@ -3,12 +3,11 @@
  */
 #include <iostream>
 
-int main() {
+auto main() -> int {
     std::string name_1;
+    int id_1 {};
     std::cout << "What is student 1 name: ";
     std::cin >> name_1;
-
-    int id_1 {};
     std::cout << "His id: ";
     std::cin >> id_1;
 

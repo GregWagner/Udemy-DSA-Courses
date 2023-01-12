@@ -1,6 +1,6 @@
 /*
  * Frequency
- * Ignore upper letters and compute the frequenccy of
+ * Ignore upper letters and compute the frequency of
  * lower letters
  */
 #include <iostream>

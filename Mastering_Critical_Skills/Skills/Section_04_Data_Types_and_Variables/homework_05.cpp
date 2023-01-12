@@ -3,7 +3,7 @@
  */
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int num1 {};
     int num2 {};
     std::cout << "Enter two numbers: ";

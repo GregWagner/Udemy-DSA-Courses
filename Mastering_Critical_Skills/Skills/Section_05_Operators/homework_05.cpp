@@ -1,7 +1,9 @@
 #include <iostream>
 
-int main() {
-    int nb {}, ng {}, nt {};
+auto main() -> int {
+    int nt {};
+    int ng {};
+    int nb {};
     std::cin >> nb >> ng >> nt;
 
     std::cout << std::boolalpha;

@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int n {};
     std::cout << "Enter largest number to check: ";
     std::cin >> n;

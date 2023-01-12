@@ -6,7 +6,7 @@
 #include <iostream>
 #include <vector>
 
-int smallest_pair(const std::vector<int>& a) {
+auto smallest_pair(const std::vector<int>& a) -> int {
     size_t answer = INT_MAX;
     for (size_t i {}; i < a.size(); ++i) {
         for (size_t j { i + 1 }; j < a.size(); ++j) {
@@ -16,7 +16,7 @@ int smallest_pair(const std::vector<int>& a) {
     return answer;
 }
 
-int main() {
+auto main() -> int {
     std::cout << std::boolalpha;
     std::vector<int> a { 20, 1, 9, 4 };
     std::cout << (smallest_pair(a) == 7) << '\n';

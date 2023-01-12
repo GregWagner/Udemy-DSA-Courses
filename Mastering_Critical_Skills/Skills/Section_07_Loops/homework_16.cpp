@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int count {};
     for (int a { 1 }; a <= 200; ++a) {
         for (int b { 1 }; b <= 200; ++b) {

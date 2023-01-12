@@ -23,7 +23,7 @@ void replace_min_max(std::vector<int>& a) {
     }
 }
 
-int main() {
+auto main() -> int {
     std::vector<int> a { 4, 1, 3, 10, 8, 10, 10 };
     replace_min_max(a);
     for (const auto& e : a) {

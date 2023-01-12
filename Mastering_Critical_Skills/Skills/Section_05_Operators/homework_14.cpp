@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     const int MONTHS_IN_YEAR { 12 };
     const int DAYS_IN_MONTH { 30 };
     const int DAYS_IN_YEAR { DAYS_IN_MONTH * MONTHS_IN_YEAR };

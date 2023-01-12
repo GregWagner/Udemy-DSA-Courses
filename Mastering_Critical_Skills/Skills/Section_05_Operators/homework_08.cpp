@@ -1,7 +1,8 @@
 #include <iostream>
 
-int main() {
-    double a {}, b {};
+auto main() -> int {
+    double b {};
+    double a {};
     std::cout << "Enter 2 numbers: ";
     std::cin >> a >> b;
 

@@ -1,8 +1,9 @@
 #include <iostream>
 #include <string>
 
-int main() {
-    std::string s1, s2;
+auto main() -> int {
+    std::string s1;
+    std::string s2;
     std::cout << "Enter 2 strings: ";
     std::cin >> s1 >> s2;
 

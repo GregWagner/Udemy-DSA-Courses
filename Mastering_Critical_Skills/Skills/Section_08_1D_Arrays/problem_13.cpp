@@ -7,12 +7,12 @@
 #include <iostream>
 #include <vector>
 
-void find_max_subarray(const std::vector<int> &a, int k) {
-    int index {};
+void find_max_subarray(const std::vector<int> &a, unsigned k) {
+    unsigned index {};
     int maxIndex {};
     int max {};
     // add up the first k values
-    for (int i {}; i < k; ++i) {
+    for (unsigned i {}; i < k; ++i) {
         max += a[i];
     }
 
@@ -34,7 +34,7 @@ void find_max_subarray(const std::vector<int> &a, int k) {
     std::cout << '\n';
 }
 
-int main() {
+auto main() -> int {
     std::vector<int> a {1, 0, 3, -4, 2, -6, 9};
     find_max_subarray(a, 3);
 }

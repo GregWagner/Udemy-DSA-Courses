@@ -3,7 +3,7 @@
  */
 #include <iostream>
 
-int main() {
+auto main() -> int {
     int num1 {}, num2 {}, num3 {};
     std::cout << "Enter three numbers: ";
     std::cin >> num1 >> num2 >> num3;

@@ -8,11 +8,11 @@
 #include <unordered_map>
 #include <vector>
 
-int most_frequent(const std::vector<int> &a) {
+auto most_frequent(const std::vector<int> &a) -> int {
     std::unordered_map<int, int> freq;
     int maxCount {};
     int maxValue {};
-    for (int i {}; i < a.size(); ++i) {
+    for (size_t i {}; i < a.size(); ++i) {
         if (freq.count(a[i])) {
             ++freq[a[i]];
         } else {
@@ -26,7 +26,7 @@ int most_frequent(const std::vector<int> &a) {
     return maxValue;
 }
 
-int main() {
+auto main() -> int {
     std::vector<int> a {-1, 2, -1, 3, -1, 5, 5};
     std::cout << std::boolalpha << (most_frequent(a) == -1) << '\n';
 }

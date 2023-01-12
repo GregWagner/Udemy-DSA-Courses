@@ -1,7 +1,8 @@
 #include <iostream>
 
-int main() {
-    int a = 0, b = 1;
+auto main() -> int {
+    auto a = 0;
+    auto b = 1;
 
     std::cout << a++ << "\n"; // 0 a=1 b=1
     std::cout << ++a << "\n"; // 2 a=2 b=1
