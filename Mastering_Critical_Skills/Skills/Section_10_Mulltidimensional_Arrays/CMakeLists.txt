@@ -10,16 +10,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Easy Problems
-#add_executable(run_homework_01 homework_01.cpp)
-#add_executable(run_homework_02 homework_02.cpp)
-#add_executable(run_homework_03 homework_03.cpp)
-#add_executable(run_homework_04 homework_04.cpp)
-#add_executable(run_homework_05 homework_05.cpp)
-#add_executable(run_homework_06 homework_06.cpp)
+#add_executable(run_homework_10_01 homework_01.cpp)
+#add_executable(run_homework_10_02 homework_02.cpp)
+#add_executable(run_homework_10_03 homework_03.cpp)
+#add_executable(run_homework_10_04 homework_04.cpp)
+#add_executable(run_homework_10_05 homework_05.cpp)
+#add_executable(run_homework_10_06 homework_06.cpp)
 
 # Medium Problems
-#add_executable(run_homework_07 homework_07.cpp)
-#add_executable(run_homework_08 homework_08.cpp)
-#add_executable(run_homework_09 homework_09.cpp)
+#add_executable(run_homework_10_07 homework_07.cpp)
+#add_executable(run_homework_10_08 homework_08.cpp)
+#add_executable(run_homework_10_09 homework_09.cpp)
 
 # Hard Problems

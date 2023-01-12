@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+auto main() -> int {
     std::cout << "\n\nGuess the "
               << "output\n---\n";
 
@@ -8,7 +8,7 @@ int main() {
     std::cout << "14/2" << '\n';
     std::cout << 17 - 10 << '\n';
     std::cout << std::endl;
-    std::cout << "\nPractive makes perfect";
+    std::cout << "\nPractice makes perfect";
 
     // std::cout << "The way to get started is to quit talking and begin doing";
 
