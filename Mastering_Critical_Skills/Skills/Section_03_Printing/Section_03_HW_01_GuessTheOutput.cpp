@@ -11,7 +11,7 @@ auto main() -> int
     std::cout << std::endl;
     std::cout << "\nPractice makes perfect";
 
-    std::cout << "The way to get started is to quit talking and begin doing";
+    // std::cout << "The way to get started is to quit talking and begin doing";
 
     return 0;
     std::cout << "\n\nBye\n\n";
