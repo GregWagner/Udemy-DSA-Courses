@@ -8,6 +8,7 @@ auto main() -> int {
     std::cout << "Enter three numbers: ";
     std::cin >> num1 >> num2 >> num3;
 
+    // do in 4 lines of code
     int temp { num1 };
     num1 = num2;
     num2 = num3;

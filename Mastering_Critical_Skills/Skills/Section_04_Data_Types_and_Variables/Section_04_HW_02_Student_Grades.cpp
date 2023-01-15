@@ -4,10 +4,12 @@
 #include <iostream>
 
 auto main() -> int {
+    // First student
     std::string name_1;
-    int id_1 {};
     std::cout << "What is student 1 name: ";
     std::cin >> name_1;
+
+    int id_1 {};
     std::cout << "His id: ";
     std::cin >> id_1;
 
@@ -15,6 +17,7 @@ auto main() -> int {
     std::cout << "His math exam grade: ";
     std::cin >> grade_1;
 
+    // Second student
     std::string name_2;
     std::cout << "What is student 2 name: ";
     std::cin >> name_2;

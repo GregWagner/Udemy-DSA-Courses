@@ -4,8 +4,8 @@
 #include <iostream>
 
 auto main() -> int {
-    int a {};
-    int b {};
+    double a {};
+    double b {};
     std::cout << "Enter two numbers: ";
     std::cin >> a >> b;
 

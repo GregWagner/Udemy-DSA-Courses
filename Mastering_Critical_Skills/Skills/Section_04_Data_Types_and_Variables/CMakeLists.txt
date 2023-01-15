@@ -1,24 +1,13 @@
-cmake_minimum_required(VERSION 3.22)
-
-project(
-  Variables
-  VERSION 1.0.0
-  LANGUAGES C CXX)
-
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
-
 # Easy Problems
-add_executable(run_homework_04_01 homework_01.cpp)
-add_executable(run_homework_04_02 homework_02.cpp)
-add_executable(run_homework_04_03 homework_03.cpp)
+add_executable(run_homework_04_01 Section_04_HW_01_Math_Operations.cpp)
+add_executable(run_homework_04_02 Section_04_HW_02_Student_Grades.cpp)
+add_executable(run_homework_04_03 Section_04_HW_03_Even_Odd_Sum.cpp)
 
 # Medium Problems
-add_executable(run_homework_04_04 homework_04.cpp)
-add_executable(run_homework_04_05 homework_05.cpp)
+add_executable(run_homework_04_04 Section_04_HW_04_Guess_the_Output.cpp)
+add_executable(run_homework_04_05 Section_04_HW_05_Swap_Two_Numbers.cpp)
 
 # Hard Problems
-add_executable(run_homework_04_06 homework_06.cpp)
-add_executable(run_homework_04_07 homework_07.cpp)
-add_executable(run_homework_04_08 homework_08.cpp)
+add_executable(run_homework_04_06 Section_04_HW_06_Swap_Three_Numbers.cpp)
+add_executable(run_homework_04_07 Section_04_HW_07_Print_Me.cpp)
+add_executable(run_homework_04_08 Section_04_HW_08_Sum_Numbers.cpp)

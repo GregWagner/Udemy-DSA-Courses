@@ -1,4 +1,5 @@
-Section 4, HW 2 Problem 2 (my homework_6.cpp)
+Section 4, HW 4 Problem 7 (Print Me)
+Section 4, HW 4 Problem 8 (Sum Numbers - good explanation and link)
 Section 5, HW 3 Hard Problem 1 (my homework_13.cpp)
 Section 7, For loops Problem 1 (my homework_14.cpp)
 Section 7, For loops Problem 2 (my homework_15.cpp)
