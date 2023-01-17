@@ -1,0 +1,2 @@
+add_executable(run_homework_04_04 Section_04_HW_04_Guess_the_Output.cpp)
+add_executable(run_homework_04_05 Section_04_HW_05_Swap_Two_Numbers.cpp)

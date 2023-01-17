@@ -1,0 +1,3 @@
+add_executable(run_homework_05_10 homework_10.cpp)
+add_executable(run_homework_05_11 homework_11.cpp)
+add_executable(run_homework_05_12 homework_12.cpp)

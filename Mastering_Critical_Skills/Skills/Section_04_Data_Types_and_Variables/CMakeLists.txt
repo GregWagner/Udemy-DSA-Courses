@@ -1,13 +1,3 @@
-# Easy Problems
-add_executable(run_homework_04_01 Section_04_HW_01_Math_Operations.cpp)
-add_executable(run_homework_04_02 Section_04_HW_02_Student_Grades.cpp)
-add_executable(run_homework_04_03 Section_04_HW_03_Even_Odd_Sum.cpp)
-
-# Medium Problems
-add_executable(run_homework_04_04 Section_04_HW_04_Guess_the_Output.cpp)
-add_executable(run_homework_04_05 Section_04_HW_05_Swap_Two_Numbers.cpp)
-
-# Hard Problems
-add_executable(run_homework_04_06 Section_04_HW_06_Swap_Three_Numbers.cpp)
-add_executable(run_homework_04_07 Section_04_HW_07_Print_Me.cpp)
-add_executable(run_homework_04_08 Section_04_HW_08_Sum_Numbers.cpp)
+add_subdirectory(Easy)
+add_subdirectory(Medium)
+add_subdirectory(Hard)

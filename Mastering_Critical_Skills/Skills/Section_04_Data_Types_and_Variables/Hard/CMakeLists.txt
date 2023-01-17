@@ -1,0 +1,3 @@
+add_executable(run_homework_04_06 Section_04_HW_06_Swap_Three_Numbers.cpp)
+add_executable(run_homework_04_07 Section_04_HW_07_Print_Me.cpp)
+add_executable(run_homework_04_08 Section_04_HW_08_Sum_Numbers.cpp)
