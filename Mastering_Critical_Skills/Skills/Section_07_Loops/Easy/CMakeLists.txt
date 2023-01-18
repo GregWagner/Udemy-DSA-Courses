@@ -1,0 +1,5 @@
+add_executable(run_homework_07_01 Section_07_HW_01_Print_Range.cpp)
+add_executable(run_homework_07_02 Section_07_HW_02_Line_of_Characters.cpp)
+add_executable(run_homework_07_03 Section_07_HW_03_Print_Left_Triangle.cpp)
+add_executable(run_homework_07_04 Section_07_HW_04_Print_Face_Down_Left_Triangle.cpp)
+add_executable(run_homework_07_05 Section_07_HW_05_Special_Averge.cpp)

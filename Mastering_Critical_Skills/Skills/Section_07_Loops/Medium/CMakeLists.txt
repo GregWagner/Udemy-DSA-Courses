@@ -1,0 +1,13 @@
+# While Loops
+add_executable(run_homework_07_06 Section_07_HW_06_Print_Diamond.cpp)
+add_executable(run_homework_07_07 Section_07_HW_07_Special_Multiples.cpp)
+add_executable(run_homework_07_08 Section_07_HW_08_Special_Multiples.cpp)
+add_executable(run_homework_07_09 Section_07_HW_09_Min_of_Values.cpp)
+
+# For Loops
+add_executable(run_homework_07_14 Section_07_HW_14_Print_X.cpp)
+add_executable(run_homework_07_15 Section_07_HW_15_Special_Pairs.cpp)
+add_executable(run_homework_07_16 Section_07_HW_16_Find_All_Quadruples.cpp)
+add_executable(run_homework_07_17 Section_07_HW_17_Is_Prime.cpp)
+add_executable(run_homework_07_18 Section_07_HW_18_Print_Primes.cpp)
+add_executable(run_homework_07_19 Section_07_HW_19_Digits_Sum_in_Range.cpp)

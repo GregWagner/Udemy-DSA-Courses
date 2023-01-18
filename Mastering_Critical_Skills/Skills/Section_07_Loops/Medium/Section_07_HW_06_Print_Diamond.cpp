@@ -1,3 +1,8 @@
+/*
+ * Note this coulld have been done with :
+ * Spaces are n - row
+ * Stars are 2 * row - 1
+ */
 #include <iostream>
 
 auto main() -> int {

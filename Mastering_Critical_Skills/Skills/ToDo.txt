@@ -3,13 +3,11 @@ Section 4, HW 4 Problem 8 (Sum Numbers - good explanation and link)
 Section 5, HW 8 Medium Problem 1 (Our Modulus review)
 Section 5, HW 13 Hard Problem 1 (100 or 7 review)
 Section 6, HW 4 Easy Problem 4 (review his way was better than ifs)
-Section 7, For loops Problem 1 (my homework_14.cpp)
-Section 7, For loops Problem 2 (my homework_15.cpp)
+Section 7, HW 8 Medium Problem (his 2nd solution is more efficient)
+Section 7, Practice Pair of numbers (study faster way)
+Section 7, For loops Problem 1 (Print X) (can do much shorter)
+Section 7, For loops Problem 2 (my homework_15.cpp) - speed up
 
-Re-watch Video 78
 Re-watch Video 84
 Re-watch 95-97 (study these)
 Do HW video 108, 109, 111
-
-Do all practice problems
-Do all projects

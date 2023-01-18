@@ -5,10 +5,8 @@ auto main() -> int {
     std::cout << "Enter the number of integers to read: ";
     std::cin >> n;
 
-    int odd_sum {};
-    int odd_count {};
-    int even_sum {};
-    int even_count {};
+    int odd_sum {}, odd_count {};
+    int even_sum {}, even_count {};
     while (n--) {
         int input {};
         std::cin >> input;

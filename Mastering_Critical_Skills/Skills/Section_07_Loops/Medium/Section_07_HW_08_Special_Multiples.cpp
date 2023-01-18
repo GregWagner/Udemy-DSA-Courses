@@ -1,3 +1,4 @@
+// a more efficient solution is to start at 3 and jump by 3s
 #include <iostream>
 
 auto main() -> int {
