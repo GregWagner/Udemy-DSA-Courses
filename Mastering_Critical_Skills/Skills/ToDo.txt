@@ -8,6 +8,5 @@ Section 7, Practice Pair of numbers (study faster way)
 Section 7, For loops Problem 1 (Print X) (can do much shorter)
 Section 7, For loops Problem 2 (my homework_15.cpp) - speed up
 
-Re-watch Video 84
 Re-watch 95-97 (study these)
 Do HW video 108, 109, 111

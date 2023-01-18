@@ -10,11 +10,13 @@ auto isPalindrome(const std::vector<int>& a) -> bool {
     size_t last { a.size() - 1 };
     while (start < last) {
         if (a[start] != a[last]) {
+            std::cout << "NO\n";
             return false;
         }
         ++start;
         --last;
     }
+    std::cout << "YES\n";
     return true;
 }
 

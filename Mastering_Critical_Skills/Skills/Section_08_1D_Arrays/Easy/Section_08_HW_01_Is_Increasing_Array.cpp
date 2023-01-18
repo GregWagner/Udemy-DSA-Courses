@@ -8,9 +8,11 @@ auto is_increasing_array(std::vector<int>& a) -> bool {
 
     for (size_t i { 1 }; i < a.size(); ++i) {
         if (a[i - 1] > a[i]) {
+            std::cout << "NO\n";
             return false;
         }
     }
+    std::cout << "YES\n";
     return true;
 }
 

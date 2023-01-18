@@ -1,0 +1,6 @@
+add_executable(run_problem_08_06 problem_06.cpp)
+add_executable(run_problem_08_07 problem_07.cpp)
+add_executable(run_problem_08_08 problem_08.cpp)
+add_executable(run_problem_08_09 problem_09.cpp)
+add_executable(run_problem_08_10 problem_10.cpp)
+add_executable(run_problem_08_11 problem_11.cpp)
