@@ -2,7 +2,7 @@
 
 auto main() -> int {
     int a {};
-    int b{};
+    int b {};
     std::cout << "Enter 2 integers: ";
     std::cin >> a >> b;
 
@@ -13,7 +13,7 @@ auto main() -> int {
         std::cout << a * b << '\n';
     } else if (a_is_even && b_is_even) {
         std::cout << a / b << '\n';
-    } else if (!a_is_even) {
+    } else if (!a_is_even && b_is_even) {
         std::cout << a + b << '\n';
     } else {
         std::cout << a - b << '\n';

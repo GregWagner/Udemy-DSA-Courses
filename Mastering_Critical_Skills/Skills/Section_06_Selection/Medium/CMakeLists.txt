@@ -1,0 +1,2 @@
+add_executable(run_homework_06_05 Section_06_HW_05_Find_Max_of_10.cpp)
+add_executable(run_homework_06_06 Section_06_HW_06_Find_Max_of_10.cpp)

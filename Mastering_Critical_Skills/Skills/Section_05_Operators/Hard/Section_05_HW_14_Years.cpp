@@ -15,5 +15,6 @@ auto main() -> int {
     int months = age / DAYS_IN_MONTH;
 
     age %= DAYS_IN_MONTH;
+
     std::cout << year << ' ' << months << ' ' << age << '\n';
 }

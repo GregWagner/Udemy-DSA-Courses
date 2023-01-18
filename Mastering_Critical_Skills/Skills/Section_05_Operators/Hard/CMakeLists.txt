@@ -1,2 +1,2 @@
-add_executable(run_homework_05_13 homework_13.cpp)
-add_executable(run_homework_05_14 homework_14.cpp)
+add_executable(run_homework_05_13 Section_05_HW_13_100_or_7.cpp)
+add_executable(run_homework_05_14 Section_05_HW_14_Years.cpp)

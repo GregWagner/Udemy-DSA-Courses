@@ -1,24 +1,4 @@
-cmake_minimum_required(VERSION 3.22)
-
-project(
-  Variables
-  VERSION 1.0.0
-  LANGUAGES C CXX)
-
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
-
-# Easy Problems
-add_executable(run_homework_06_01 homework_01.cpp)
-add_executable(run_homework_06_02 homework_02.cpp)
-add_executable(run_homework_06_03 homework_03.cpp)
-add_executable(run_homework_06_04 homework_04.cpp)
-
-# Medium Problems
-add_executable(run_homework_06_05 homework_05.cpp)
-add_executable(run_homework_06_06 homework_06.cpp)
-
-# Hard Problems
-add_executable(run_homework_06_07 homework_07.cpp)
-add_executable(run_homework_06_08 homework_08.cpp)
+add_subdirectory(Practice)
+add_subdirectory(Easy)
+add_subdirectory(Medium)
+add_subdirectory(Hard)

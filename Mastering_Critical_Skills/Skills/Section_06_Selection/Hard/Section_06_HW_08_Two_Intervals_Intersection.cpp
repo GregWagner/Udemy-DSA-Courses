@@ -1,10 +1,8 @@
 #include <iostream>
 
 auto main() -> int {
-    int e2 {};
-    int s2 {};
-    int e1 {};
-    int s1 {};
+    int e1 {}, s1 {};
+    int e2 {}, s2 {};
     std::cout << "Enter 2 start/end intervals: ";
     std::cin >> s1 >> e1 >> s2 >> e2;
 

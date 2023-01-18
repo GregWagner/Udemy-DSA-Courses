@@ -1,9 +1,14 @@
+# Operators
 add_executable(run_homework_05_01 Section_05_HW_01_Guess_the_Output.cpp)
-add_executable(run_homework_05_02 homework_02.cpp)
-add_executable(run_homework_05_03 homework_03.cpp)
-add_executable(run_homework_05_04 homework_04.cpp)
-add_executable(run_homework_05_05 homework_05.cpp)
-add_executable(run_homework_05_06 homework_06.cpp)
-add_executable(run_homework_05_07 homework_07.cpp)
-add_executable(run_homework_05_08 homework_08.cpp)
-add_executable(run_homework_05_09 homework_09.cpp)
+add_executable(run_homework_05_02 Section_05_HW_02_Guess_the_Output.cpp)
+add_executable(run_homework_05_03 Section_05_HW_03_Guess_the_Output.cpp)
+
+# Logical Operators
+add_executable(run_homework_05_04 Section_05_HW_04_Guess_the_Output.cpp)
+add_executable(run_homework_05_05 Section_05_HW_05_Create_Logic.cpp)
+add_executable(run_homework_05_06 Section_05_HW_06_Simplify_Expression.cpp)
+
+# Division and Modulus
+add_executable(run_homework_05_07 Section_05_HW_07_Averages.cpp)
+add_executable(run_homework_05_08 Section_05_HW_08_Fractional_Part.cpp)
+add_executable(run_homework_05_09 Section_05_HW_09_Our_Remainder.cpp)

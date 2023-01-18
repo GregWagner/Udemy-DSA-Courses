@@ -5,8 +5,6 @@ auto main() -> int {
     std::cout << "Enter a number: ";
     std::cin >> num;
 
-    int sum {
-        (num % 10) + (num / 10 % 10) + (num / 100 % 10)
-    };
+    int sum { (num % 10) + (num / 10 % 10) + (num / 100 % 10) };
     std::cout << sum << '\n';
 }
