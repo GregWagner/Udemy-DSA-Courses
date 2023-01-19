@@ -12,6 +12,5 @@ auto main() -> int {
         n *= 10;
         n += digit;
     }
-
     std::cout << n << ' ' << n * 3 << '\n';
 }

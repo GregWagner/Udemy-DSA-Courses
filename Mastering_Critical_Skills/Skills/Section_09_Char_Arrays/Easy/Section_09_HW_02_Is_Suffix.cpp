@@ -2,8 +2,7 @@
 #include <string>
 
 auto main() -> int {
-    std::string s1;
-    std::string s2;
+    std::string s1, s2;
     std::cout << "Enter 2 strings: ";
     std::cin >> s1 >> s2;
 

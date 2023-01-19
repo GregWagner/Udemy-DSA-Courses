@@ -11,8 +11,7 @@ auto is_substring(std::string& s1, size_t s1_index, std::string& s2, size_t s2_i
 }
 
 auto main() -> int {
-    std::string s1;
-    std::string s2;
+    std::string s1, s2;
     std::cout << "Enter 2 strings: ";
     std::cin >> s1 >> s2;
 

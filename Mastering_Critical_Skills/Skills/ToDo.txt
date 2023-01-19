@@ -8,10 +8,17 @@ Section 7, Practice Pair of numbers (study faster way)
 Section 7, For loops Problem 1 (Print X) (can do much shorter)
 Section 7, For loops Problem 2 (my homework_15.cpp) - speed up
 Do the Following without a set/map
-Section 10, 1D Array Medium Problem 1 (Find 3 smallest) - understand his way
-Section 10, 1D Array Medium Problem 3 (Most Freq Number) - understand his way
-Section 10, 1D Array Medium Problem 5 (Unique Number) - understand his way
-Section 10, 1D Array Hard Problem 1 (Recaman Sequence) - Re-watch (Sliding window)
-Re-watch and Do Problems for Videos 94-97 (Section 10 Hard Problems)
+Section 8, 1D Array Medium Problem 1 (Find 3 smallest) - understand his way
+Section 8, 1D Array Medium Problem 3 (Most Freq Number) - understand his way
+Section 8, 1D Array Medium Problem 5 (Unique Number) - understand his way
+Section 8, 1D Array Hard Problem 1 (Recaman Sequence) - Re-watch (Sliding window)
+Re-watch and Do Problems for Videos 94-97 (Section 8 Hard Problems)
+Section 8, Character Arrays Practice Problem 1 (his way was better)
+Section 8, Character Arrays Practice Problem 3 (his way was better)
+Section 8, Character Arrays Easy Problem 3 (review this)
+Section 8, Character Arrays Easy Problem 4 (review this)
+Section 8, Character Arrays Medium Problem 7 (look at his hint)
+Do Section 8, Character Arrays Medium Problem 8
+Do Section 8, Character Arrays Medium Problem 8
+Do Section 8, Character Arrays Application
 
-Do HW video 108, 109, 111
