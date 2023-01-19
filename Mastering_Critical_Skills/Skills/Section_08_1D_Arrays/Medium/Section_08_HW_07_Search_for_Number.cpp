@@ -1,7 +1,6 @@
 /*
  * Search for a number
  * Find the last occurrence in the array and print its index
- * Note: This could have also been done by shifting each value by 270
  */
 #include <iostream>
 #include <vector>
