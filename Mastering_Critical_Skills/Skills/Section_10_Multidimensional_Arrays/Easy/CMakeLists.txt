@@ -1,0 +1,3 @@
+add_executable(run_homework_10_01 Section_10_HW_01_Smaller_Row.cpp)
+add_executable(run_homework_10_02 Section_10_HW_02_Triangular_Matrix.cpp)
+add_executable(run_homework_10_03 Section_10_HW_03_Transpose.cpp)
