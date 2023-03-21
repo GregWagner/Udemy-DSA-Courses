@@ -8,27 +8,27 @@
  */
 #include <iostream>
 
-auto main() -> int
-{
-    int a{};
+auto main() -> int {
+    int a {};
     std::cout << "Enter a number: ";
     std::cin >> a;
 
-    int b{};
+    int b {};
     std::cout << "Enter either -1 or 1: ";
     std::cin >> b;
 
     // precalculate both equations
-    int if_b_is_minus_one{2 * a + 1};
-    int if_b_is_one{a * a};
+    int if_b_is_minus_one { 2 * a + 1 };
+    int if_b_is_one { a * a };
 
+    // convert b to 0 or 1
     // b = 1: b_is_1 = 1
     // b = -1: b_is_1 = 0
     int b_is_1 = (b + 1) / 2;
 
     // b = 1: b_is_neg_1 = 0
     // b = -1: b_is_neg_1 = 1
-    int b_is_neg_1{1 - b_is_1};
+    int b_is_neg_1 { 1 - b_is_1 };
 
     // Either 1 * equation_1 + 0 * equation_2
     // or
