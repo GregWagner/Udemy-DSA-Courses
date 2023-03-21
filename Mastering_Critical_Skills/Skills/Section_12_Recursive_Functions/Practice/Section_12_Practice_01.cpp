@@ -1,0 +1,17 @@
+#include <iostream>
+
+auto print_triangle(int levels) {
+    if (!levels) {
+        return;
+    }
+    for (int i {}; i < levels; ++i) {
+        std::cout << '*';
+    }
+    std::cout << '\n';
+
+    print_triangle(levels - 1);
+}
+
+auto main() -> int {
+    print_triangle(5);
+}
