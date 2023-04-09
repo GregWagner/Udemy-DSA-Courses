@@ -1,5 +1,0 @@
-add_executable(run_problem_08_12 Section_08_HW_12_Recaman_Sequence.cpp)
-add_executable(run_problem_08_13 Section_08_HW_13_Fixed_Sliding_Window.cpp)
-add_executable(run_problem_08_14 Section_08_HW_14_Count_Increasing_Subarrays.cpp)
-add_executable(run_problem_08_15 Section_08_HW_15_Josephus_Problem.cpp)
-add_executable(run_problem_08_16 Section_08_HW_16_Longest_Subarray.cpp)

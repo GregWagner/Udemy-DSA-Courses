@@ -1,5 +1,0 @@
-add_executable(run_problem_08_01 Section_08_HW_01_Is_Increasing_Array.cpp)
-add_executable(run_problem_08_02 Section_08_HW_02_Replace_MinMax.cpp)
-add_executable(run_problem_08_03 Section_08_HW_03_Unique_Numbers_of_Ordered_List.cpp)
-add_executable(run_problem_08_04 Section_08_HW_04_Is_Palindrome.cpp)
-add_executable(run_problem_08_05 Section_08_HW_05_Smallest_Pair.cpp)

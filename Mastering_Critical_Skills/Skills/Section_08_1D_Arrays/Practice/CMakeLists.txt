@@ -1,4 +1,0 @@
-add_executable(run_practice_08_01 Section_08_Practice_01_Find_2_Max_Values.cpp)
-add_executable(run_practice_08_02 Section_08_Practice_02_Find_Pair_Values_of_Max_Sum.cpp)
-add_executable(run_practice_08_03 Section_08_Practice_03_Reverse_in_Place.cpp)
-add_executable(run_practice_08_04 Section_08_Practice_04_Find_Most_Frequent.cpp)

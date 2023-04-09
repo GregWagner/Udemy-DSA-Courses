@@ -1,0 +1,5 @@
+Skills			    4.7		33.5 hours
+Data Structures		4.7		20.0 hours
+Algorithms 1		4.8		19.0 hours
+Algorithms 2		5.0		15.0 hours
+Coding Interviews 1	4.8		17.5 hours

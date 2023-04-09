@@ -1,7 +1,0 @@
-add_executable(run_homework_11_01 Section_11_HW_01_Max_of_6_Numbers.cpp)
-add_executable(run_homework_11_02 Section_11_HW_02__Reverse_String.cpp)
-add_executable(run_homework_11_03 Section_11_HW_03_Calculator.cpp)
-add_executable(run_homework_11_04 Section_11_HW_04_Is_Palindrome.cpp)
-add_executable(run_homework_11_05 Section_11_HW_05_Set_Powers.cpp)
-add_executable(run_homework_11_06 Section_11_HW_06_Get_Nth_Prime.cpp)
-add_executable(run_homework_11_07 Section_11_HW_07_Replace_Substring.cpp)

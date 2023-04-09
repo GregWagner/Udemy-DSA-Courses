@@ -1,3 +1,0 @@
-add_executable(run_homework_03_01 Section_03_HW_01_GuessTheOutput.cpp)
-add_executable(run_homework_03_02 Section_03_HW_02_PrintPyramids.cpp)
-add_executable(run_homework_03_03 Section_03_HW_03_FindTheErrors.cpp)

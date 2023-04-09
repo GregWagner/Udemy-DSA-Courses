@@ -1,4 +1,0 @@
-# Easy Problems
-add_executable(run_homework_04_01 Section_04_HW_01_Math_Operations.cpp)
-add_executable(run_homework_04_02 Section_04_HW_02_Student_Grades.cpp)
-add_executable(run_homework_04_03 Section_04_HW_03_Even_Odd_Sum.cpp)

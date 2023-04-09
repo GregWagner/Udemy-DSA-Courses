@@ -1,1 +1,0 @@
-add_executable(run_practice_17_01 Section_17_Practice_01.cpp)

@@ -1,5 +1,0 @@
-add_executable(run_practice_06_01 Section_06_Practice_01_Simple_Calculator.cpp)
-add_executable(run_practice_06_02 Section_06_Practice_02_Min_2_Numbers.cpp)
-add_executable(run_practice_06_03 Section_06_Practice_03_Min_3_Numbers.cpp)
-add_executable(run_practice_06_04 Section_06_Practice_04_Is_Even.cpp)
-add_executable(run_practice_06_05 Section_06_Practice_05_Last_3_Digits.cpp)

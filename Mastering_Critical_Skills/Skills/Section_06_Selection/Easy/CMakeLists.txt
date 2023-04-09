@@ -1,4 +1,0 @@
-add_executable(run_homework_06_01 Section_06_HW_01_Arithmetic.cpp)
-add_executable(run_homework_06_02 Section_06_HW_02_Sort_3_Numbers.cpp)
-add_executable(run_homework_06_03 Section_06_HW_03_Maximum.cpp)
-add_executable(run_homework_06_04 Section_06_HW_04_Conditional_Count.cpp)

@@ -1,3 +1,0 @@
-add_executable(run_practice_09_01 Section_09_Practice_01_Conc_Strings.cpp)
-add_executable(run_practice_09_02 Section_09_Practice_02_Letters_Freq.cpp)
-add_executable(run_practice_09_03 Section_09_Practice_03_Special_String_Mapping.cpp)

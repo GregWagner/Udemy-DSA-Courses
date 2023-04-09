@@ -1,0 +1,33 @@
+Complete Binary Tree Notes
+
+Minimum number of nodes in a CBT of hight h is:
+    2^(h-1)             so h <= log(n) + 1
+Maximum number of nodes in a CBT of hight h is:
+    2^(h) - 1           so h >= log(n+1)
+so
+log(n+1) <= h <= log(n) + 1
+O(log n) <= h <= O(log n) so h = O(log n)
+
+So one of the problems with a balanced tree is trying to keep 
+hight - to log n, but in a CBT the height is always log n
+
+The second problem with a balanced tree is coming up with 
+a way to store the nodes and is pretty complex. To store a 
+CBT you use an array and you can use the equation:
+    left = 2 * level
+    right = 2 * level + 1
+if you start at index 1 and skip index 0, or
+    left = 2 * level + 1
+    right = 2 * level + 2
+if starting at index 0.
+This makes inserting easy = add it to the end of the array
+Also to get to the parent index:
+    (Child Index - 1) / 2       child index can be either right or left
+
+
+Heap
+- CBT
+- has Heap Order Property
+    root < left and right for minimum heap
+    root > left and right for maximum heap
+

@@ -1,4 +1,0 @@
-add_executable(run_homework_07_10 Section_07_HW_10_Find_NOs.cpp)
-add_executable(run_homework_07_11 Section_07_HW_11_Reverse_Number.cpp)
-add_executable(run_homework_07_12 Section_07_HW_12_Multiplication_Table.cpp)
-add_executable(run_homework_07_13 Section_07_HW_13_Special_Sum.cpp)

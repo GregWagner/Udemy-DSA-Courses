@@ -1,6 +1,0 @@
-add_executable(run_problem_08_06 Section_08_HW_06_Find_the_3_min_values.cpp)
-add_executable(run_problem_08_07 Section_08_HW_07_Search_for_Number.cpp)
-add_executable(run_problem_08_08 Section_08_HW_08_Most_Freq_Number.cpp)
-add_executable(run_problem_08_09 Section_08_HW_09_Digits_Freq.cpp)
-add_executable(run_problem_08_10 Section_08_HW_10_Unique_Numbers_in_Unordered_List.cpp)
-add_executable(run_problem_08_11 Section_08_HW_11_Sorting_Numbers.cpp)

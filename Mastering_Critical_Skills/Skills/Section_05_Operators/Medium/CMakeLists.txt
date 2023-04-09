@@ -1,3 +1,0 @@
-add_executable(run_homework_05_10 Section_05_HW_10_Is_Even.cpp)
-add_executable(run_homework_05_11 Section_05_HW_11_Sum_Last_Three_Digits.cpp)
-add_executable(run_homework_05_12 Section_05_HW_12_Forth_Last_Digit.cpp)

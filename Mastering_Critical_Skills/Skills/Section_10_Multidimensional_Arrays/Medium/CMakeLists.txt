@@ -1,4 +1,0 @@
-add_executable(run_homework_10_04 Section_10_HW_04_How_Many_Primes.cpp)
-add_executable(run_homework_10_05 Section_10_HW_05_Find_Mountains.cpp)
-add_executable(run_homework_10_06 Section_10_HW_06_Active_Robot.cpp)
-add_executable(run_homework_10_07 Section_10_HW_07_Flatten_3D_Array.cpp)

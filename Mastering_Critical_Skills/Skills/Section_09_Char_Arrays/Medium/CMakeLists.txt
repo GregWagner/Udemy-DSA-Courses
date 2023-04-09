@@ -1,3 +1,0 @@
-add_executable(run_homework_09_07 Section_09_HW_07_Compressing.cpp)
-add_executable(run_homework_09_08 Section_09_HW_08_Compare_Strings.cpp)
-add_executable(run_homework_09_09 Section_09_HW_09_Add_5555.cpp)

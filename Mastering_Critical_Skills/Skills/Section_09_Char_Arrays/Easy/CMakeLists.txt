@@ -1,6 +1,0 @@
-add_executable(run_homework_09_01 Section_09_HW_01_Is_Prefix.cpp)
-add_executable(run_homework_09_02 Section_09_HW_02_Is_Suffix.cpp)
-add_executable(run_homework_09_03 Section_09_HW_03_Is_Substring.cpp)
-add_executable(run_homework_09_04 Section_09_HW_04_Is_Subssequence.cpp)
-add_executable(run_homework_09_05 Section_09_HW_05_Converting_Number.cpp)
-add_executable(run_homework_09_06 Section_09_HW_06_Grouping.cpp)

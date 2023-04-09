@@ -1,2 +1,0 @@
-add_executable(run_homework_06_07 Section_06_HW_07_Intervals.cpp)
-add_executable(run_homework_06_08 Section_06_HW_08_Two_Intervals_Intersection.cpp)

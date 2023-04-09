@@ -1,0 +1,25 @@
+75      Print all Subsequences of a string
+78      Print all Permutations of a string
+79      Staircase Problem
+97      Find first and last occurence of a sorted array
+98      Search rotated arrray
+115     Middle of a linked list
+117     Remove kth item from end of linked list
+120     Merge Sort of link list
+135     Remove All Ajacent Duplicates
+170     Symmetric Trees
+175/6   Construct tree from PreOrder and InOrder Traversal
+177/8   Construct tree from InOrder and PostOrder Traversal
+179/180 Diameter
+187     Validate BST
+192/3   Delete node (FIX THIS!!!!)
+194/5   Convert BST to linked list (FIX THIS!!!!)
+199     Remove Duplicates
+220     k-sorted array
+221     k-smallest elements
+232     Longest common subsequence DP
+233/234 Minimum Distance
+Section 34  Kruskal
+Section 35  Prims
+Section 36  Dijiktra
+Section 37  Topographical Sort

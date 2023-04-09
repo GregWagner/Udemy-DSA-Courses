@@ -1,4 +1,0 @@
-add_executable(run_practice_10_01 Section_10_Practice_01_Max_Value.cpp)
-add_executable(run_practice_10_02 Section_10_Practice_02_Special_Print.cpp)
-add_executable(run_practice_10_03 Section_10_Practice_3_Swap_2_Columns.cpp)
-add_executable(run_practice_10_04 Section_10_Practice_04_Greedy_Robot.cpp)
