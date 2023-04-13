@@ -14,10 +14,8 @@ auto main() -> int {
     }
 
     for (size_t i {}; i < frequency.size(); ++i) {
-        if (frequency[i]) {
-            while (frequency[i]--) {
-                std::cout << i << ' ';
-            }
+        while (frequency[i]--) {
+            std::cout << i << ' ';
         }
     }
     std::cout << '\n';

@@ -16,7 +16,6 @@ Section 7, For loops Problem 2 - study his speed up
 Do the Following without a set/map
 Section 8, 1D Array Medium Problem 1 (Find 3 smallest) - understand his way
 Section 8, 1D Array Medium Problem 3 (Most Freq Number) - understand his way
-Section 8, 1D Array Hard Problem 1 (Recaman Sequence) - Re-watch (Sliding window)
 Re-watch and Do Problems for Videos 94-97 (Section 8 Hard Problems)
 
 Section 9, Character Arrays Practice Problem 1 (his way was better)
