@@ -1,8 +1,0 @@
-add_executable(run_homework_12_01 Section_12_HW_01_Length_of_3n1.cpp)
-add_executable(run_homework_12_02 Section_12_HW_02_Power_Function.cpp)
-add_executable(run_homework_12_03 Section_12_HW_03_Array_Max.cpp)
-add_executable(run_homework_12_04 Section_12_HW_04_Array_Sum.cpp)
-add_executable(run_homework_12_05 Section_12_HW_05_Array_Average.cpp)
-add_executable(run_homework_12_06 Section_12_HW_06_Array_Increment.cpp)
-add_executable(run_homework_12_07 Section_12_HW_07_Array_Accumulation.cpp)
-add_executable(run_homework_12_08 Section_12_HW_08_Left_Max.cpp)
