@@ -22,9 +22,8 @@ Section 9, Character Arrays Practice Problem 1 (his way was better)
 Section 9, Character Arrays Practice Problem 3 (his way was better)
 Section 9, Character Arrays Easy Problem 3 (review this)
 Section 9, Character Arrays Easy Problem 4 (review this)
-Section 9, Character Arrays Medium Problem 7 (look at his hint)
-Do Section 9, Character Arrays Medium Problem 8
-Do Section 9, Character Arrays Medium Problem 8
+Section 9, Character Arrays Medium Problem 1 (look at his hint)
+Section 9, Character Arrays Medium Problem 3 (look at his hint)
 Do Section 9, Character Arrays Application
 
 Section 10, Mult-Dem Array Practice 2 (good demo of directional array)
