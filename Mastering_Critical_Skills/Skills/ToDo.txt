@@ -1,10 +1,5 @@
 Quizes to retake
-2
-7
-8
-9
-11
-12
+2, 7, 8, 9, 11, 12, 17, 18
 
 Section 4, HW 4 Problem 7 (Print Me)
 Section 4, HW 4 Problem 8 (Sum Numbers - good explanation and link)
@@ -45,4 +40,16 @@ Section 10, Mult-Dem Array Application (tic tac toe - study his solution)
 Section 11 Homework 03 (Reverse string - his way is faster)
 
 Section 12 Homewok 5 (Array Average - study code)
+Do the following After Studying recursion!!!
+Section 12 Homewok Medium 9 (Right Max - unable to do)
+Section 12 Homewok Medium 10 (Right Max - unable to do)
+Section 12 Homewok Medium 11 (Right Max - unable to do)
+Section 12 Homewok Medium 12 (Right Max - unable to do)
+Section 12 Homewok Medium 13 (Right Max - unable to do)
+Section 12 Homewok Medium 14 (Right Max - unable to do)
+Section 12 Homewok Medium 15 (Right Max - unable to do)
+Section 12 Homewok Medium 16 (Right Max - unable to do)
+Section 12 Homewok Medium 17 (Right Max - unable to do)
+
+
 
