@@ -5,7 +5,7 @@ auto main() -> int {
     int start {}, end {};
     std::cin >> start >> end;
 
-    while (start <= 7) {
+    while (start <= end) {
         std::cout << start << '\n';
         ++start;
     }

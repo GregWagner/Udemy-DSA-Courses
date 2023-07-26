@@ -1,4 +1,5 @@
 #include <iostream>
+
 auto main() -> int {
     std::cout << "Enter n and a character: ";
     int n {};
