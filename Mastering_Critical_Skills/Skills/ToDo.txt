@@ -21,7 +21,7 @@ Section 8, Medium Problem 2 (Search for number - his way is better)
 Section 8, Medium Problem 3 (Most Freq Number - understand his way)
 Re-watch and Do Problems for Videos 94-97 (Section 8 Hard Problems)
 
-Section 9 - rewatch video 99 - getline for strings vs char array
+Section 9, Rewatch video 99 - getline for strings vs char array
 Section 9, Practice Problem 1 (Conc Strings - his way was better)
 Section 9, Practice Problem 3 (Special String Mapping - his way was better)
 Section 9, Easy Problem 3 (Is Substring? - review this)
@@ -29,14 +29,14 @@ Section 9, Easy Problem 4 (Is Subsequence? - review this)
 Section 9, Medium Problem 1 (Compressing - look at his hint)
 Section 9, Medium Problem 3 (Add 5555 - look at his hint)
 
-Section 10, Mult-Dem Array Practice greedy robot (good demo of directional array)
-Section 10, Mult-Dem Array Practice 2 (good explanation of flatting)
-Section 10, Mult-Dem Array Easy 2 (his way is better)
-Section 10, Mult-Dem Array Medium/Hard 1 (is Prime - he precomuted)
-Section 10, Mult-Dem Array Medium/Hard 2 (is mountain - he used direction array)
-Section 10, Mult-Dem Array Medium/Hard 3 (robot - he used modulus)
-Do Mult-Dem Array Medium/Hard 4 (Flatten 3D array)
-Section 10, Mult-Dem Array Application (tic tac toe - study his solution)
+Section 10, Practice Greedy Robot (good demo of directional array)
+Section 10, Practice Flatten Array (good explanation of flattening)
+Section 10, Easy (Triangular Matrix - his way is better)
+Section 10, Medium/Hard (Is Prime - he precomuted)
+Section 10, Medium/Hard (Find mountain - he used direction array)
+Section 10, Medium/Hard (Active Robot - he used modulus)
+Section 10, Medium Hard (Flatten 3D array) TODO
+Section 10, Application (tic tac toe - study his solution)
 
 Section 11 Homework 03 (Reverse string - his way is faster)
 
