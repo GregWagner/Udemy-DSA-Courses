@@ -1,6 +1,7 @@
 #include <cmath>
 #include <iostream>
 
+// this is actually wronng
 auto set_powers(int a[], int len = 5, int m = 2) -> void {
     for (int i {}; i < len; ++i) {
         a[i] = std::pow(m, i);

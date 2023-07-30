@@ -38,19 +38,11 @@ Section 10, Medium/Hard (Active Robot - he used modulus)
 Section 10, Medium Hard (Flatten 3D array) TODO
 Section 10, Application (tic tac toe - study his solution)
 
-Section 11 Homework 03 (Reverse string - his way is faster)
+Section 11 Challenge 02 (Reverse string - his way is faster)
+Section 11 Challenge 05 (Set Power - need to redo)
 
-Section 12 Homewok 5 (Array Average - study code)
+Section 12 Homework 5 (Array Average - study code)
 Do the following After Studying recursion!!!
-Section 12 Homewok Medium 9 (Right Max - unable to do)
-Section 12 Homewok Medium 10 (Right Max - unable to do)
-Section 12 Homewok Medium 11 (Right Max - unable to do)
-Section 12 Homewok Medium 12 (Right Max - unable to do)
-Section 12 Homewok Medium 13 (Right Max - unable to do)
-Section 12 Homewok Medium 14 (Right Max - unable to do)
-Section 12 Homewok Medium 15 (Right Max - unable to do)
-Section 12 Homewok Medium 16 (Right Max - unable to do)
-Section 12 Homewok Medium 17 (Right Max - unable to do)
-
+Section 12 Homework Medium 9 (Right Max - unable to do)
 
 
