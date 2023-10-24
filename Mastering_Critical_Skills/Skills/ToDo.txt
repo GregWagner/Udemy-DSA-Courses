@@ -41,7 +41,7 @@ Section 10, Application (tic tac toe - study his solution)
 Section 11 Challenge 02 (Reverse string - his way is faster)
 Section 11 Challenge 05 (Set Power - need to redo)
 
-Section 12 Homework 5 (Array Average - study code)
+Section 12 Easy 5 (Array Average - study code)
 Do the following After Studying recursion!!!
 Section 12 Homework Medium 9 (Right Max - unable to do)
 
