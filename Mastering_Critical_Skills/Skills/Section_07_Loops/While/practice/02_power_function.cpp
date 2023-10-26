@@ -2,13 +2,13 @@
 
 auto main() -> int {
     std::cout << "Enter 2 integers: ";
-    int x {}, y {};
-    std::cin >> x >> y;
+    int x {}, power {};
+    std::cin >> x >> power;
 
     int answer { 1 };
-    while (y > 0) {
+    while (power > 0) {
         answer *= x;
-        --y;
+        --power;
     }
     std::cout << answer << '\n';
 }

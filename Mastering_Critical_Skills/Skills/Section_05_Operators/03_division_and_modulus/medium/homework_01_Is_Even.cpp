@@ -9,7 +9,7 @@ auto main() -> int {
     bool is_even1 = num % 2 == 0;
 
     // Using only / 2
-    bool is_even2 = (num / 2) * 2 == num;
+    bool is_even2 = (num / 2.0) * 2.0 == num;
 
     // Using only % 10
     bool is_even3 = num % 10 == 0 || num % 10 == 2 || num % 10 == 4

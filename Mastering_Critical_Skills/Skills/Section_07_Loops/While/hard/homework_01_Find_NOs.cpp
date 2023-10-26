@@ -10,7 +10,8 @@ auto main() -> int {
         std::cin >> s;
 
         if (s.size() == 2) {
-            if ((std::tolower(s[0]) == 'n' && std::tolower(s[1]) == 'o') || (std::tolower(s[0]) == 'o' && std::tolower(s[1]) == 'n')) {
+            if ((std::tolower(s[0]) == 'n' && std::tolower(s[1]) == 'o') ||
+		    (std::tolower(s[0]) == 'o' && std::tolower(s[1]) == 'n')) {
                 std::cout << s << ' ';
             }
         }

@@ -11,7 +11,7 @@ Section 5, Division Hard Problem 1 (100 or 7 - review)
 Section 6, Easy Problem 2 (Sorting 3 numbers - review his way was better)
 Section 6, Easy Problem 4 (Conditional count - review his way was better than ifs)
 
-Section 7, Medium Problem 3 (his 2nd solution is more efficient)
+Section 7, While Medium Problem 3 (his 2nd solution is more efficient)
 Section 7, For Practices Pairs/Triples of numbers (study faster way)
 Section 7, For loops Problem 1 (Print X) (can do much shorter than I did)
 Section 7, For loops Problem 2 (Find special pairs) - study his speed up

@@ -13,6 +13,6 @@ auto main() -> int {
     double last_two_numbers = d + e;
     std::cout << (first_three_numbers / last_two_numbers) << '\n';
 
-    // part c: The average of the first 3 numbers diivided by the average of the last 2 numbers
+    // part c: The average of the first 3 numbers divided by the average of the last 2
     std::cout << (first_three_numbers / 3.0) / (last_two_numbers / 2.0) << '\n';
 }

@@ -8,7 +8,7 @@ auto main() -> int {
 
     std::cout << "Before swap: " << num1 << ' ' << num2 << '\n';
 
-    int temp = num1;
+    int temp {num1};
     num1 = num2;
     num2 = temp;
     std::cout << "After swap:  " << num1 << ' ' << num2 << '\n';
