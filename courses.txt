@@ -21,4 +21,15 @@ Cracking Coding Interview: Data Structture & Algorithm 				        48.0 hours	4.
 Mastering Data Structures & Algorithms in C and C++ Started 11/05/2023		58.5 hours	4.6
                                                                             58.5 hours
 
-472 Hours Total
+Beginning C++ Programming - From Beginner to Beyond                          46 hours   4.6
+The C++20 Masterclass: From Fundamentals to Advanced                        102 hours   4.6
+                                                                            148
+
+620 Hours Total
+
+Cmake, Testts, and Tooling for C/C++ Projects
+Modern OpenGL3.3 for Beginners
+Mastering Computional Geomentry Algorithms
+Interactive GUI
+Qt 5 C++ GUI Development for Beginners
+Qt 6 Core Beginners with C++
