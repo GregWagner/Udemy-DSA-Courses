@@ -1,11 +1,11 @@
 #include <iostream>
 #include <vector>
 
-const in NOT_FOUND {-1};
+const int NOT_FOUND{ -1 };
 
 template <typename T>
 int linear_search(const std::vector<T>& a, T key) {
-    for (size_t index {}; index < a.size(); ++index) {
+    for (size_t index{}; index < a.size(); ++index) {
         if (a[index] == key) {
             return static_cast<int>(index);
         }
@@ -14,9 +14,9 @@ int linear_search(const std::vector<T>& a, T key) {
 }
 
 int main() {
-    std::vector<int> a { 10, 15, 12, 9, 6, 4, 3, 10, 8 };
+    std::vector<int> a{ 10, 15, 12, 9, 6, 4, 3, 10, 8 };
 
-    int key {};
+    int key{};
     std::cout << "Enter the value to search for: ";
     std::cin >> key;
 
