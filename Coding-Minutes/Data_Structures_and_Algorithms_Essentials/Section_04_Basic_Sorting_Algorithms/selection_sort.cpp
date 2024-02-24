@@ -11,10 +11,10 @@ void print(const std::vector<T>& a) {
 
 template <typename T>
 void selectionSort(std::vector<T>& a) {
-    for (size_t i {}; i < a.size() - 1; ++i) {
+    for (size_t i{}; i < a.size() - 1; ++i) {
         // find the smallest unsorted value
-        size_t smallest_position { i };
-        for (size_t j { i }; j < a.size(); ++j) {
+        size_t smallest_position{ i };
+        for (size_t j{ i }; j < a.size(); ++j) {
             if (a[j] < a[smallest_position]) {
                 smallest_position = j;
             }
@@ -25,7 +25,7 @@ void selectionSort(std::vector<T>& a) {
 }
 
 int main() {
-    std::vector<int> a { 6, 2, 7, 4, 8, 1, 3 };
+    std::vector<int> a{ 6, 2, 7, 4, 8, 1, 3 };
     print(a);
     selectionSort(a);
     print(a);

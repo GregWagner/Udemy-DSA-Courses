@@ -8,7 +8,7 @@
 template <typename T>
 std::vector<T> countingSort(const std::vector<T>& a) {
     // find the largest element in the array
-    int largest_number {};
+    int largest_number{};
     for (const auto& ele : a) {
         largest_number = std::max(largest_number, ele);
     }
@@ -23,8 +23,8 @@ std::vector<T> countingSort(const std::vector<T>& a) {
 
     // put back the elements from frequency array into the answer
     std::vector<T> answer(a.size());
-    size_t index {};
-    for (size_t i {}; i < frequency.size(); ++i) {
+    size_t index{};
+    for (size_t i{}; i < frequency.size(); ++i) {
         while (frequency[i]) {
             answer[index++] = i;
             --frequency[i];
@@ -42,7 +42,7 @@ void print(const std::vector<T>& a) {
 }
 
 int main() {
-    std::vector<int> a { 6, 2, 7, 4, 8, 1, 3 };
+    std::vector<int> a{ 6, 2, 7, 4, 8, 1, 3 };
     a = countingSort(a);
     print(a);
 }

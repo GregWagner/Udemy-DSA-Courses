@@ -15,8 +15,8 @@ void insertationSort(std::vector<T>& a) {
         return;
     }
 
-    for (size_t i { 1 }; i < a.size(); ++i) {
-        int current_value { a[i] };
+    for (size_t i{ 1 }; i < a.size(); ++i) {
+        int current_value{ a[i] };
         size_t previous = i;
         // shift to the right until correct spot found
         while ((previous > 0) && (a[previous - 1] > current_value)) {
@@ -28,7 +28,7 @@ void insertationSort(std::vector<T>& a) {
 }
 
 int main() {
-    std::vector<int> a { 6, 2, 7, 4, 8, 1, 3 };
+    std::vector<int> a{ 6, 2, 7, 4, 8, 1, 3 };
     insertationSort(a);
     print(a);
 }
