@@ -8,8 +8,8 @@
 #include <sstream>
 
 std::pair<int, int> calculatePosition(const std::string& route) {
-    int x_position {};
-    int y_position {};
+    int x_position{};
+    int y_position{};
 
     for (const auto c : route) {
         if (c == 'N') {
@@ -18,7 +18,7 @@ std::pair<int, int> calculatePosition(const std::string& route) {
             --y_position;
         } else if (c == 'E') {
             ++x_position;
-        } else {
+        } else if (c == 'W') {
             --x_position;
         }
     }
@@ -28,8 +28,8 @@ std::pair<int, int> calculatePosition(const std::string& route) {
 void printFinalPosition(std::pair<int, int> position) {
     std::ostringstream output;
 
-    int x_position { position.first };
-    int y_position { position.second };
+    int x_position{ position.first };
+    int y_position{ position.second };
 
     bool going_north = y_position > 0;
     while (y_position--) {

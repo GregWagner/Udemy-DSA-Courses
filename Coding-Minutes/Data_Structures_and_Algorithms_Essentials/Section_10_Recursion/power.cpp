@@ -13,8 +13,10 @@ int power(int a, int n) {
      * return a * power(a, n - 1);
      */
 
-    int sub_problem { power(a, n / 2) };
+     // Fast way
+    int sub_problem{ power(a, n / 2) };
     sub_problem *= sub_problem;
+    // check if even or odd
     return n & 1 ? a * sub_problem : sub_problem;
 }
 

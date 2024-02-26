@@ -1,42 +1,47 @@
 Coding Minutes Data Structures and Algorithms Essentials Rewatch List
 
 Section 3 - Arrays
-17-19   Subarry Sum and Exercise  2 for all negatives
+16-18   Subarry Sum and Exercise  2 for all negatives
         Exercise 3 lower bound
         Exercise 4 sorted pair sum
         Exercise 5 k-rotate
 
 Section 4 - Basic Sorting Algorithms
-32-33   Counting Sort
+36-37   Counting Sort
         Exercise 9 Chopsticks
         Exercise 10 Defense Kingdom
 
 Section 5 - Character Arrays/Strings
-38      Shortest Path
+42      Shortest Path
 
 Section 6 - 2D Arrays
-47      Sprial Print
-48-49   Sorted Array Search (Staircase Search)
-50      Mango Trees (2D Prefix Sum)
+51      Sprial Print
+52      Sorted Array Search (Staircase Search)
+53      Mango Trees (2D Prefix Sum)
         Exercise 18 Pascals Triangle
         Exercise 19 Submatrix sum
 
 Section 9 - Bit Manipulation
-76      Update a bit
-77      Clear last n bits
-78      Clear range of bits
-79      Replace bits
-80      Is n a power of 2
-82      Count bits hack
-83      Fast Exponention
-84      Convert to binary
+80      Update a bit
+81      Clear last n bits
+82      Clear range of bits
+83      Replace bits
+84      Is n a power of 2
+86      Count bits hack
+87      Fast Exponention
+88      Convert to binary
+        Exercise 24 Xoring
+        Exercise 25 Modulo Exponentiation
+        Exercise 26 Earth Levels!
         Exercise 27 Subset Sum Queries
 
 Section 10  - Recursion Basics
-95      Power function optimized
-96      Bubble Sort Recursively
-99      Exercise 31 Binary Strings
-100     Exercise 32 Friends Party
+        Exercise 29 Print Increasing numbers (not recursive)
+99      Power function optimized
+100     Bubble Sort Recursively
+        Exercise 30 Tiling problem
+        Exercise 31 Binary Strings
+        Exercise 32 Friends Party
 
 Secttion 11 - Divide and Conquer
 101     Merge Sort

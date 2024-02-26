@@ -7,9 +7,9 @@
  */
 #include <iostream>
 
-// O(log(n))
+ // O(log(n))
 int fastExpo(int a, int n) {
-    int answer { 1 };
+    int answer{ 1 };
     while (n) {
         if (n & 1) {
             answer *= a;

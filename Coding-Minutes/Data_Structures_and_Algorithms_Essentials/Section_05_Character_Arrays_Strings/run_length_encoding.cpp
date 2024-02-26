@@ -12,11 +12,11 @@
 #include <sstream>
 
 std::string compressString(std::string s) {
-    size_t n { s.length() };
+    size_t n{ s.length() };
 
     std::ostringstream output;
-    for (size_t i {}; i < n; ++i) {
-        size_t count { 1 };
+    for (size_t i{}; i < n; ++i) {
+        size_t count{ 1 };
         while ((i < n - 1) && (s[i] == s[i + 1])) {
             ++count;
             ++i;
@@ -27,9 +27,9 @@ std::string compressString(std::string s) {
 }
 
 int main() {
-    std::string s1 { "aaabbccddee" };
+    std::string s1{ "aaabbccddee" };
     std::cout << compressString(s1) << '\n';
 
-    std::string s2 { "abcd" };
+    std::string s2{ "abcd" };
     std::cout << compressString(s2) << '\n';
 }

@@ -6,7 +6,7 @@
 #include <vector>
 
 void convertInteger(int n) {
-    static std::vector<std::string> spell { "zero", "one", "two", "three", "four", "five",
+    static std::vector<std::string> spell{ "zero", "one", "two", "three", "four", "five",
         "six", "seven", "eight", "nine" };
 
     if (n == 0) {

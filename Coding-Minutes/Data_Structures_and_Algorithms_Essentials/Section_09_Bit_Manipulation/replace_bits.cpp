@@ -31,7 +31,7 @@ void replaceBits(unsigned& n, unsigned i, unsigned j, unsigned m) {
 }
 
 int main() {
-    unsigned n { 15 };
+    unsigned n{ 15 };
     replaceBits(n, 1, 3, 2);
     std::cout << n << '\n';
 }

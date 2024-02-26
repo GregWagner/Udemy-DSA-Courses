@@ -2,14 +2,14 @@
 
 template <typename T>
 class Vector {
-    int current_size {};
-    int max_size { 1 };
-    T* arr {};
+    int current_size{};
+    int max_size{ 1 };
+    T* arr{};
 
 public:
     explicit Vector(int max_size_ = 1)
-        : max_size { max_size_ }
-        , arr { new T[max_size] } {
+        : max_size{ max_size_ }
+        , arr{ new T[max_size] } {
     }
 
     void push_back(T data) {
@@ -18,7 +18,7 @@ public:
             T* old_array = arr;
             max_size *= 2;
             arr = new int[max_size];
-            for (int i {}; i < current_size; ++i) {
+            for (int i{}; i < current_size; ++i) {
                 arr[i] = old_array[i];
             }
             delete[] old_array;

@@ -19,8 +19,8 @@ std::pair<int, int> search(int a[][4], int n, int m, int key) {
     }
 
     // start from last column in first row
-    int row {};
-    int col { m - 1 };
+    int row{};
+    int col{ m - 1 };
 
     while ((row < n) && (col >= 0)) {
         std::cout << "Checking " << row << ", " << col << ": " << a[row][col] << '\n';

@@ -16,10 +16,10 @@ bool isSorted2(int a[], int i, int n) {
 
 int main() {
     std::cout << std::boolalpha;
-    int a[] {1, 3, 5, 7};
+    int a[]{ 1, 3, 5, 7 };
     std::cout << (isSorted(a, 4)) << '\n';
     std::cout << (isSorted2(a, 0, 4)) << '\n';
-    int b[] {1, 3, 5, 1};
+    int b[]{ 1, 3, 5, 1 };
     std::cout << (!isSorted(b, 4)) << '\n';
     std::cout << (!isSorted2(b, 0, 4)) << '\n';
 }

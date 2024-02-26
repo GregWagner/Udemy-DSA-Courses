@@ -4,7 +4,7 @@
 #include <iostream>
 
 int fast_count_bits(unsigned n) {
-    int count {};
+    int count{};
     while (n) {
         // removes the last set bit from n
         n &= n - 1;
@@ -14,7 +14,7 @@ int fast_count_bits(unsigned n) {
 }
 
 int count_bits(unsigned n) {
-    int count {};
+    int count{};
     while (n) {
         count += n & 1;
         n >>= 1;

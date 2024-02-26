@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    size_t largest_size {};
+    size_t largest_size{};
     std::string largest_string;
 
     std::string s;
@@ -12,5 +12,5 @@ int main() {
         }
     }
     std::cout << "Largest String was " << largest_string
-              << ", which is " << largest_size << " characters long\n";
+        << ", which is " << largest_size << " characters long\n";
 }

@@ -7,7 +7,8 @@ void bubbleSort(std::vector<T>& a, size_t n, size_t j = 0) {
         return;
     }
 
-    // if we reached the end of this pass
+    // if we reached the end of this pass so last
+    // value in array is in the correct spot
     if (j == n - 1) {
         // reduce problem size and reset j to 0
         bubbleSort(a, n - 1, 0);
@@ -29,7 +30,7 @@ void print(const std::vector<T>& a) {
 }
 
 int main() {
-    std::vector<int> a { 6, 2, 7, 4, 8, 1, 3 };
+    std::vector<int> a{ 6, 2, 7, 4, 8, 1, 3 };
     bubbleSort(a, a.size());
     print(a);
 }

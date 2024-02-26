@@ -19,8 +19,8 @@ int lastOccurance(int a[], int n, int key) {
 }
 
 int main() {
-    int a[] { 1, 7, 5, 7, 6, 2 };
+    int a[]{ 1, 7, 5, 7, 6, 2 };
     int n = sizeof(a) / sizeof(int);
-    int key { 7 };
+    int key{ 7 };
     std::cout << lastOccurance(a, n, key) << '\n';
 }
