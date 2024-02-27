@@ -44,27 +44,27 @@ Section 10  - Recursion Basics
         Exercise 32 Friends Party
 
 Secttion 11 - Divide and Conquer
-101     Merge Sort
-106     Rotated Array Search
+105-106 Merge Sort
+109-110 Rotated Array Search
         Exercise 34 2D Merge
 
 Section 12 - Backtracking
-110-111 Finding Subsets (Pretty much all of backtracking)
-113     Permutations
-119     Sudoku Solver
+114-116 Finding Subsets (Pretty much all of backtracking)
+117     Permutations
+123     Sudoku Solver
 
 Section 13 - Space Time Complexity
 128     Merge Sort Analysis
 129     Time Complexity For Recursive Problems
 
 Section 15 Linked List
-149     Reverse Link List
+154-155 Reverse Link List
         Coding Exercise 40
 
 Section 16 - Stacks
-156     Insert at bottom of stack
-157     Reverse a stack
-158     Stock span
+161     Insert at bottom of stack
+162     Reverse a stack
+163     Stock span
 
 Section 17 - Queues
 163     Implement Stack with 2 Queues

@@ -6,8 +6,8 @@ class List;
 class Node {
 public:
     explicit Node(int d)
-        : data{d}
-        , next{nullptr} {
+        : data{ d }
+        , next{ nullptr } {
     }
 
     ~Node() {
@@ -24,7 +24,6 @@ private:
     int data;
     Node* next;
 };
-
 
 class List {
 public:
@@ -93,7 +92,7 @@ public:
             head = nullptr;
             return head;
         }
-        Node* previous_node {};
+        Node* previous_node{};
         Node* currrent_node = head;
         while (currrent_node->next) {
             previous_node = currrent_node;
@@ -106,7 +105,7 @@ public:
     }
 
     void pop_back() {
-        Node* previous_node {};
+        Node* previous_node{};
         Node* currrent_node = head;
         while (currrent_node->next) {
             previous_node = currrent_node;
@@ -122,7 +121,7 @@ public:
             return;
         }
         Node* currrent_node = head;
-        for (int index { 1 }; index <= position - 1; ++index) {
+        for (int index{ 1 }; index <= position - 1; ++index) {
             if (currrent_node->next == nullptr) {
                 std::cerr << "Invald insertation position.\n";
                 return;
@@ -140,7 +139,7 @@ public:
             return;
         }
         Node* currrent_node = head;
-        int index { 1 };
+        int index{ 1 };
         while (index < position - 1 && currrent_node->next) {
             currrent_node = currrent_node->next;
             ++index;
@@ -180,6 +179,7 @@ public:
     }
 
     void reverse() {
+        tail = head;
         Node* currrent_node = head;
         Node* previous_node = {};
         while (currrent_node != nullptr) {

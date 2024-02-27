@@ -5,7 +5,7 @@ template <typename T>
 T partition(std::vector<T>& a, int start, int end) {
     T pivot = a[end];
     int leftIndex = start - 1;
-    for (int rightIndex { start }; rightIndex < end; ++rightIndex) {
+    for (int rightIndex{ start }; rightIndex < end; ++rightIndex) {
         if (a[rightIndex] < pivot) {
             ++leftIndex;
             // move item at i on correct side of pivot
@@ -30,7 +30,7 @@ void quickSort(std::vector<T>& a, int start, int end) {
 }
 
 int main() {
-    std::vector<int> a { 10, 5, 2, 0, 7, 6, 4 };
+    std::vector<int> a{ 10, 5, 2, 0, 7, 6, 4 };
     quickSort(a, 0, a.size() - 1);
 
     for (const int x : a) {

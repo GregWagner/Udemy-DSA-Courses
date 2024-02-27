@@ -7,18 +7,18 @@ class Item;
 class Cart;
 
 class Product {
-    int id {};
+    int id{};
     std::string name;
-    int price {};
+    int price{};
 
 public:
     Product() {
     }
 
     Product(int id, std::string name, int price)
-        : id { id }
-        , name { name }
-        , price { price } {
+        : id{ id }
+        , name{ name }
+        , price{ price } {
     }
 
     std::string getDisplayName() const {
@@ -34,8 +34,8 @@ public:
 };
 
 class Item {
-    Product product {};
-    int quantity {};
+    Product product{};
+    int quantity{};
 
 public:
     Item() {
@@ -72,7 +72,7 @@ public:
 
     int getTotal() const {
         // Todo
-        int total {};
+        int total{};
         for (auto itemPair : items) {
             auto item = itemPair.second;
             total += item.getItemPrice();

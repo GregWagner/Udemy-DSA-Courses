@@ -20,7 +20,6 @@ void findSubsets(char* input, char* output, int input_index = 0, int output_inde
         return;
     }
 
-
     // recursive cases
     // include the ith letter in the output so move the index for
     // both the input and output arrays

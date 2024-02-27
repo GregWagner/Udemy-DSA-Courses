@@ -32,7 +32,7 @@ int main() {
 
     std::sort(begin(list), end(list), [](std::string& a, std::string& b) {
         return (a.length() == b.length() ? a < b : a.length() < b.length());
-    });
+        });
 
     for (const auto& ele : list) {
         std::cout << ele << ' ';

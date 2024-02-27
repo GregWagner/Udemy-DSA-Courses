@@ -3,7 +3,7 @@
 
 // note a is shared accross all function calls
 void printVector(const std::vector<int>& a, int n) {
-    for (int i {}; i < n; ++i) {
+    for (int i{}; i < n; ++i) {
         std::cout << a[i] << ' ';
     }
     std::cout << '\n';

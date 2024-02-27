@@ -33,6 +33,7 @@ void merge(std::vector<T>& a, int startingIndex, int endingIndex) {
 
 template <typename T>
 void mergeSort(std::vector<T>& a, int startingIndex, int endingIndex) {
+    // base case
     if (startingIndex >= endingIndex) {
         return;
     }

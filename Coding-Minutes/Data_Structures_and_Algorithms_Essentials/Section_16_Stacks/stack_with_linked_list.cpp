@@ -4,11 +4,11 @@ template <typename T>
 class Node {
 public:
     explicit Node(T data)
-        : data { data } {
+        : data{ data } {
     }
 
     T data;
-    Node<T>* next {};
+    Node<T>* next{};
 };
 
 template <typename T>
@@ -37,7 +37,7 @@ public:
     }
 
 private:
-    Node<T>* head {};
+    Node<T>* head{};
 };
 
 int main() {

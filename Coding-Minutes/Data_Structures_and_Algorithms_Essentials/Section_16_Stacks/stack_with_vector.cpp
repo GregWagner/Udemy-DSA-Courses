@@ -9,7 +9,7 @@ public:
     }
 
     T data;
-    Node<T>* next {};
+    Node<T>* next{};
 };
 
 template <typename T>
