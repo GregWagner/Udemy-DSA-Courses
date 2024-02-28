@@ -80,13 +80,13 @@ Section 19 - Binary Search Tree
 190     Root to Leaf node
 
 Section 20 - Heaps/Priorityy Queue
-192     Remove min/max Code - do homework
-195-196 Nearby Cars
+197     Remove min/max Code - do homework
+200-201 Nearby Cars
 
 Section 21 - Hashing
-205     Hashing Code - implement erase() and isPresent()
-206     Hashing Code - operator[]
-207     Webinar - watch this
+210     Hashing Code - implement erase() and isPresent()
+211     Hashing Code - operator[]
+212     Webinar - watch this
 
 Section 22 - Trie Data Structure
 

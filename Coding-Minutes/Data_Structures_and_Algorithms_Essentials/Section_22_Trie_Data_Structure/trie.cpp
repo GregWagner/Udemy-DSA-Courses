@@ -6,7 +6,7 @@
 class Node {
 public:
     explicit Node(char data)
-        : data { data } {
+        : data{ data } {
     }
 
     friend class Trie;
@@ -14,7 +14,7 @@ public:
 private:
     char data;
     std::unordered_map<char, Node*> map;
-    bool isTerminal {};
+    bool isTerminal{};
 };
 
 class Trie {
@@ -51,14 +51,14 @@ private:
 };
 
 int main() {
-    std::vector<std::string> words { "apple", "ape", "mango", "news", "mo" };
+    std::vector<std::string> words{ "apple", "ape", "mango", "news", "mo" };
     Trie tree;
 
     for (const auto& word : words) {
         tree.insert(word);
     }
 
-    std::vector<std::string> queries { "apple", "banna", "new", "mango" };
+    std::vector<std::string> queries{ "apple", "banna", "new", "mango" };
     for (const auto& word : queries) {
         std::cout << (tree.search(word) ? "Yes\n" : "No\n");
     }

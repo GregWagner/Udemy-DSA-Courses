@@ -17,8 +17,8 @@ public:
         v.push_back(data);
 
         // perculate up to correct place
-        int index { v.size() - 1 };
-        int parent { index / 2 };
+        int index{ v.size() - 1 };
+        int parent{ index / 2 };
         // while the child is smaller than then the parent
         while (index > 1 && v[index] < v[parent]) {
             std::swap(v[index], v[parent]);
@@ -34,6 +34,7 @@ public:
 
     // remove the minimum node
     void pop() {
+        // swap the first and last elements
         std::swap(v[1], v[v.size() - 1]);
         v.pop_back();
 
@@ -49,9 +50,9 @@ private:
 
     // O(log n)
     void heapify(int index) {
-        int left { 2 * index };
-        int right { left + 1 };
-        int minIndex { index };
+        int left{ 2 * index };
+        int right{ left + 1 };
+        int minIndex{ index };
         if (left < v.size() && v[left] < v[index]) {
             minIndex = left;
         }

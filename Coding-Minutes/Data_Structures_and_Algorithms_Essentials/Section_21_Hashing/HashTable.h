@@ -8,8 +8,8 @@ template <typename T>
 class Node {
 public:
     Node(const std::string& key, T value)
-        : key { key }
-        , value { value } {
+        : key{ key }
+        , value{ value } {
     }
 
     ~Node() {
@@ -18,20 +18,20 @@ public:
 
     std::string key;
     T value;
-    Node* next {};
+    Node* next{};
 };
 
 template <typename T>
 class Hashtable {
 public:
     explicit Hashtable(int default_size = 7)
-        : tableSize { default_size } {
+        : tableSize{ default_size } {
         table = new Node<T>*[tableSize];
         clearTable();
     }
 
     void insert(const std::string& key, T value) {
-        int index { hashFunc(key) };
+        int index{ hashFunc(key) };
         Node<T>* n = new Node<T>(key, value);
         // add to the front of the liist
         n->next = table[index];
@@ -45,7 +45,7 @@ public:
     }
 
     T* search(const std::string& key) {
-        int index { hashFunc(key) };
+        int index{ hashFunc(key) };
         Node<T>* temp = table[index];
         while (temp != nullptr) {
             if (temp->key == key) {
@@ -72,10 +72,13 @@ public:
 
     void erase(std::string& key) {
         // todo
+        // find the bucket id
+
+        // iterate over the linked list
     }
 
     void print() {
-        for (int i {}; i < tableSize; ++i) {
+        for (int i{}; i < tableSize; ++i) {
             std::cout << "Bucket " << i << " -> ";
             Node<T>* temp = table[i];
             while (temp != nullptr) {
@@ -88,12 +91,12 @@ public:
 
 private:
     Node<T>** table;
-    int currentSize {};
-    int tableSize {};
+    int currentSize{};
+    int tableSize{};
 
-    int hashFunc(const std::string &key) {
-        int index {};
-        int power { 1 };
+    int hashFunc(const std::string& key) {
+        int index{};
+        int power{ 1 };
         for (auto ch : key) {
             index = (index + ch * power) % tableSize;
             power = (power * 29) % tableSize;
@@ -103,7 +106,7 @@ private:
 
     void clearTable() {
         currentSize = 0;
-        for (int i {}; i < tableSize; ++i) {
+        for (int i{}; i < tableSize; ++i) {
             table[i] = nullptr;
         }
     }
@@ -112,12 +115,13 @@ private:
         Node<T>** oldTable = table;
         int oldTableSize = tableSize;
 
+        // todo: this should be prime
         tableSize = tableSize * 2 + 1;
         table = new Node<T>*[tableSize];
         clearTable();
 
         // copy elements from old table to new
-        for (int i {}; i < oldTableSize; ++i) {
+        for (int i{}; i < oldTableSize; ++i) {
             Node<T>* temp = oldTable[i];
             ++currentSize;
             while (temp != nullptr) {

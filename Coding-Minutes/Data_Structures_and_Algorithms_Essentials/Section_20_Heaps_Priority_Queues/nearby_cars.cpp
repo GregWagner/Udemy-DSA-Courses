@@ -32,9 +32,9 @@
 class Car {
 public:
     Car(const std::string& id, int x, int y)
-        : id { id }
-        , x { x }
-        , y { y } {
+        : id{ id }
+        , x{ x }
+        , y{ y } {
     }
 
     int distance() const {
@@ -47,8 +47,8 @@ public:
 
 private:
     std::string id;
-    int x {};
-    int y {};
+    int x{};
+    int y{};
 };
 
 struct CarCompare {
@@ -62,7 +62,7 @@ void printNearestCars(const std::vector<Car>& cars, size_t k) {
     std::priority_queue<Car, std::vector<Car>, CarCompare> maxHeap(
         cars.begin(), cars.begin() + k);
 
-    for (size_t i { k }; i < cars.size(); ++i) {
+    for (size_t i{ k }; i < cars.size(); ++i) {
         auto car = cars[i];
         if (car.distance() < maxHeap.top().distance()) {
             maxHeap.pop();
