@@ -67,17 +67,17 @@ Section 16 - Stacks
 163     Stock span
 
 Section 17 - Queues
-163     Implement Stack with 2 Queues
+168-169 Implement Stack with 2 Queues
 
 Section 18 - Binary Trees
-170     Level Order Print
-175-177 Diameter of a binary tree
+175-176 Level Order Print
+180-182 Diameter of a binary tree
 
 Section 19 - Binary Search Tree
-182     Delete node BST
-183     Delete node code
-184     Print in range
-185     Root to Leaf node
+187     Delete node BST
+188     Delete node code
+189     Print in range
+190     Root to Leaf node
 
 Section 20 - Heaps/Priorityy Queue
 192     Remove min/max Code - do homework

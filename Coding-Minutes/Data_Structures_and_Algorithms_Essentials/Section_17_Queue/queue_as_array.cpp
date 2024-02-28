@@ -7,8 +7,8 @@
 class Queue {
 public:
     explicit Queue(int defaultSize = 5)
-        : maxSize {defaultSize}
-        , rear { defaultSize - 1 } {
+        : maxSize{ defaultSize }
+        , rear{ defaultSize - 1 } {
         arr = new int[maxSize];
     }
 
@@ -55,11 +55,11 @@ public:
 
 private:
     int* arr;
-    int currentSize {};
-    int maxSize {};
+    int currentSize{};
+    int maxSize{};
 
-    int front {};
-    int rear {};
+    int front{};
+    int rear{};
 };
 
 int main() {

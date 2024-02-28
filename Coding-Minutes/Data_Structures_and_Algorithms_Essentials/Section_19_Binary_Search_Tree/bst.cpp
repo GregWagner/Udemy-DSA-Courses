@@ -4,11 +4,11 @@
 class Node {
 public:
     int value;
-    Node* left {};
-    Node* right {};
+    Node* left{};
+    Node* right{};
 
     explicit Node(int value)
-        : value { value } {
+        : value{ value } {
     }
 };
 
@@ -59,6 +59,7 @@ Node* deleteNode(Node* root, int key) {
     if (root == nullptr) {
         return nullptr;
     }
+    // first find the node
     if (key < root->value) {
         root->left = deleteNode(root->left, key);
     } else if (key > root->value) {
@@ -136,7 +137,7 @@ void printRootToLeaf(Node* root, std::vector<int>& path) {
 
 int main() {
     Node* root = nullptr;
-    int a[] { 8, 3, 10, 1, 6, 14, 4, 7, 13 };
+    int a[]{ 8, 3, 10, 1, 6, 14, 4, 7, 13 };
     for (int x : a) {
         root = insert(root, x);
     }

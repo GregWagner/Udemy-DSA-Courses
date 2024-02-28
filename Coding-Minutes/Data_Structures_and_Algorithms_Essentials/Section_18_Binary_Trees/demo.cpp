@@ -4,17 +4,17 @@
 class Node {
 public:
     explicit Node(int data)
-        : data { data } {
+        : data{ data } {
     }
 
     int data;
-    Node* left {};
-    Node* right {};
+    Node* left{};
+    Node* right{};
 };
 
 // Preorder builld of the tree (root, then left, then righ)
 Node* builldtree() {
-    int data {};
+    int data{};
     std::cout << "Enter data: ";
     std::cin >> data;
 
@@ -29,7 +29,7 @@ Node* builldtree() {
 }
 
 Node* buildLevelOrder() {
-    int data {};
+    int data{};
     std::cout << "Enter data: ";
     std::cin >> data;
 
@@ -142,9 +142,9 @@ int diameter(Node* root) {
         return 0;
     }
 
-    int includesRoot { height(root->left) + height(root->right) };
-    int rightHeight { diameter(root->right) };
-    int leftHeight { diameter(root->left) };
+    int includesRoot{ height(root->left) + height(root->right) };
+    int rightHeight{ diameter(root->right) };
+    int leftHeight{ diameter(root->left) };
 
     return std::max(includesRoot, std::max(rightHeight, leftHeight));
 }
@@ -152,13 +152,13 @@ int diameter(Node* root) {
 // O(n) way to get diameter!
 // At every node, return height and diameter
 std::pair<int, int> diameter1(Node* root) {
-    std::pair<int, int> answer { 0, 0 };
+    std::pair<int, int> answer{ 0, 0 };
     if (root == nullptr) {
         return answer;
     }
 
-    std::pair<int, int> right { diameter1(root->right) };
-    std::pair<int, int> left { diameter1(root->left) };
+    std::pair<int, int> right{ diameter1(root->right) };
+    std::pair<int, int> left{ diameter1(root->left) };
 
     answer.first = std::max(left.first, right.first) + 1;
 
