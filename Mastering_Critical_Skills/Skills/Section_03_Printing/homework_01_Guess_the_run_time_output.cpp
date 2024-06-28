@@ -1,8 +1,7 @@
 #include <iostream>
 
 auto main() -> int {
-    std::cout << "\n\nGuess the "
-              << "output\n===\n";
+    std::cout << "\n\nGuess the " << "output\n===\n";
 
     std::cout << 10 + 20 - 5 << '\n';
     std::cout << "14/2\n";
