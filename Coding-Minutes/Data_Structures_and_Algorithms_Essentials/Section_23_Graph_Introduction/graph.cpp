@@ -14,7 +14,7 @@ private:
 
 public:
     explicit Graph(int v)
-        : number_of_vertices { v } {
+        : number_of_vertices{ v } {
         l = new std::list<int>[v];
     }
 
@@ -26,7 +26,7 @@ public:
     }
 
     void printAdjancyList() {
-        for (int i {}; i < number_of_vertices; ++i) {
+        for (int i{}; i < number_of_vertices; ++i) {
             std::cout << i << " --> ";
             for (auto node : l[i]) {
                 std::cout << node << ' ';
@@ -80,7 +80,7 @@ public:
         std::vector<int> inDegree(number_of_vertices, 0);
 
         // iterate over all the edges to find the right indegree
-        for (int i {}; i < number_of_vertices; ++i) {
+        for (int i{}; i < number_of_vertices; ++i) {
             for (auto neighbor : l[i]) {
                 ++inDegree[neighbor];
             }
@@ -89,10 +89,10 @@ public:
         // bfs
         std::queue<int> q;
         // initializee the queue with nodes having an inDegree of 0
-        for (int i {}; i < number_of_vertices; ++i) {
-//          std::cout << i << ": inDegree: " << inDegree[i] << '\n';
+        for (int i{}; i < number_of_vertices; ++i) {
+            //          std::cout << i << ": inDegree: " << inDegree[i] << '\n';
             if (inDegree[i] == 0) {
-//              std::cout << "Node " << i << " has inDegree of 0\n";
+                //              std::cout << "Node " << i << " has inDegree of 0\n";
                 q.push(i);
             }
         }
@@ -108,7 +108,7 @@ public:
             for (auto neighbor : l[node]) {
                 --inDegree[neighbor];
                 if (inDegree[neighbor] == 0) {
-//                  std::cout << "Node " << neighbor << " has indegree of 0\n";
+                    //                  std::cout << "Node " << neighbor << " has indegree of 0\n";
                     q.push(neighbor);
                 }
             }

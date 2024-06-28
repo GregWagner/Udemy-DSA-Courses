@@ -91,14 +91,14 @@ Section 21 - Hashing
 Section 22 - Trie Data Structure
 
 Section 23 - Graphs Introduction
-221     Topograpical Ordering using BFS
-224-225 Dijkshatra's algorithm
+226     Topograpical Ordering using BFS
+229-230 Dijkshatra's algorithm
 
-Section 24 - Dynamic Programming Introudctions
-227     Do top down counting coins
-228-229 Longest Common Subsequence
-221/232 Knapsack problem
-233-236 Wines (may be included in next course)
+Section 24 - Dynamic Programming Introuductions
+232     Do top down counting coins
+234-235 Longest Common Subsequence
+236/237 Knapsack problem
+238-239 Wines (may be included in next course)
 
 Also:
 Redo all the exercises from scratch!!!

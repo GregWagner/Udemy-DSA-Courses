@@ -37,11 +37,11 @@ int largestSubArraySum2(const std::vector<T>& a) {
         prefix[i] = prefix[i - 1] + a[i];
     }
 
-    // now compute the largest sum using the prefix sum array
+    // now compute the largest sum using the prefix sum array formula
     int largest_sum {};
     for (size_t starting_index {}; starting_index < a.size(); ++starting_index) {
         for (size_t ending_index { starting_index }; ending_index < a.size(); ++ending_index) {
-            // check for > 0 needed to avoid prefix index of -1
+            // check for starting index > 0 needed to avoid prefix index of -1
             int subarray_sum = (starting_index > 0 ?
                 prefix[ending_index] - prefix[starting_index - 1] :
                 prefix[ending_index]);
@@ -65,10 +65,11 @@ int largestSubArraySum3(const std::vector<T>& a) {
     int current_sum {};
     for (const auto& ele : a) {
         current_sum += ele;
-        if (current_sum > 0) {
-            largest_sum = std::max(largest_sum, current_sum);
-        } else {
+        // if running sum becomes negative, reset to 0
+        if (current_sum < 0) {
             current_sum = 0;
+        } else {
+            largest_sum = std::max(largest_sum, current_sum);
         }
     }
     return largest_sum;

@@ -14,10 +14,14 @@ void reverse_array(std::vector<T>& a) {
 }
 
 template <typename T>
+void reverse_array_using_stl(std::vector<T>& a) {
+    std::reverse(a.begin(), a.end());
+}
+
+template <typename T>
 void print_array(const std::vector<T>& a) {
-    for (const auto& ele : a) {
-        std::cout << ele << ' ';
-    }
+    auto size = a.size();
+    std::cout.write(reinterpret_cast<const char*>(a.data()), size * sizeof(T));
     std::cout << '\n';
 }
 

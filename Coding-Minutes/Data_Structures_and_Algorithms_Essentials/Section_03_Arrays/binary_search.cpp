@@ -5,11 +5,12 @@
 const int NOT_FOUND{ -1 };
 
 template <typename T>
-int binary_search(const std::vector<T>& a, T key) {
+T binary_search(const std::vector<T>& a, T key) {
     size_t start{};
-    size_t end{ a.size() };
+    size_t end{ a.size() -1 };
     while (start <= end) {
-        size_t middle{ (start + end) / 2 };
+        // avoid overflow
+        size_t middle{start + (end - start) / 2};
         if (a[middle] == key) {
             return static_cast<T>(middle);
         }
@@ -23,7 +24,7 @@ int binary_search(const std::vector<T>& a, T key) {
 }
 
 int main() {
-    std::vector<int> a{ 10, 15, 12, 9, 6, 4, 3, 10, 8 };
+    std::vector<int> a{ 10, 20, 30, 45, 60, 70, 89 };
     std::sort(std::begin(a), std::end(a));
 
     int key{};

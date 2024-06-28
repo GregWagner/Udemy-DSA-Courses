@@ -7,15 +7,23 @@
 
 template <typename T>
 int maxSumSubarray(const std::vector<T>& a) {
-    int largest_sum { a[0] };
+    bool allNegative { true };
+    int largest_sum{ a[0] };
     int current_sum {};
     for (const auto& ele : a) {
+        if (ele >= 0) {
+            allNegative = false;
+        }
         current_sum += ele;
         if (current_sum < 0) {
             current_sum = 0;
         } else {
             largest_sum = std::max(largest_sum, current_sum);
         }
+    }
+
+    if (allNegative) {
+        return *std::max_element(a.begin(), a.end());
     }
     return largest_sum;
 }

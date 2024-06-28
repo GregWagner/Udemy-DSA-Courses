@@ -2,11 +2,7 @@
 #include <vector>
 
 int largestElement(const std::vector<int>& arr) {
-    int largest { arr[0] };
-    for (const auto& e : arr) {
-        largest = std::max(e, largest);
-    }
-    return largest;
+    return *std::max_element(arr.begin(), arr.end());
 }
 
 int main() {

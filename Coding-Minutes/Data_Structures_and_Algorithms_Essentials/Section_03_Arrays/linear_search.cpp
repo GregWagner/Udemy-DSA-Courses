@@ -13,6 +13,14 @@ int linear_search(const std::vector<T>& a, T key) {
     return NOT_FOUND;
 }
 
+template <typename T>
+int linear_search_using_stl(const std::vector<T>& a, const T& key) {
+    auto begin = a.cbegin();
+    auto end = a.cend();
+    auto it = std::find(begin, end, key);
+    return (it != end) ? static_cast<int>(std::distance(begin, it)) : NOT_FOUND;
+}
+
 int main() {
     std::vector<int> a{ 10, 15, 12, 9, 6, 4, 3, 10, 8 };
 
