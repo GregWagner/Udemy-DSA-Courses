@@ -36,7 +36,7 @@ public:
 
 private:
     int mNumberOfVertices {};
-  // this could also be an array/vector of lists or a hashmaap
+    // this could also be an array/vector of lists or a hashmaap
     std::list<int>* mAdjacencyList;
 };
 

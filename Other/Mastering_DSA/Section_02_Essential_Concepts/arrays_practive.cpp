@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main()
-{
+int main() {
     int a[]{2, 4, 6, 8, 10};
 
     a[0] = 12;
@@ -12,8 +11,7 @@ int main()
     std::cout << a[1] << '\n';
     printf("%d\n", a[2]);
 
-    for (const auto x : a)
-    {
+    for (const auto x: a) {
         std::cout << x << '\n';
     }
 }
