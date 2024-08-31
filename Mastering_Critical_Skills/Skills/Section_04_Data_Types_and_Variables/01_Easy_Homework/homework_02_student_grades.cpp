@@ -31,5 +31,5 @@ auto main() -> int {
     std::cout << "\nStudents grades in math\n"
         << first_students_name << " (with id " << first_students_id << ") got grade: " << first_students_grade << '\n'
         << second_students_name << " (with id " << second_students_id << ") got grade: " << second_students_grade << '\n'
-        << "Average grade: " << (first_students_grade + second_students_grade) / 2 << '\n';
+        << "Average grade: " << (first_students_grade + second_students_grade) / 2.0 << '\n';
 }

@@ -1,7 +1,7 @@
 #include <iostream>
 
 auto main() -> int {
-    int a{}, b{};
+    double a{}, b{};
     std::cin >> a >> b;
 
     std::cout << a << " + " << b << " = " << a + b << std::endl;
