@@ -6,6 +6,30 @@ auto main() -> int {
     int n {};
     std::cin >> n;
 
+    std::vector<int> a(500 + 1, -1);
+
+    int num {};
+    for (int i{}; i < n; ++i) {
+        std::cin >> num;
+        // array will always have the last index for the number
+        a[num] = i;
+    }
+
+    int q{};
+    std::cout << "Enter number of queries: ";
+    std::cin >> q;
+
+    while (q--) {
+        std::cin >> num;
+        std::cout << a[num] << '\n';
+    }
+}
+
+auto old_main() -> int {
+    std::cout << "Enter n: ";
+    int n {};
+    std::cin >> n;
+
     std::vector<int> a(n);
 
     for (int i {}; i < n; ++i) {
@@ -28,4 +52,5 @@ auto main() -> int {
         }
         std::cout << index << '\n';
     }
+    return 0;
 }

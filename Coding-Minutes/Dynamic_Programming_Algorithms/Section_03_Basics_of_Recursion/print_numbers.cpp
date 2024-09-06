@@ -9,18 +9,24 @@
 #include <iostream>
 
 void printIncreasing(int n) {
+    // base case
     if (n == 0) {
         return;
     }
+
+    // recursive case
     printIncreasing(n - 1);
     std::cout << n << ' ';
 }
 
 void printDecreasing(int n) {
+    // base case
     if (n == 0) {
         return;
     }
+
     std::cout << n << ' ';
+    // recursive case
     printDecreasing(n - 1);
 }
 

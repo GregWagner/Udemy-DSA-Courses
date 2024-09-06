@@ -1,8 +1,14 @@
-13 - Increasing Decreasing Number
+Basics of Recursion
+13 - Increasing Decreasing Number (print_numbers.cpp)
 15 - Power function Fast
 16 - Tiling Problem
+18 - Pair friends
+
+Backtracking
 22 - Finding Subsets
 27 - Generating Brackets
+
+
 37 - Count number of binary bits in sequence of numbers
 41 - Redo with memoization
 42 - IPL

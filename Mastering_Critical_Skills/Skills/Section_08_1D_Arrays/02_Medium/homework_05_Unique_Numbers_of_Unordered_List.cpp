@@ -13,6 +13,7 @@ auto main() -> int {
     for (int i {}; i < n; ++i) {
         int value;
         std::cin >> value;
+        // check if we have seen this number before
         if (!a[value]) {
             a[value] = true;
             values[count++] = value;

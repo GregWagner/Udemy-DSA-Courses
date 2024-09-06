@@ -12,9 +12,12 @@
 #include <iostream>
 
 int tile(int n) {
+    // base case
     if (n <= 3) {
         return 1;
     }
+
+    // recursive case
     return tile(n - 1) + tile(n - 4);
 }
 

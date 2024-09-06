@@ -6,15 +6,18 @@
  * or can be paired up.
  *
  * For 3 friends:
- * A, AB+C, AC+B, BC+A > 4
+ * A,B,C, AB+C, AC+B, BC+A => 4
  * f(n - 1) + (n - 1) * f(n - 2)
  */
 #include <iostream>
 
 int pair(int n) {
+    // base case
     if (n <= 1) {
         return 1;
     }
+
+    // recursive case
     return pair(n - 1) + (n - 1) * pair(n - 2);
 }
 

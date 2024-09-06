@@ -6,7 +6,7 @@ auto main() -> int {
     std::string t {};
     std::cin >> s >> t;
 
-    std::string concString = "";
+    std::string concString{};
 
     size_t index {};
     while (index < s.size() && index < t.size()) {

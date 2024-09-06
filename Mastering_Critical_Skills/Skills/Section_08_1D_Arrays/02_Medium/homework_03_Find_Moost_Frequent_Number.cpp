@@ -11,6 +11,7 @@ auto main() -> int {
     for (int i {}; i < n; ++i) {
         int value {};
         std::cin >> value;
+        //shift the value
         ++a[value + 500];
     }
 
@@ -20,6 +21,7 @@ auto main() -> int {
             mostFrequentIndex = i;
         }
     }
+    // unshift the value
     std::cout << mostFrequentIndex - 500 << " repeated "
               << a[mostFrequentIndex] << " times.\n";
 }

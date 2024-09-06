@@ -6,10 +6,14 @@
 #include <vector>
 
 bool isArraySorted(const std::vector<int>& n, unsigned index = 0) {
-    if (index >= n.size()) {
+    // base case
+    if (n.size() <= 1 || index >= n.size()) {
         return true;
     }
-    return (n[index] < n[index + 1]) && (isArraySorted(n, index + 1));
+
+    // recursive case
+    return (n[index] <= n[index + 1]) &&
+        (isArraySorted(n, index + 1));
 }
 
 int main() {

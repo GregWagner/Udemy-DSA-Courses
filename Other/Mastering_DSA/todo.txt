@@ -1,0 +1,5 @@
+Mastering DS and Algorithms Rewatch List
+
+1) Review Taylor Series (Video 66 - 70)
+2) Review nCr Series (Video 73 - 74)
+3) Review Arrays (Video 92)

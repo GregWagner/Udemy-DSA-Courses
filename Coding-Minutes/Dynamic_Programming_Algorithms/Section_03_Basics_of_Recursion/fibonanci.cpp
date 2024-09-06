@@ -1,9 +1,16 @@
+/*
+ * Example 2
+ * Compute the nth fibonacci number
+ */
 #include <iostream>
 
 long fibonaci(long n) {
+    // base case
     if (n <= 1) {
         return n;
     }
+
+    // recursive case
     return fibonaci(n - 1) + fibonaci(n - 2);
 }
 

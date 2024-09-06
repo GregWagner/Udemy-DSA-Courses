@@ -1,4 +1,5 @@
-/* Count the number of binary strings with no
+/*
+ * Count the number of binary strings with no
  * consecutive ones that can be formed using a
  * binary string of length n.
  *
@@ -10,10 +11,15 @@
 #include <iostream>
 
 int countBinaryStrings(int n) {
+    // base case
     if (n <= 0) {
         return 1;
     }
-    return countBinaryStrings(n - 2) + countBinaryStrings(n - 1);
+
+    // recursive case
+    // n - 2 because we have to set the first 2 bits to 10
+    // n - 1 because we have to set the first bit to 0
+    return countBinaryStrings(n - 1) + countBinaryStrings(n - 2);
 }
 
 int main() {

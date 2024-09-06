@@ -1,6 +1,6 @@
 /*
- * Given a string, find alll subsets (i.e. subsequence not substring)
- * of the given string.
+ * Given a string, find alll subsets (i.e. subsequence not
+ * substring) of the given string.
  *
  * Brute force requires 2 recursive calls
  *
@@ -8,7 +8,7 @@
  * output "", a, b, c, ab, ac, bc, abc
  *
  * for each character
- * Include the character and exclude the character
+ * 1) Include the character and 2) exclude the character
  */
 #include <iostream>
 
@@ -22,12 +22,12 @@ void findSubsets(char* input, char* output, int i = 0, int j = 0) {
 
     // recursive cases
 
-    // include the ith letter in the output
+    // 1) include the ith letter in the output
     output[j] = input[i];
     findSubsets(input, output, i + 1, j + 1);
 
     // backtracking case
-    // exclude the ith letter in the output (overwrite output[j])
+    // 2) exclude the ith letter in the output (overwrite output[j])
     findSubsets(input, output, i + 1, j);
 }
 

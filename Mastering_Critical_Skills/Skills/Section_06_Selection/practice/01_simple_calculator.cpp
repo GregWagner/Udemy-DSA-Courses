@@ -2,7 +2,7 @@
 
 auto main() -> int {
     std::cout << "Enter number op number: ";
-    int num1 {}, num2 {};
+    double num1 {}, num2 {};
     char op {};
     std::cin >> num1 >> op >> num2;
 
