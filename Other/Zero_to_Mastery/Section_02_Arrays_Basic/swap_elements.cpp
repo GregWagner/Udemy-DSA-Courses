@@ -4,7 +4,7 @@
 #include <iostream>
 
 void print(const std::string &prompt, unsigned a, unsigned b) {
-    std::cout << prompt << '\n' 
+    std::cout << prompt << '\n'
         << "a = " << a << '\n'
         << "b = " << b << '\n';
 }
