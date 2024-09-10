@@ -2,21 +2,22 @@
  * Finding the largest element in an array
  */
 #include <iostream>
+#include <vector>
 
 int main() {
-    int numberOfElements {};
+    size_t numberOfElements {};
     std::cout << "Enter the number of elements: ";
     std::cin >> numberOfElements;
-    int* arr = new int[numberOfElements];
+    std::vector<int> arr(numberOfElements, 0);
 
     std::cout << "Enter each arr element:\n";
-    for (int i {}; i < numberOfElements; ++i) {
+    for (size_t i {}; i < numberOfElements; ++i) {
         std::cin >> arr[i];
     }
 
     int largest { arr[0] };
-    for (size_t i { 1 }; i < numberOfElements; ++i) {
-        largest = arr[i] > largest ? arr[i] : largest;
+    for (const auto element: arr) {
+        largest = std::max(element, largest);
     }
     std::cout << "Largest element was " << largest << ".\n";
 }

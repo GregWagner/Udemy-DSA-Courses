@@ -1,4 +1,4 @@
-function countDown(num: number) {
+function countDown(num) {
     if (num <= 0) {
         console.log("All Done!");
         return;
@@ -6,5 +6,4 @@ function countDown(num: number) {
     console.log(num);
     countDown(num - 1);
 }
-
 countDown(5);
