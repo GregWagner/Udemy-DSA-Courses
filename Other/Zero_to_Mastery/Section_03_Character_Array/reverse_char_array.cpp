@@ -14,7 +14,7 @@ size_t length(char input[]) {
 void reverse(char s[]) {
     size_t startingIndex {0};
     size_t endingIndex {length(s) - 1};
-    
+
     while (startingIndex < endingIndex) {
         std::swap(s[startingIndex], s[endingIndex]);
         ++startingIndex;

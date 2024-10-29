@@ -18,10 +18,9 @@ void printAllPrefixs(char s[]) {
 int main() {
     char str[] = "abcd";
     printAllPrefixs(str);
-#if 0
+
     std::string s{"abcd"};
     for (size_t i {1}; i <= s.size(); ++i) {
         std::cout << s.substr(0, i) << '\n';
     }
-#endif
 }
