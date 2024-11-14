@@ -1,0 +1,20 @@
+Exercise                                Leetcode #
+----------------------------------      ----------
+1   Find Center of Star Graph           1791
+2   Maximal Network Rank                1615
+3   Min Degree of a Connectred Trio     1761
+4   Snakes and Ladder                   909
+5   Message Route                       CSES
+6   Word Ladder                         127
+7   Valid BFS?                          Codeforces 1037D
+8   Keys and Rooms                      841
+9   Largest Island                      695?
+10  Astronaut Pairs                     HackerRank?
+11  Reconstruct Itnerary                322
+12  Cycle Detection in Undirected
+13  Directed Graph Cycle Detection
+14  Course Schedule
+15  Is Graph Bipartite?
+16  Detecting an Odd Length Cycle
+17  Detect Cycles in Grid
+18  Shortest Cycle in Undirected

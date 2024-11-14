@@ -1,8 +1,3 @@
-/*
- * Breath First Search      Video 19
- * BFS Shortest Path        Video 21
- */
-
 #include <iostream>
 #include <list>
 #include <memory>
@@ -12,7 +7,7 @@ class Graph {
     public:
         explicit Graph(int numberOfVertices)
             : mNumberOfVertices{numberOfVertices},
-              mAdjacencyList{new std::list<int>[mNumberOfVertices]} {
+              mAdjacencyList{new std::list<int>[mNumberOfVertices]} { 
         }
 
         void addEdge(int i, int j, bool undirectional = true) {
@@ -39,7 +34,6 @@ class Graph {
             std::queue<int> q;
             bool *visited = new bool[mNumberOfVertices] {};
 
-            // handle the starting node
             q.push(source);
             visited[source] = true;
 
@@ -65,7 +59,6 @@ class Graph {
             // used to print out the path
             int *parent = new int[mNumberOfVertices] {-1};
 
-            // handle the starting node
             q.push(source);
             visited[source] = true;
             parent[source] = source;
@@ -87,7 +80,7 @@ class Graph {
                 }
             }
 
-            // print the shortest distance
+            // print the shortest distancce 
             for (int i {}; i < mNumberOfVertices; ++i) {
                 std::cout << "Shortest distance to " << i << " from " << source
                     << " is " << distance[i] << '\n';

@@ -12,7 +12,7 @@ class Node {
         }
 
         std::list<std::string> neighbors;
-
+        
     private:
         std::string name;
 };
@@ -33,7 +33,7 @@ class Graph {
         }
 
         void printAdjacencyList() {
-            for (const auto &cityPair : map) {
+            for (auto cityPair : map) {
                 auto city = cityPair.first;
                 Node *node = cityPair.second;
                 std::cout << city << " --> ";

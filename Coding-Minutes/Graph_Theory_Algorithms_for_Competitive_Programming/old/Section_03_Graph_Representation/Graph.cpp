@@ -1,6 +1,5 @@
 /*
  * Using an Adjacency List to represent a graph
- * Video 15
  */
 #include <iostream>
 #include <list>

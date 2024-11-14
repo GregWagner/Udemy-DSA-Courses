@@ -7,7 +7,7 @@ class Graph {
     public:
         explicit Graph(int numberOfVertices)
             : mNumberOfVertices{numberOfVertices},
-              mAdjacencyList{new std::list<int>[mNumberOfVertices]} {
+              mAdjacencyList{new std::list<int>[mNumberOfVertices]} { 
         }
 
         void addEdge(int i, int j, bool undirectional = true) {

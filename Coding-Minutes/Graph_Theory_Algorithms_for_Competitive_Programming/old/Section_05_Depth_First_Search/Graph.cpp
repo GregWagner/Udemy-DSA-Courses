@@ -1,8 +1,3 @@
-/*
- * Breath First Search      Video 19
- * BFS Shortest Path        Video 21
- */
-
 #include <iostream>
 #include <list>
 #include <memory>
@@ -12,7 +7,7 @@ class Graph {
     public:
         explicit Graph(int numberOfVertices)
             : mNumberOfVertices{numberOfVertices},
-              mAdjacencyList{new std::list<int>[mNumberOfVertices]} {
+              mAdjacencyList{new std::list<int>[mNumberOfVertices]} { 
         }
 
         void addEdge(int i, int j, bool undirectional = true) {
@@ -39,12 +34,11 @@ class Graph {
             std::queue<int> q;
             bool *visited = new bool[mNumberOfVertices] {};
 
-            // handle the starting node
             q.push(source);
             visited[source] = true;
 
             while (!q.empty()) {
-                int vertice {q.front()};
+                int vertice = q.front();
                 std::cout << vertice << '\n';
                 q.pop();
 
@@ -58,14 +52,18 @@ class Graph {
             }
         }
 
+        void dfs(int source) {
+            bool *visited = new bool[mNumberOfVertices] {};
+            dfsHelper(source, visited);
+            std::cout << '\n';
+        }
+
         void bfsShortestPath(int source, int destination = -1) {
             std::queue<int> q;
             bool *visited = new bool[mNumberOfVertices] {};
             int *distance = new int[mNumberOfVertices] {};
-            // used to print out the path
             int *parent = new int[mNumberOfVertices] {-1};
 
-            // handle the starting node
             q.push(source);
             visited[source] = true;
             parent[source] = source;
@@ -86,8 +84,7 @@ class Graph {
                     }
                 }
             }
-
-            // print the shortest distance
+            // print the shortest distancce 
             for (int i {}; i < mNumberOfVertices; ++i) {
                 std::cout << "Shortest distance to " << i << " from " << source
                     << " is " << distance[i] << '\n';
@@ -102,11 +99,24 @@ class Graph {
                 }
                 std::cout << source << '\n';
             }
+
         }
 
     private:
         int mNumberOfVertices {};
         std::list<int> *mAdjacencyList;
+
+        void dfsHelper(int node, bool* visited) {
+            visited[node] = true;
+            std::cout << node << ' ';
+
+            // make a recursive call on all its unvisted neighbors
+            for (auto neighbor : mAdjacencyList[node]) {
+                if (!visited[neighbor]) {
+                    dfsHelper(neighbor, visited); 
+                }
+            }
+        }
 };
 
 int main() {
@@ -120,5 +130,6 @@ int main() {
     g.addEdge(3, 5);
     g.addEdge(5, 6);
 
-    g.bfsShortestPath(1, 6);
+    //g.bfsShortestPath(1, 6);
+    g.dfs(1);
 }
