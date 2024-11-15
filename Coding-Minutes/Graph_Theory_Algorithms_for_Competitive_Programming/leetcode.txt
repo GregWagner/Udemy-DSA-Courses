@@ -13,8 +13,12 @@ Exercise                                Leetcode #
 11  Reconstruct Itnerary                322
 12  Cycle Detection in Undirected
 13  Directed Graph Cycle Detection
-14  Course Schedule
-15  Is Graph Bipartite?
+14  Course Schedule                     207
+15  Is Graph Bipartite?                 785
 16  Detecting an Odd Length Cycle
 17  Detect Cycles in Grid
 18  Shortest Cycle in Undirected
+19  All paths from source to target
+20  Course Schedule II
+21  Largest Color Value in a Directed
+22  Game Routes

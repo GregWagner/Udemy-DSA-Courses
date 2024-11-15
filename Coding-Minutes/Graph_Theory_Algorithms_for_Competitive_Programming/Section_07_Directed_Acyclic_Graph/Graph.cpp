@@ -8,7 +8,7 @@ class Graph {
     public:
         explicit Graph(int numberOfVertices)
             : mNumberOfVertices{numberOfVertices},
-              mAdjacencyList{new std::list<int>[mNumberOfVertices]} { 
+              mAdjacencyList{new std::list<int>[mNumberOfVertices]} {
         }
 
         void addEdge(int i, int j, bool undirectional = false) {
@@ -18,6 +18,7 @@ class Graph {
             }
         }
 
+        // Kahn's algorithm
         void bfs_topologicaLSort() {
             std::vector<int> inDegree(mNumberOfVertices, 0);
 
@@ -38,13 +39,13 @@ class Graph {
                 }
             }
 
-            // start popping
+            // start poping
             while (!q.empty()) {
                 int node = q.front();
                 std::cout << node << ' ';
                 q.pop();
 
-                // go through neighbors of this node and reducc in-degree by 1.
+                // go through neighbors of this node and reduce in-degree by 1.
                 for (auto neighbor : mAdjacencyList[node]) {
                     --inDegree[neighbor];
                     if (inDegree[neighbor] == 0) {
@@ -97,7 +98,7 @@ class Graph {
             // make a recursive call on all its unvisted neighbors
             for (auto neighbor : mAdjacencyList[node]) {
                 if (!visited[neighbor]) {
-                    dfsHelper(neighbor, visited); 
+                    dfsHelper(neighbor, visited);
                 }
             }
         }
@@ -112,5 +113,6 @@ int main() {
     g.addEdge(1, 4);
     g.addEdge(1, 2);
 
+    g.bfs_topologicaLSort();
     g.dfs_topologicaLSort();
 }
