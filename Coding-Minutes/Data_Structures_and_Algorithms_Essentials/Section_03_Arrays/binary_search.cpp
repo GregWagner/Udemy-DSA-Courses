@@ -1,3 +1,5 @@
+// binary_search.cpp Video 12
+
 #include <algorithm>
 #include <iostream>
 #include <vector>
@@ -27,15 +29,15 @@ int main() {
     std::vector<int> a{ 10, 20, 30, 45, 60, 70, 89 };
     std::sort(std::begin(a), std::end(a));
 
-    int key{};
-    std::cout << "Enter the value to search for: ";
-    std::cin >> key;
-
+    int key{45};
     auto index = binary_search(a, key);
+    std::cout << key << (index == NOT_FOUND
+        ? " was NOT found\n"
+        : " is present at index " + std::to_string(index) + '\n');
 
-    if (index == NOT_FOUND) {
-        std::cout << key << " was NOT found\n";
-    } else {
-        std::cout << key << " is present at index " << index << '\n';
-    }
+    key = 123;
+    index = binary_search(a, key);
+    std::cout << key << (index == NOT_FOUND
+        ? " was NOT found\n"
+        : " is present at index " + std::to_string(index) + '\n');
 }

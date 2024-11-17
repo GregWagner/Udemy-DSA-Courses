@@ -1,3 +1,5 @@
+// Reverse an array Video 13
+
 #include <algorithm>
 #include <iostream>
 #include <vector>
@@ -20,8 +22,9 @@ void reverse_array_using_stl(std::vector<T>& a) {
 
 template <typename T>
 void print_array(const std::vector<T>& a) {
-    auto size = a.size();
-    std::cout.write(reinterpret_cast<const char*>(a.data()), size * sizeof(T));
+    for (size_t i{}; i < a.size(); ++i) {
+        std::cout << a[i] << ' ';
+    }
     std::cout << '\n';
 }
 

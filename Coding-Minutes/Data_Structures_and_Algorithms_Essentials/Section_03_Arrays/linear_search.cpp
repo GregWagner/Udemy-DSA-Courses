@@ -1,3 +1,5 @@
+// linear_search.cpp Video 10
+
 #include <iostream>
 #include <vector>
 
@@ -24,15 +26,16 @@ int linear_search_using_stl(const std::vector<T>& a, const T& key) {
 int main() {
     std::vector<int> a{ 10, 15, 12, 9, 6, 4, 3, 10, 8 };
 
-    int key{};
-    std::cout << "Enter the value to search for: ";
-    std::cin >> key;
-
+    int key{4};
     auto index = linear_search(a, key);
 
-    if (index == NOT_FOUND) {
-        std::cout << key << " was NOT found\n";
-    } else {
-        std::cout << key << " is present at index " << index << '\n';
-    }
+    std::cout << key << (index == NOT_FOUND
+        ? " was NOT found\n"
+        : " is present at index " + std::to_string(index) + '\n');
+
+    key = 123;
+    index = linear_search(a, key);
+    std::cout << key << (index == NOT_FOUND
+        ? " was NOT found\n"
+        : " is present at index " + std::to_string(index) + '\n');
 }

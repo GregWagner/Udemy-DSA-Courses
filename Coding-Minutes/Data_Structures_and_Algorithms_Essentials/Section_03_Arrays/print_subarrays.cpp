@@ -1,6 +1,5 @@
-/*
- * Print all subarrays of a given array
- */
+// Print all subarrays of a given array Vidoe 15
+
 #include <iostream>
 #include <vector>
 

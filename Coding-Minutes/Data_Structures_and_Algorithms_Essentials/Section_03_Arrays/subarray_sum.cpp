@@ -1,5 +1,6 @@
 /*
  * Find the largest sum of all the subarrays
+ * Vides 16, 17, 18
  */
 #include <iostream>
 #include <vector>
@@ -29,8 +30,9 @@ int largestSubArraySum1(const std::vector<T>& a) {
  */
 template <typename T>
 int largestSubArraySum2(const std::vector<T>& a) {
-    // precompute the prefix sum vector which is the sum of all the revious elements
-    std::vector<T> prefix;
+    // precompute the prefix sum vector which is the sum of all
+    // the previous elements
+        std::vector<T> prefix;
     prefix.reserve(a.size());
     prefix[0] = a[0];
     for (size_t i { 1 }; i < a.size(); ++i) {

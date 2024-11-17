@@ -1,6 +1,5 @@
-/*
- * Print all the pairs of an array
- */
+// Print all the pairs of an array Video 14
+
 #include <iostream>
 #include <vector>
 
@@ -11,9 +10,7 @@ void printAllPairs(const std::vector<T>& a) {
         for (size_t j { i + 1 }; j < size; ++j) {
             std::cout << a[i] << ", " << a[j] << '\n';
         }
-        if (i < size - 1) {
-            std::cout << '\n';
-        }
+        std::cout << '\n';
     }
 }
 

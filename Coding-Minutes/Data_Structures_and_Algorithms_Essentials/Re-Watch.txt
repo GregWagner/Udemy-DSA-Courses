@@ -1,7 +1,8 @@
 Coding Minutes Data Structures and Algorithms Essentials Rewatch List
 
 Section 3 - Arrays
-16-18   Subarry Sum and Exercise  2 for all negatives
+16-18   Subarry Sum
+        Exercise 2 for all negatives
         Exercise 3 lower bound
         Exercise 4 sorted pair sum
         Exercise 5 k-rotate
