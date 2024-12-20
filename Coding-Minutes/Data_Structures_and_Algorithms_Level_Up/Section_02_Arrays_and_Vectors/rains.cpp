@@ -31,34 +31,3 @@
  * water  0 0 1 0 1 2 1 0 0 1 0 0 (min - height)
  *        sum = 6
  */
-#include <iostream>
-#include <vector>
-
-int calculateTrappedWater(const std::vector<int>& heights) {
-    size_t n = heights.size();
-    if (n <= 2) {
-        return 0;
-    }
-
-    std::vector<int> left(n, 0);
-    std::vector<int> right(n, 0);
-
-    left[0] = heights[0];
-    right[n - 1] = heights[n - 1];
-
-    for (size_t i { 1 }; i < n; ++i) {
-        left[i] = std::max(left[i - 1], heights[i]);
-        right[n - i - 1] = std::max(right[n - i], heights[n - i - 1]);
-    }
-
-    int total {};
-    for (size_t i {}; i < n; ++i) {
-        total += std::min(right[i], left[i]) - heights[i];
-    }
-    return total;
-}
-
-int main() {
-    std::vector<int> a { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
-    std::cout << calculateTrappedWater(a) << '\n';
-}

@@ -1,5 +1,5 @@
 /*
- * Pairs
+* Pairs
  *
  * Given an array containing N integers and a number totalSum denoting a
  * target sum, find two distinct integers that can pair up to form the
@@ -28,18 +28,32 @@
  */
 #include <iostream>
 #include <unordered_set>
-#include <vector>
+#include <vector>\
 
-std::vector<int> pairSum(const std::vector<int>& a, int totalSum) {
+auto pairSumBad(const std::vector<int>& a, int totalSum) -> std::vector<int> {
+    std::vector<int> results(2, 0);
+    for (size_t i {}; i < a.size(); ++i) {
+        for (size_t j {i + 1}; j < a.size(); ++j) {
+            if (a[i] + a[j] == totalSum) {
+                results[0]  = a[i];
+                results[1]  = a[j];
+                return results;
+            }
+        }
+    }
+    return results;
+}
+
+auto pairSum(const std::vector<int>& a, int totalSum) -> std::vector<int> {
     std::unordered_set<int> hash;
-    std::vector<int> results;
+    std::vector<int> results(2, 0);
 
     for (auto const& value : a) {
         // check if the number needed has already been added to the hash
         if (hash.find(totalSum - value) != hash.end()) {
             // answer found
-            results.push_back(value);
-            results.push_back(totalSum - value);
+            results[0] = value;
+            results[1] = totalSum - value;
             break;
         }
         hash.insert(value);
@@ -47,9 +61,9 @@ std::vector<int> pairSum(const std::vector<int>& a, int totalSum) {
     return results;
 }
 
-int main() {
+auto main() -> int {
     std::vector<int> a { 10, 5, 2, 3, -6, 9, 11 };
-    int totalSum {4};
+    const int totalSum {4};
 
     auto p = pairSum(a, totalSum);
     if (p.empty()) {

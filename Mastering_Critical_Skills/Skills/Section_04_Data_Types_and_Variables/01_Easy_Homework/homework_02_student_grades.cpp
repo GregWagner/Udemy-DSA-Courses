@@ -14,7 +14,7 @@ auto main() -> int {
     double first_students_grade{};
     std::cin >> first_students_grade;
 
-    // read the seconds students information
+    // read the second students information
     std::cout << "What is student 2's name: ";
     std::string second_students_name{};
     std::cin >> second_students_name;

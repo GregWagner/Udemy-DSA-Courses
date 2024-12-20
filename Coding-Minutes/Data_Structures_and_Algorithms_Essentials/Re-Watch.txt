@@ -16,8 +16,8 @@ Section 5 - Character Arrays/Strings
 42      Shortest Path
 
 Section 6 - 2D Arrays
-51      Sprial Print
-52      Sorted Array Search (Staircase Search)
+51      Sprial Print (when to stop outer loop)
+52,54   Sorted Array Search (Staircase Search)
 53      Mango Trees (2D Prefix Sum)
         Exercise 18 Pascals Triangle
         Exercise 19 Submatrix sum

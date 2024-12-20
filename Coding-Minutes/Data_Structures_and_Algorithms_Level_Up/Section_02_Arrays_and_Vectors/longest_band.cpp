@@ -36,15 +36,14 @@
 #include <unordered_set>
 #include <vector>
 
-int largestBand(const std::vector<int>& a) {
+auto largestBand(const std::vector<int>& a) -> int {
     // create the unordered set from the vector
     std::unordered_set<int> hash(std::begin(a), std::end(a));
 
     int largest {};
     for (auto const e : a) {
-        int startOfBand { e };
         // check if this number is the start of a band
-        if (hash.find(startOfBand - 1) == hash.end()) {
+        if (int startOfBand { e }; hash.find(startOfBand - 1) == hash.end()) {
             // yes - find entire hand starting from here
             int currentBandCount { 1 };
             int i { 1 };
@@ -58,7 +57,7 @@ int largestBand(const std::vector<int>& a) {
     return largest;
 }
 
-int main() {
-    std::vector<int> a { 1, 9, 3, 0, 18, 5, 2, 4, 10, 7, 12, 6 };
+auto main() -> int {
+    const std::vector<int> a { 1, 9, 3, 0, 18, 5, 2, 4, 10, 7, 12, 6 };
     std::cout << largestBand(a) << '\n';
 }

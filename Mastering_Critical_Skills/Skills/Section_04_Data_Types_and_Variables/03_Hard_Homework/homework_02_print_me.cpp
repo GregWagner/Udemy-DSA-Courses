@@ -6,7 +6,8 @@ auto main() -> int {
     std::cin >> a >> b;
 
     // convert -1 and 1 to 0 and 1
-    std::cout << ((b + 1) / 2) * (a * a) + ((b - 1) / -2) * (a * a + 1) << '\n';
+    std::cout << ((b + 1) / 2) * (a * a) +
+                 ((b - 1) / -2) * (a * a + 1) << '\n';
 }
 
 /*

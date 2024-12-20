@@ -28,49 +28,47 @@
  *       Use pairSum to find other numbers using 2 pointer approach
  *           (one at 1st and one at last)
  *           to increase sum move left, to decrease sum move right
- *           This takes a total of O(n^2)\
+ *           This takes a total of O(n^2)
  *   NOTE: You can't use this for the orginal pairSum since the sorting
  *   would be the bottleneck.
  */
+
 #include <algorithm>
 #include <iostream>
 #include <vector>
 
-std::vector<std::vector<int>> triplets(std::vector<int>& a, int targetSum) {
+auto triplets(std::vector<int>& a, const int targetSum) -> std::vector<std::vector<int>> {
     std::vector<std::vector<int>> results;
 
     std::sort(a.begin(), a.end());
 
     // pick every element and solve pair sum for remaining part
-    int n = a.size();
+    const size_t n = a.size();
     for (int i {}; i <= n - 3; ++i) {
 
         // 2 pointer approach
         // point to the next element and the last element
         int start { i + 1 };
-        int end { n - 1 };
+        size_t end { n - 1 };
 
         while (start < end) {
-            int currentSum = a[i] + a[start] + a[end];
-            if (currentSum == targetSum) {
+            if (const int currentSum = a[i] + a[start] + a[end]; currentSum == targetSum) {
                 results.push_back({ a[i], a[start], a[end] });
                 ++start; // setup to look for more pairs
                 --end;
             } else if (currentSum > targetSum) {
-                // too high, try moving to left
-                --end;
+                --end;          // too high, try moving left
             } else {
-                // too low, try moving to the right
-                ++start;
+                ++start;        // too low, try moving right
             }
         }
     }
     return results;
 }
 
-int main() {
+auto main() -> int {
     std::vector<int> a { 1, 2, 3, 4, 5, 6, 7, 8, 9, 15 };
-    int targetSum {18};
+    const int targetSum {18};
 
     auto p = triplets(a, targetSum);
 

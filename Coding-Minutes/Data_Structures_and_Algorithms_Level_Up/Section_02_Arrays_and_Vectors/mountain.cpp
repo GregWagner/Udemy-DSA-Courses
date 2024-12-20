@@ -22,11 +22,11 @@
 #include <iostream>
 #include <vector>
 
-int highest_mountain(const std::vector<int>& a) {
-    int n = a.size();
+auto highest_mountain(const std::vector<int>& a) -> int {
+    const size_t n { a.size() };
     int largest {};
 
-    int i { 1 };
+    int i { 1 };    // first element can't be a peak
     while (i <= n - 2) {
         // check if a[i] is a peak or not
         if (a[i - 1] < a[i] && a[i] > a[i + 1]) {
@@ -52,12 +52,14 @@ int highest_mountain(const std::vector<int>& a) {
     return largest;
 }
 
-int main() {
+auto main() -> int {
     std::cout << std::boolalpha;
-    std::vector<int> a { 5, 6, 1, 2, 3, 4, 5, 4, 3, 2, 0, 1, 2, 3, -2, 4 };
+    const std::vector<int> a { 5, 6, 1, 2, 3, 4, 5, 4, 3, 2, 0, 1, 2, 3, -2, 4 };
     std::cout << (highest_mountain(a) == 9) << '\n';
-    std::vector<int> a2 { 2, 1, 4, 7, 3, 2, 5 };
+
+    const std::vector<int> a2 { 2, 1, 4, 7, 3, 2, 5 };
     std::cout << (highest_mountain(a2) == 5) << '\n';
-    std::vector<int> a1 { 0, 1, 2, 3, 4, 5, 4, 3, 2, 1, 0 };
+
+    const std::vector<int> a1 { 0, 1, 2, 3, 4, 5, 4, 3, 2, 1, 0 };
     std::cout << (highest_mountain(a1) == 11) << '\n';
 }

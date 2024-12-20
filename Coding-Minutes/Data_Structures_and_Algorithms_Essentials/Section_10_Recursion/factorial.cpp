@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdint>
 
 int64_t fact(int64_t n) {
     if (n <= 1) {
