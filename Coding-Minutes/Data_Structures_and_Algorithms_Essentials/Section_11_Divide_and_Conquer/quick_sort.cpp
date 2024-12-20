@@ -24,7 +24,7 @@ void quickSort(std::vector<T>& a, int start, int end) {
     }
 
     T pivot = partition(a, start, end);
-    // pivot will not be in the correct position
+    // pivot will now be in the correct position
     quickSort(a, start, pivot - 1);     // sort left side
     quickSort(a, pivot + 1, end);       // sort right side
 }

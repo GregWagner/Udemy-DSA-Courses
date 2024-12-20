@@ -52,7 +52,9 @@ Secttion 11 - Divide and Conquer
 Section 12 - Backtracking
 114-116 Finding Subsets (Pretty much all of backtracking)
 117     Permutations
-123     Sudoku Solver
+118-120 N-Queen Problems
+121-122 Grid Ways
+123-124 Sudoku Solver
 
 Section 13 - Space Time Complexity
 128     Merge Sort Analysis
