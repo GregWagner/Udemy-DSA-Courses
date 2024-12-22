@@ -17,11 +17,9 @@ Node* insert(Node* root, int value) {
         return new Node(value);
     }
 
-    if (value < root->value) {
-        root->left = insert(root->left, value);
-    } else {
-        root->right = insert(root->right, value);
-    }
+    value < root->value
+        ?  root->left = insert(root->left, value)
+        : root->right = insert(root->right, value);
     return root;
 }
 
@@ -65,23 +63,25 @@ Node* deleteNode(Node* root, int key) {
     } else if (key > root->value) {
         root->right = deleteNode(root->right, key);
     } else {
-        // current node matchs the key
+        // current node matches the key
         // Case 1: No Children
         if (root->left == nullptr && root->right == nullptr) {
             delete root;
             root = nullptr;
 
-            // Case 2: Single Child
+        // Case 2: Single Child
         } else if (root->left == nullptr) {
             Node* temp = root;
             root = root->right;
+            root->right = nullptr;
             delete temp;
         } else if (root->right == nullptr) {
             Node* temp = root;
             root = root->left;
+            root->left = nullptr;
             delete temp;
 
-            // Case 3: Two Children
+        // Case 3: Two Children
         } else {
             // find smallest node in the right subtree (the next value in-order)
             Node* temp = findSmallestNode(root->right);

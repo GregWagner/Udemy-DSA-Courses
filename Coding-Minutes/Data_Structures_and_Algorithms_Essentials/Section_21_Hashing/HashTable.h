@@ -116,7 +116,7 @@ private:
         int oldTableSize = tableSize;
 
         // todo: this should be prime
-        tableSize = tableSize * 2 + 1;
+        tableSize = oldTableSize * 2 + 1;
         table = new Node<T>*[tableSize];
         clearTable();
 

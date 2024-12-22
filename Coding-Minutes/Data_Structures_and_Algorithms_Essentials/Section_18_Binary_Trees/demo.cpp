@@ -28,6 +28,7 @@ Node* builldtree() {
     return node;
 }
 
+// BFS - read 2 numbers (left and right) each time
 Node* buildLevelOrder() {
     int data{};
     std::cout << "Enter data: ";
@@ -157,9 +158,10 @@ std::pair<int, int> diameter1(Node* root) {
         return answer;
     }
 
-    std::pair<int, int> right{ diameter1(root->right) };
     std::pair<int, int> left{ diameter1(root->left) };
+    std::pair<int, int> right{ diameter1(root->right) };
 
+    // height
     answer.first = std::max(left.first, right.first) + 1;
 
     int d1 = left.first + right.first;

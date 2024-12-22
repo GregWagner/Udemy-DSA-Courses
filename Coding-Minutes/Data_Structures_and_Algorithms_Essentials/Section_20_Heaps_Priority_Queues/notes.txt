@@ -1,10 +1,10 @@
-                Unsorted    Sorted      
+                Unsorted    Sorted
                 Array       Array       List        BST         Heap
 Push            O(1)        O(n)        O(n)        O(n)        O(log n)
 Pop (remove)    O(n)        O(1)        O(1)        O(n)        O(log n)
 Get             O(n)        O(1)        O(1)        O(n)        O(1)
 
-Heap as tree
+Heap as tree (skip index 0)
       i
     /   \
   2*i   2*i+1

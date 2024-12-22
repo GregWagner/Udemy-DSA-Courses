@@ -67,13 +67,14 @@ Section 15 Linked List
 Section 16 - Stacks
 161     Insert at bottom of stack
 162     Reverse a stack
-163     Stock span
+163     Stock span (need to code this)
 
 Section 17 - Queues
-168-169 Implement Stack with 2 Queues
+168-169 Implement Stack with 2 Queues (remove duplicate code)
 
 Section 18 - Binary Trees
 175-176 Level Order Print
+177-168 Level Order Build Tree
 180-182 Diameter of a binary tree
 
 Section 19 - Binary Search Tree
@@ -94,7 +95,7 @@ Section 21 - Hashing
 Section 22 - Trie Data Structure
 
 Section 23 - Graphs Introduction
-226     Topograpical Ordering using BFS
+226-228 Topograpical Ordering using BFS
 229-230 Dijkshatra's algorithm
 
 Section 24 - Dynamic Programming Introuductions
