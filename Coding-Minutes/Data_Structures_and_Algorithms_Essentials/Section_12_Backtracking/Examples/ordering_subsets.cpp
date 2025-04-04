@@ -16,11 +16,14 @@ void findSubsets(char* input, char* output, std::vector<std::string>& list,
 
     // include the ith letter in the output
     output[output_index] = input[input_index];
-    findSubsets(input, output, list, input_index + 1, output_index + 1);
+    findSubsets(input, output, list, input_index + 1,
+        output_index + 1);
 
     // backtracking case
-    // exclude the ith letter in the output (overwrite output[output_index])
-    findSubsets(input, output, list, input_index + 1, output_index);
+    // exclude the ith letter in the output (overwrite
+    // output[output_index])
+    findSubsets(input, output, list, input_index + 1,
+        output_index);
 }
 
 int main() {
@@ -30,8 +33,9 @@ int main() {
 
     findSubsets(input, output, list);
 
-    std::sort(begin(list), end(list), [](std::string& a, std::string& b) {
-        return (a.length() == b.length() ? a < b : a.length() < b.length());
+    std::sort(begin(list), end(list),
+        [](std::string& a, std::string& b) {
+            return (a.length() == b.length() ? a < b : a.length() < b.length());
         });
 
     for (const auto& ele : list) {

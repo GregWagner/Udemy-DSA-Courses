@@ -12,7 +12,8 @@ public:
     Node* right{};
 };
 
-// Preorder builld of the tree (root, then left, then righ)
+// Preorder builld of the tree (root, left, right)
+// Video 171
 Node* builldtree() {
     int data{};
     std::cout << "Enter data: ";
@@ -29,9 +30,10 @@ Node* builldtree() {
 }
 
 // BFS - read 2 numbers (left and right) each time
+// video 177-178
 Node* buildLevelOrder() {
     int data{};
-    std::cout << "Enter data: ";
+    std::cout << "Enter root data: ";
     std::cin >> data;
 
     if (data == -1) {
@@ -70,6 +72,7 @@ void deleteTree(Node* root) {
     }
 }
 
+// video 179
 int height(Node* root) {
     if (root == nullptr) {
         return 0;
@@ -77,6 +80,8 @@ int height(Node* root) {
     return 1 + std::max(height(root->left), height(root->right));
 }
 
+// preorder traversal - root, left, right
+// video 172
 void printPreorder(Node* root) {
     if (root == nullptr) {
         return;
@@ -86,6 +91,8 @@ void printPreorder(Node* root) {
     printPreorder(root->right);
 }
 
+// in order traversal - left, root, right
+// video 173
 void printInorder(Node* root) {
     if (root == nullptr) {
         return;
@@ -95,6 +102,9 @@ void printInorder(Node* root) {
     printInorder(root->right);
 }
 
+// post order traversal - left, right, root
+// bottom up traversal
+// video 174
 void printPostorder(Node* root) {
     if (root == nullptr) {
         return;
@@ -104,7 +114,8 @@ void printPostorder(Node* root) {
     std::cout << root->data << '\n';
 }
 
-// Level Order (BFS)
+// Level Order Traversal (BFS)
+// video 176
 void printLevelOrder(Node* root) {
     std::queue<Node*> q;
 
@@ -114,14 +125,14 @@ void printLevelOrder(Node* root) {
     while (!q.empty()) {
         Node* temp = q.front();
         if (temp == nullptr) {
-            q.pop();
+            q.pop();        // remove nullptr from queue
             std::cout << '\n';
             // insert a new nullptr to mark next level
             if (!q.empty()) {
                 q.push(nullptr);
             }
         } else {
-            q.pop();
+            q.pop();        // remove node from queue
             std::cout << temp->data << ' ';
             if (temp->left) {
                 q.push(temp->left);

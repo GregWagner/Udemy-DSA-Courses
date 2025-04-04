@@ -1,12 +1,12 @@
 /*
- * Given an array sequence, find the length of the longest subsequence 
+ * Given an array sequence, find the length of the longest subsequence
  * such that all elements of the subsequennce are sorted in increasing
  * order.
  */
 #include <iostream>
 #include <vector>
 
-// bottom up 
+// bottom up
 int lis(const std::vector<int> &a) {
     std::vector<int> dp(a.size(), 1);
 

@@ -22,9 +22,9 @@ int fib_dp(int n, std::vector<int> &dp) {
     return dp[n];
 }
 
-// Bottom Up
+// Bottom Up without an array
 int fib_dp1(int n) {
-    int first { 0 };
+    int first {};
     int second { 1 };
     int current { 1 };
     for (int i { 2 }; i <= n; ++i) {

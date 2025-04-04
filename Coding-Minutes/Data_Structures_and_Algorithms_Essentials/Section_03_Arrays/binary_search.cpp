@@ -1,4 +1,4 @@
-// binary_search.cpp Video 12
+// binary_search.cpp Video 13
 
 #include <algorithm>
 #include <iostream>
@@ -9,7 +9,7 @@ const int NOT_FOUND{ -1 };
 template <typename T>
 T binary_search(const std::vector<T>& a, T key) {
     size_t start{};
-    size_t end{ a.size() -1 };
+    size_t end{ a.size() - 1 };
     while (start <= end) {
         // avoid overflow
         size_t middle{start + (end - start) / 2};

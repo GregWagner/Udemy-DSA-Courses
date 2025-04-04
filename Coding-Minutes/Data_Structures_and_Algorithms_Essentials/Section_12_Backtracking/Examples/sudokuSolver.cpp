@@ -1,5 +1,5 @@
 /*
- * Given a partially fiilled Sudoku matrix of 9x9,
+ * Given a partially filled Sudoku matrix of 9x9,
  * write a function to fill the matrix using Sudoku Rules.
  */
 #include <iostream>

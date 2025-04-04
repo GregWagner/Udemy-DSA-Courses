@@ -1,10 +1,7 @@
-/*
- * Example 1
- * Compute factorial of a number
- */
 #include <iostream>
+#include <cassert>
 
-long factorial(long n) {
+auto factorial(long n) -> long {
     // base case
     if (n <= 1) {
         return n;
@@ -14,6 +11,15 @@ long factorial(long n) {
     return n * factorial(n - 1);
 }
 
-int main() {
-    std::cout << "5! = " << factorial(5) << '\n';
+auto main() -> int {
+    // Test base case
+    assert(factorial(0) == 0);
+    assert(factorial(1) == 1);
+
+    // Test positive numbers
+    assert(factorial(2) == 2);
+    assert(factorial(3) == 6);
+    assert(factorial(5) == 120);
+
+    std::cout << "All tests passed!" << std::endl;
 }

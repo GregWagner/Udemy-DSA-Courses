@@ -1,5 +1,5 @@
 /*
- * Prinnt all positions of an element
+ * Print all positions of an element
  */
 #include <iostream>
 #include <vector>

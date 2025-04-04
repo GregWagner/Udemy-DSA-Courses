@@ -1,8 +1,7 @@
 /*
- * Given an MxN grid, find the number of
- * ways to reach the bottom right corner
- * starting from the top left. At each cell
- * you can move right or down
+ * Given an MxN grid, find the number of ways to reach
+ * the bottom right corner starting from the top left.
+ * At each cell you can move right or down
  *
  * At each cell, there are 2 sub-problems.
  * Going right and going down.

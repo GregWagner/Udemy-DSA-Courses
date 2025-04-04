@@ -1,20 +1,31 @@
-DP = Recursion + Optimation:wq
+DP = Recursion + Optimation
 
-
-Steps 
+Steps
 1) Form a state -> f(x, y, z...)
-2) Form a recursive relation (also called Optimal Substructure)
-3) Overlapping Subproblems
-    Once a solution to something is found, there is no need to 
+    Most important step
+    f(x) is a one dimensional state
+    f(x,y) is a two dimensional state
+    f(x,y,z) is a three dimensional state
+    example f(n) => nth fibonacci number
+2) Form a recursive relation
+    also called Optimal Substructure/Subproblem
+    ex: sum of all the states, min of all the states...
+    example f(n) = f(n-1) + f(n-2)
+3) Overlapping (repeating) Subproblems
+    Once a solution to something is found, there is no need to
     solve it again and there are 2 ways to handle them:
-    1) Tabulation 
-        Fixed size/static
+    1) Tabulation
+        Fixed size/static table and fill in the table
         Do not go to any state twice
     2) Memoization
-        Saving a solution and reusing it when the same problem occurs
+        Saving a solution and reusing it when the same
+        problem occurs
 
 For example find the fibonacci number
-    state if f(n) -> nth fibonacci number
+    state:
+        f(n) -> nth fibonacci number
     recursive relationship is:
         f(n) = f(n - 1) + f(n - 2)
 
+Note the 26 problems are at:
+https://atcoder.jp/contests/dp/tasks

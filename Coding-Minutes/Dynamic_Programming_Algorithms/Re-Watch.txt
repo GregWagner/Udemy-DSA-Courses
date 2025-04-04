@@ -8,7 +8,8 @@ Backtracking
 22 - Finding Subsets
 27 - Generating Brackets
 
-
+Intro to Dynamic Programming
 37 - Count number of binary bits in sequence of numbers
+
 41 - Redo with memoization
 42 - IPL

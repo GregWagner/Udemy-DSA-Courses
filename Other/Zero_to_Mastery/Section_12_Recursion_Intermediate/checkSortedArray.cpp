@@ -28,7 +28,7 @@ bool isSorted2(int a[], int n) {
     return a[0] <= a[1];
 }
 
-// check from left to right
+// check from right to left
 bool isSorted3(int a[], int n) {
     if (n <= 1) {
         return true;

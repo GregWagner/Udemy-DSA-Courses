@@ -1,5 +1,5 @@
 /*
- * This is an exercisee
+ * This is an exercise
  * Given a sorted array and a number, find a pair in the
  * array whose sum is closest to x.
  */
@@ -7,7 +7,7 @@
 #include <iostream>
 #include <vector>
 
- // brute force
+ // brute force (check all pairs)
 std::pair<int, int> closestSum1(const std::vector<int>& arr, int x) {
     int difference{ INT_MAX };
     int first{};
@@ -33,16 +33,18 @@ std::pair<int, int> closestSum(const std::vector<int>& arr, int x) {
 
     int left{};
     int right = arr.size() - 1;
-    while (right > left) {
+    while (left < right) {
         int sum = arr[left] + arr[right];
         if (std::abs(sum - x) < difference) {
             difference = std::abs(sum - x);
             first = left;
             second = right;
-            // is this right?
-            ++left;
+        }
+        // try to minimize the difference
+        if (sum < x) {
+            ++left;     // increase sum
         } else {
-            --right;
+            --right;    // decrease sum
         }
     }
     return { arr[first], arr[second] };

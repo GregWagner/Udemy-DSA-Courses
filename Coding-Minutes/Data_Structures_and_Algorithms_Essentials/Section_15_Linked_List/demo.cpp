@@ -154,12 +154,12 @@ public:
     }
 
     bool search(int key) const {
-        Node* currrent_node = head;
-        while (currrent_node != nullptr) {
-            if (head->getData() == key) {
+        Node* current_node = head;
+        while (current_node != nullptr) {
+            if (current_node->getData() == key) {
                 return true;
             }
-            currrent_node = head->next;
+            current_node = head->next;
         }
         return false;
     }
@@ -178,6 +178,7 @@ public:
         return searchHelper(head, key);
     }
 
+    // note: swapping is not a good idea here and slow
     void reverse() {
         tail = head;
         Node* currrent_node = head;

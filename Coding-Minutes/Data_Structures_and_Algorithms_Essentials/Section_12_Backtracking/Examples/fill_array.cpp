@@ -1,6 +1,5 @@
 #include <iostream>
 
-// note a is shared accross all function calls
 void printArray(int* a, int n) {
     for (int i{}; i < n; ++i) {
         std::cout << a[i] << ' ';
@@ -8,7 +7,6 @@ void printArray(int* a, int n) {
     std::cout << '\n';
 }
 
-// note a is shared accross all function calls
 void fillArray(int* a, int index, int n, int value = 1) {
     // base case
     if (index == n) {

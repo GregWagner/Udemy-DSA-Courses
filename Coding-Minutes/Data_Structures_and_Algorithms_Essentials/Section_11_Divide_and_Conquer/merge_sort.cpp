@@ -4,17 +4,15 @@
 template <typename T>
 void merge(std::vector<T>& a, int startingIndex, int endingIndex) {
     int left{ startingIndex };
-    int middle{ (startingIndex + endingIndex) / 2 };
+    int middle{startingIndex + (endingIndex - startingIndex) / 2};
     int right{ middle + 1 };
 
     std::vector<T> temp;
 
     while (left <= middle && right <= endingIndex) {
-        if (a[left] < a[right]) {
-            temp.push_back(a[left++]);
-        } else {
-            temp.push_back(a[right++]);
-        }
+        a[left] < a[right]
+            ? temp.push_back(a[left++])
+            : temp.push_back(a[right++]);
     }
 
     // copy the remaning elements
@@ -38,7 +36,7 @@ void mergeSort(std::vector<T>& a, int startingIndex, int endingIndex) {
         return;
     }
 
-    int middleIndex = (startingIndex + endingIndex) / 2;
+    int middleIndex{startingIndex + (endingIndex - startingIndex) / 2};
     mergeSort(a, startingIndex, middleIndex);
     mergeSort(a, middleIndex + 1, endingIndex);
 

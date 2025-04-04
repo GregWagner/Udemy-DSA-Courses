@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 
-// note a is shared accross all function calls
 void printVector(const std::vector<int>& a, int n) {
     for (int i{}; i < n; ++i) {
         std::cout << a[i] << ' ';
@@ -9,7 +8,6 @@ void printVector(const std::vector<int>& a, int n) {
     std::cout << '\n';
 }
 
-// note a is shared accross all function calls
 void fillVector(std::vector<int>& a, int index, int n, int value) {
     // base case
     if (index == n) {

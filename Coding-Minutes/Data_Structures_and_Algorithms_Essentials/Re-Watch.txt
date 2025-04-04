@@ -1,8 +1,11 @@
 Coding Minutes Data Structures and Algorithms Essentials Rewatch List
 
 Section 3 - Arrays
+11      Binary search - how to avoid overflow setting middle
+        size_t middle{start + (end - start) / 2};
+13      Reverse array - swap using 2 pointers
 16-18   Subarry Sum
-        Exercise 2 for all negatives
+        Exercise 2 kadanes for all negatives
         Exercise 3 lower bound
         Exercise 4 sorted pair sum
         Exercise 5 k-rotate
@@ -24,11 +27,19 @@ Section 6 - 2D Arrays
 
 Section 9 - Bit Manipulation
 80      Update a bit
+        First clear it, then OR in new value
 81      Clear last n bits
+        Left shift -1 by n, then AND with value
 82      Clear range of bits
+        mask = (~0<<(j+1) | (1<<i)-1)
+        AND mask with value
 83      Replace bits
 84      Is n a power of 2
+        n & (n-1) == 0 -> true
 86      Count bits hack
+        while (n)
+            n = n & (n-1)
+            ++count
 87      Fast Exponention
 88      Convert to binary
         Exercise 24 Xoring
@@ -37,6 +48,9 @@ Section 9 - Bit Manipulation
         Exercise 27 Subset Sum Queries
 
 Section 10  - Recursion Basics
+95      Use vectors
+97      Review last occurance (do subproblem first)
+        and use vectors
         Exercise 29 Print Increasing numbers (not recursive)
 99      Power function optimized
 100     Bubble Sort Recursively
@@ -57,8 +71,8 @@ Section 12 - Backtracking
 123-124 Sudoku Solver
 
 Section 13 - Space Time Complexity
-128     Merge Sort Analysis
-129     Time Complexity For Recursive Problems
+132     Merge Sort Analysis
+133     Time Complexity For Recursive Problems
 
 Section 15 Linked List
 154-155 Reverse Link List

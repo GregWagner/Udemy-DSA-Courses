@@ -5,6 +5,7 @@
 
 void print(char *a) {
     if (a[0] == '\0') {
+        std::cout << '\n';
         return;
     }
     std::cout << a[0];
@@ -13,6 +14,7 @@ void print(char *a) {
 
 void reverse_print(char *a) {
     if (a[0] == '\0') {
+        std::cout << '\n';
         return;
     }
     reverse_print(a + 1);
@@ -22,7 +24,5 @@ void reverse_print(char *a) {
 int main() {
     char a[] {"abc"};
     print(a);
-    std::cout << '\n';
     reverse_print(a);
-    std::cout << '\n';
 }

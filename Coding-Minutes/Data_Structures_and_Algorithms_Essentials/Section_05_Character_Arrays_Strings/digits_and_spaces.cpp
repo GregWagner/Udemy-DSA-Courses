@@ -10,6 +10,7 @@ int main() {
     int spaces{};
     int digits{};
 
+    // read one character at a time
     auto ch{ std::cin.get() };
     while (ch != '\n') {
         if (ch >= '0' && ch <= '9') {
@@ -19,6 +20,7 @@ int main() {
         } else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
             ++alpha;
         }
+        // read next character
         ch = std::cin.get();
     }
     std::cout << "Alpha: " << alpha << "\nSpaces: " << spaces

@@ -7,6 +7,7 @@ bool isSorted(const std::vector<T>& a, unsigned start = 0) {
     if (start == a.size() - 1) {
         return true;
     }
+    // this will short circuit if the first condition is false
     return (a[start] < a[start + 1]) && isSorted(a, start + 1);
 }
 

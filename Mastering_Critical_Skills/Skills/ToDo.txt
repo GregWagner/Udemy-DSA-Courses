@@ -45,4 +45,15 @@ Section 12 Easy 5 (Array Average - study code)
 Do the following After Studying recursion!!!
 Section 12 Homework Medium 9 (Right Max - unable to do)
 
+Do all of section 13 (1st project)
+Section 14 Practice
+Do all of section 15 (2nd project)
+
+Section 17, Video 168 Tuples
+Section 17, Video 169 Iterators
+Section 17, Video 171 Erase using iterators
+Section 17, Video 172 3D Vector
+Section 17, Video 176 Multiset and std::tie3D
+Section 17, Video 178 Printing map
+Section 17, Video 191 Structured binding
 

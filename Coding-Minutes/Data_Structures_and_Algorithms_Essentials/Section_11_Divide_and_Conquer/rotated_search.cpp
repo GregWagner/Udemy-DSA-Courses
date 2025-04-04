@@ -21,12 +21,14 @@ int rotated_search(const std::vector<int>& nums, int target) {
         }
 
         if (nums[start] <= nums[middle]) {
+            // mid lies on left line
             if (target >= nums[start] && target <= nums[middle]) {
                 end = middle - 1; // left
             } else {
                 start = middle + 1; // right
             }
         } else {
+            // mid lies on right line
             if (target >= nums[middle] && target <= nums[end]) {
                 start = middle + 1; // right
             } else {

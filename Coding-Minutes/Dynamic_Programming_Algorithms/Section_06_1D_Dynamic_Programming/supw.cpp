@@ -8,14 +8,16 @@
  * about the number of minutes taken by each activity.
  * You have been assigned to assign SUPW duties to students,
  * including yourself. The rules say that no student can go
- * 3 days in a row without any SUPPW duty.
- * Find th minimum number of minutes you spend overall on SUPW.
+ * 3 days in a row without any SUPW duty.
+ * Find the minimum number of minutes you spend overall on SUPW.
  *
- * Every 3 daay window, you must pick at least 1 activity.
+ * Every 3 day window, you must pick at least 1 activity.
  *
- * Greedy - pick the minimimm in each 3 daay window.
+ * Greedy - pick the minimimm in each 3 day window.
  *    This does not always work:
- *    2 2 3 2 2  - greedy picks 2 + 2, answer is 3
+ *    2 2 3 2 2  - greedy picks right most element in each group of 3:
+ *      2 + 2, but correct answer is 3
+ *
  * DP
  *    State --> f(i) = the minimum number of minutes
  *                     spent in SUPW duty if

@@ -75,6 +75,14 @@ public:
         std::cout << '\n';
     }
 
+    // for Directed Acyclic Graph - used for dependency resolution
+    // for example: task scheduling
+    // 1. find the in-degree of all the nodes
+    // 2. push all the nodes with in-degree of 0 into a queue
+    // 3. pop the nodes from the queue and print them
+    // 4. for each node popped, reduce the in-degree of its neighbors by 1
+    // 5. if the in-degree of a neighbor becomes 0, push it into the queue
+    // 6. repeat steps 3-5 until the queue is empty
     void topological_sort() {
         // calcullaate in-degree for all nodes
         std::vector<int> inDegree(number_of_vertices, 0);
@@ -90,14 +98,14 @@ public:
         std::queue<int> q;
         // initializee the queue with nodes having an inDegree of 0
         for (int i{}; i < number_of_vertices; ++i) {
-            //          std::cout << i << ": inDegree: " << inDegree[i] << '\n';
+//          std::cout << i << ": inDegree: " << inDegree[i] << '\n';
             if (inDegree[i] == 0) {
-                //              std::cout << "Node " << i << " has inDegree of 0\n";
+//              std::cout << "Node " << i << " has inDegree of 0\n";
                 q.push(i);
             }
         }
 
-        // starting poping
+        // start poping nodes with inDegree of 0
         while (!q.empty()) {
             int node = q.front();
             std::cout << node << ' ';
@@ -108,7 +116,7 @@ public:
             for (auto neighbor : l[node]) {
                 --inDegree[neighbor];
                 if (inDegree[neighbor] == 0) {
-                    //                  std::cout << "Node " << neighbor << " has indegree of 0\n";
+//                  std::cout << "Node " << neighbor << " has indegree of 0\n";
                     q.push(neighbor);
                 }
             }

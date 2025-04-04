@@ -18,7 +18,8 @@ int lowerBound(const std::vector<int>& a, int value) {
         if (a[middle] > value) {
             right = middle - 1;
         } else {
-            // assume middle might be the answer
+            // assume middle might be the answer and look for a
+            // larger value
             answer = a[middle];
             left = middle + 1;
         }

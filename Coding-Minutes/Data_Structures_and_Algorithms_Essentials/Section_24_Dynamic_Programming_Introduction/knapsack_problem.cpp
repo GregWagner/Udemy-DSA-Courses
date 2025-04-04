@@ -3,6 +3,9 @@
  * subset of items in a bag of capacity W such that we get
  * the maximum total value in the bag (also known as a knapsack)
  *
+ * You need to maximum the profit while keeping the weight
+ * of the bag less than or equal to W
+ *
  * input
  *  n = 4
  *  W = 11
@@ -15,6 +18,7 @@
  * If you have n items, there are 2^n ways to form subsets
  * f(n, w) -> max profit = max(include item, exclude item)
  * Either include an item or now
+ *                            price of this + subproblem
  * If including last item     price[n - 1] + f(n-1, W - wts[n-1])
  * If excluding last item     0 + f(n-1, W)
  */
@@ -27,7 +31,8 @@ int knapsack(int weights[], int prices[], int N, int W) {
         return 0;
     }
 
-    int include {};
+    int include{};
+    // make sure we can include this item
     if (weights[N - 1] <= W) {
         include = prices[N - 1] + knapsack(weights, prices, N - 1, W - weights[N - 1]);
     }
@@ -37,12 +42,16 @@ int knapsack(int weights[], int prices[], int N, int W) {
 }
 
 // Bottom Up DP
+// note: since each row only depends on the previous row,
+// the space can be reduced to 2 rows instead of n rows
 int knapsackDP(int weights[], int prices[], int N, int W) {
-    std::vector<std::vector<int>> dp(N + 1, std::vector<int>(W + 1));
+    // 2D DP (n x w)
+    std::vector<std::vector<int>> dp(N + 1, std::vector<int>(W + 1), 0);
 
     for (int n { 1 }; n <= N; ++n) {
         for (int w { 1 }; w <= W; ++w) {
             int include {};
+            // make sure we can include this item
             if (weights[n - 1] <= w) {
                 include = prices[n - 1] + dp[n - 1][w - weights[n - 1]];
             }

@@ -7,7 +7,7 @@
 
 bool isArraySorted(const std::vector<int>& n, unsigned index = 0) {
     // base case
-    if (n.size() <= 1 || index >= n.size()) {
+    if (n.size() <= 1 || index >= n.size() - 1) {
         return true;
     }
 
@@ -18,6 +18,5 @@ bool isArraySorted(const std::vector<int>& n, unsigned index = 0) {
 
 int main() {
     std::vector<int> n = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-    std::cout << std::boolalpha;
-    std::cout << isArraySorted(n) << '\n';
+    std::cout << std::boolalpha << isArraySorted(n) << '\n';
 }

@@ -1,7 +1,7 @@
 /*
  * Find the last occurence of an element in an array
  *
- * Check the subproblem first
+ * Check the subproblem first then check the 1st element
  */
 #include <iostream>
 

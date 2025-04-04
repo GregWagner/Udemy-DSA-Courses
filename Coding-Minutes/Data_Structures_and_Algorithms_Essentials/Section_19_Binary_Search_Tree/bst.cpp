@@ -12,13 +12,14 @@ public:
     }
 };
 
+// video 184
 Node* insert(Node* root, int value) {
     if (root == nullptr) {
         return new Node(value);
     }
 
     value < root->value
-        ?  root->left = insert(root->left, value)
+        ? root->left = insert(root->left, value)
         : root->right = insert(root->right, value);
     return root;
 }
@@ -33,6 +34,7 @@ void printInOrder(Node* root) {
     printInOrder(root->right);
 }
 
+// video 186
 bool search(Node* root, int key) {
     if (root == nullptr) {
         return false;
@@ -53,10 +55,12 @@ Node* findSmallestNode(Node* root) {
     return root;
 }
 
+// video 187-188
 Node* deleteNode(Node* root, int key) {
     if (root == nullptr) {
         return nullptr;
     }
+
     // first find the node
     if (key < root->value) {
         root->left = deleteNode(root->left, key);
@@ -92,7 +96,9 @@ Node* deleteNode(Node* root, int key) {
     return root;
 }
 
-void printRange(Node* root, int start, int end) {
+// print all elements between start and end
+// video 189
+void printRange(Node * root, int start, int end) {
     if (root == nullptr) {
         return;
     }
@@ -116,6 +122,7 @@ void deleteTree(Node* root) {
     }
 }
 
+// print all paths from root to all leafs
 void printRootToLeaf(Node* root, std::vector<int>& path) {
     if (root == nullptr) {
         return;
@@ -126,6 +133,7 @@ void printRootToLeaf(Node* root, std::vector<int>& path) {
             std::cout << ele << " -> ";
         }
         std::cout << root->value << "\n";
+        return;
     }
     path.push_back(root->value);
     printRootToLeaf(root->left, path);

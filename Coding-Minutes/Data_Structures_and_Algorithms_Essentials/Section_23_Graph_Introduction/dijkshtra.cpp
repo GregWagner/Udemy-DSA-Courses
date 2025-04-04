@@ -10,25 +10,10 @@ private:
     std::list<std::pair<int,int> > *l;
 
 public:
-    /**
-     * Constructor for the Graph class.
-     *
-     * @param v the number of vertices in the graph
-     * @return N/A
-     * @throws N/A
-     */
     explicit Graph(int v) : nummber_of_vertices {v} {
         l = new std::list<std::pair<int, int>>[nummber_of_vertices];
     }
 
-    /**
-     * Adds an edge between two vertices in a graph.
-     *
-     * @param u the first vertex
-     * @param v the second vertex
-     * @param weight the weight of the edge
-     * @param undir whether the edge is undirected (default is true)
-     */
     void addEdge(int u, int v, int weight, bool undir = true){
         l[u].push_back({weight, v});
         if(undir) {
@@ -41,8 +26,8 @@ public:
     // Space Complexity: O(V)
     // Algorithm: Dijkstra's Algorithm
     //
-    // Returns the shortest distance from the source node to the destination node
-    // in a weighted graph
+    // Returns the shortest distance from the source node to the
+    // destination node in a weighted graph
     //
     int dijkstra(int src, int dest) {
         std::vector<int> dist(nummber_of_vertices, INT_MAX); // distances from source
@@ -71,7 +56,7 @@ public:
                     }
                     // insert updated value with new distancce
                     dist[neighbor] = currentDistance + currentEdge;
-                    s.insert(std::make_pair(dist[neighbor], neighbor));
+                    s.insert({dist[neighbor], neighbor});
                 }
             }
         }
@@ -83,13 +68,6 @@ public:
     }
 };
 
-/**
- * The main function that creates a graph, adds edges, and performs Dijkstra's algorithm to find the shortest path from a source vertex to a destination vertex.
- *
- * @param None
- * @return None
- * @throws None
- */
 int main() {
     Graph g(5);
     g.addEdge(0, 1, 1);

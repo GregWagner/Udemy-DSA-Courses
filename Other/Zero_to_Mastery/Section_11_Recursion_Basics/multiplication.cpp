@@ -1,5 +1,5 @@
 /*
- * Multiplication
+ * Multiplication without using multiplcation operator
  */
 #include <iostream>
 

@@ -7,10 +7,10 @@
 int countOccurencces(const std::vector<int> &a, int key, size_t index = 0) {
     if (index > a.size()) {
         return 0;
-    } 
+    }
     if (a[index] == key) {
         return 1 + countOccurencces(a, key, index + 1);
-    } 
+    }
     return countOccurencces(a, key, index + 1);
 }
 

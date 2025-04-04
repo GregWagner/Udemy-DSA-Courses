@@ -32,6 +32,7 @@ public:
         if (head) {
             Node<T>* temp = head;
             head = head->next;
+            temp->next = nullptr;
             delete temp;
         }
     }

@@ -3,17 +3,20 @@
  * There is a collection of N wines placed linearly on a sheld.
  * The price of he ith wine it pi.
  * Since wines get better every year, suppose today is year 1, and
- * on year y, the price of the ith wine will be y * pi (i.e. y-times
- * the current year value).
+ * on year y, the price of the ith wine will be y * pi (i.e.
+ * y-times the current year value).
  * You want to sell all the wines you have, but you want to sell
- * exactly one wine per year, starting this year. One oter constraint -
- * each year you can sell either the leftmost or rightmost wine without
- * re-ordering. Find the maximum profit you can get it you see all the
- * wines in the optimal order.
+ * exactly one wine per year, starting this year. One other
+ * constraint - each year you can sell either the leftmost or
+ * rightmost wine without re-ordering. Find the maximum profit you
+ * can get it you see all the wines in the optimal order.
  *
- * Greedy does not always work
+ * Greedy does not always work (i.e pick the smallest of either the
+ * left or right most wine)
  *  {2, 3, 5, 1, 4};
- *  max = 50
+ *  max = 49
+ *  2*1 + 3*2 + 4*3 + 1*4 + 5*5 = 49
+ * The actual max is 50
  *  2*1 + 4*2 + 1*3 + 3*4 + 5*5 = 50
  *
  * At each step, need to try both sides and determine which on
@@ -24,6 +27,13 @@
  *      price[left] * y + f(left + 1, right, year + 1)
  *      price[right] * y + f(left, right - 1, year + 1)
  *    )_
+ *
+ *For 2, 3, 5, 1, 4 the bottom up solution is:
+ * 10 23 43 45 50
+ * 0  15 37 40 48
+ * 0   0 25 29 41
+ * 0   0  0  5 24
+ * 0   0  0  0 20
  */
 #include <iostream>
 #include <vector>
@@ -53,11 +63,11 @@ int wines_bottom_up(int prices[], int n) {
     for (int i { n - 1 }; i >= 0; --i) {
         // fill in from bottom row to top row
         for (int j {}; j < n; ++j) {
-            // One bottle left
+            // check if only one bottle left
             if (i == j) {
                 dp[i][j] = n * prices[i];
 
-                // everything below the diagonal is zero:w
+            // everything below the diagonal is zero
             } else if (i < j) {
                 int year = n - (j - i);
                 int pick_left = prices[i] * year + dp[i + 1][j];

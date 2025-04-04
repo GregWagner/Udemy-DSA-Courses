@@ -1,7 +1,8 @@
 /*
- * Given N carrtesian points in a 2D plan where each represents
- * the location of a car. You are at the origin, and you want
- * to know the names of the nearest k cars.
+ * Given N carrtesian points in a 2D plan where each
+ * represents the location of a car. You are at the
+ * origin, and you want to know the names of the nearest
+ * k cars.
  *
  * N = 5, K = 3
  * C1 1 1
@@ -13,7 +14,8 @@
  * Output:  C4, C1, C2
  *
  * Brute Force (O(n log n + k))
- * Sort cars by distance from the origin and get the smallest k distances.
+ * Sort cars by distance from the origin and get the
+ * smallest k distances.
  *
  * min heap (key is the distance)
  * O(n + k log n)
@@ -22,8 +24,8 @@
  * Build a MAX heap of size k
  * Push in k elements
  * For all the rest of the elements:
- *    If the element is smaller than the max element in the heap
- *    replace the max element with it
+ *    If the element is smaller than the max element in
+ *    the heap replace the max element with it
  */
 #include <algorithm>
 #include <iostream>

@@ -13,11 +13,13 @@
 
 int tile(int n) {
     // base case
-    if (n <= 3) {
+    if (n < 4) {
+        // can only place tile vertically
         return 1;
     }
 
     // recursive case
+    // number of ways vertically + number of ways horizontally
     return tile(n - 1) + tile(n - 4);
 }
 

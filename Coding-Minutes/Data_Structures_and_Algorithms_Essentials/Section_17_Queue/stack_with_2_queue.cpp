@@ -45,6 +45,7 @@ public:
                 int item = q2.front();
                 q1.push(item);
                 q2.pop();
+                // return the last item
                 if (q2.empty()) {
                     return item;
                 }
@@ -55,6 +56,7 @@ public:
                 int item = q1.front();
                 q1.pop();
                 q2.push(item);
+                // return the last item
                 if (q1.empty()) {
                     return item;
                 }

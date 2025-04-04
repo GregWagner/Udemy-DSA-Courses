@@ -46,7 +46,7 @@ public:
 
     T* search(const std::string& key) {
         int index{ hashFunc(key) };
-        Node<T>* temp = table[index];
+        Node<T>* temp{ table[index] };
         while (temp != nullptr) {
             if (temp->key == key) {
                 return &temp->value;
@@ -73,8 +73,13 @@ public:
     void erase(std::string& key) {
         // todo
         // find the bucket id
+        int index{ hashFunc(key) };
+        Node<T>* temp{ table[index] };
 
         // iterate over the linked list
+        while (temp != nullptr) {
+        }
+
     }
 
     void print() {
@@ -112,17 +117,17 @@ private:
     }
 
     void rehash() {
-        Node<T>** oldTable = table;
-        int oldTableSize = tableSize;
+        Node<T>** oldTable{ table };
+        int oldTableSize{ tableSize };
 
         // todo: this should be prime
-        tableSize = oldTableSize * 2 + 1;
-        table = new Node<T>*[tableSize];
+        tableSize{ oldTableSize * 2 + 1 };
+        table{ new Node<T>*[tableSize] };
         clearTable();
 
         // copy elements from old table to new
         for (int i{}; i < oldTableSize; ++i) {
-            Node<T>* temp = oldTable[i];
+            Node<T>* temp{ oldTable[i] };
             ++currentSize;
             while (temp != nullptr) {
                 insert(temp->key, temp->value);

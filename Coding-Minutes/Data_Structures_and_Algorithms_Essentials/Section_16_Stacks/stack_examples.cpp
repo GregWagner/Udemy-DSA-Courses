@@ -2,10 +2,12 @@
 #include <stack>
 
 void insertAtBottom(std::stack<int>& s, int data) {
+    // base case
     if (s.empty()) {
         s.push(data);
         return;
     }
+
     int temp = s.top();
     s.pop();
     insertAtBottom(s, data);
@@ -13,9 +15,11 @@ void insertAtBottom(std::stack<int>& s, int data) {
 }
 
 void reverseStack(std::stack<int>& s) {
+    // base case
     if (s.empty()) {
         return;
     }
+
     int temp = s.top();
     s.pop();
     reverseStack(s);

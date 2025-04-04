@@ -1,0 +1,4 @@
+When starting a DP problem always start with a
+single problem (the base case).
+Then add 1 element and think about it:wq
+

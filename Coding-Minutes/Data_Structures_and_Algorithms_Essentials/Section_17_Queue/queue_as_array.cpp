@@ -1,4 +1,5 @@
 /*
+ * Queue implemented using a circular array
  * Insert at rear + 1
  * Remove from front
  */

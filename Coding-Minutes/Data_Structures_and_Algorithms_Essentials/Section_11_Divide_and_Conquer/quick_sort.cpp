@@ -8,7 +8,7 @@ T partition(std::vector<T>& a, int start, int end) {
     for (int rightIndex{ start }; rightIndex < end; ++rightIndex) {
         if (a[rightIndex] < pivot) {
             ++leftIndex;
-            // move item at i on correct side of pivot
+            // move item at i to correct side of pivot
             std::swap(a[leftIndex], a[rightIndex]);
         }
     }

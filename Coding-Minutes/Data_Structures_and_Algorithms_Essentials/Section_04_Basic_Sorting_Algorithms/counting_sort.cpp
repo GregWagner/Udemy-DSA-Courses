@@ -1,6 +1,7 @@
 /*
  * Data must be in a specific range (for example 0-100)
  * Create a frequency count array and then scan from left to right
+ * O(n + range of numbers)
  */
 #include <iostream>
 #include <vector>

@@ -4,7 +4,7 @@
  */
 #include <iostream>
 
-long fibonaci(long n) {
+auto fibonaci(long n) -> long {
     // base case
     if (n <= 1) {
         return n;
@@ -14,7 +14,7 @@ long fibonaci(long n) {
     return fibonaci(n - 1) + fibonaci(n - 2);
 }
 
-int main() {
+auto main() -> int {
     std::cout << "1: " << fibonaci(1) << '\n';
     std::cout << "2: " << fibonaci(2) << '\n';
     std::cout << "3: " << fibonaci(3) << '\n';

@@ -66,7 +66,9 @@ int countSolveNQueen(int n, int board[][20], int row = 0) {
             board[row][col] = 1;
             count += countSolveNQueen(n, board, row + 1);
 
-            // need to backtrack - i.e. try next column
+            // we tried every column on this row and none worked
+            // need to backtrack - i.e. remove the queen and 
+            // try the next column
             board[row][col] = 0;
         }
     }
@@ -84,11 +86,13 @@ bool solveNQueen(int n, int board[][20], int row = 0) {
     for (int col{}; col < n; ++col) {
         if (validSpot(n, board, row, col)) {
             board[row][col] = 1;
+            // go to next row
             if (solveNQueen(n, board, row + 1)) {
                 return true;
             }
-
-            // need to backtrack - i.e. try next column
+            // we tried every column on this row and none worked
+            // need to backtrack - i.e. remove the queen and 
+            // try the next column
             board[row][col] = 0;
         }
     }

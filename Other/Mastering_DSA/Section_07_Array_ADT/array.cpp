@@ -4,6 +4,7 @@
 class Array {
     public:
         Array() {}
+
         Array(int a[], int size) {
             this->length = size;
             for (int i {}; i < size; ++i) {

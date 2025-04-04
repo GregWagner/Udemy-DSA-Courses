@@ -18,6 +18,9 @@ int pair(int n) {
     }
 
     // recursive case
+    // pair(n-1) => all friends remain single
+    // (n-1) => this firend can be paired with any of the remaining friends
+    // pair(n-2) => remaining friends
     return pair(n - 1) + (n - 1) * pair(n - 2);
 }
 

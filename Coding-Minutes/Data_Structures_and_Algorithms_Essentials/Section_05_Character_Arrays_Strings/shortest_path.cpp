@@ -1,6 +1,6 @@
 /*
- * Given a long route containing NSEW directions, find the shortest
- * path to reach the location.
+ * Given a long route containing NSEW directions, find the
+ * shortest path to reach the location.
  * Example
  *      SNNNEWE -> NNE
  */
@@ -32,11 +32,13 @@ void printFinalPosition(std::pair<int, int> position) {
     int y_position{ position.second };
 
     bool going_north = y_position > 0;
+    y_position = std::abs(y_position);
     while (y_position--) {
         output << (going_north ? 'N' : 'S');
     }
 
     bool going_east = x_position > 0;
+    x_position = std::abs(x_position);
     while (x_position--) {
         output << (going_east ? 'E' : 'W');
     }

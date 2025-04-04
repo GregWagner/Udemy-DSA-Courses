@@ -5,13 +5,14 @@
  */
 #include <iostream>
 
+// slow O(n) space and time
 int power(int a, int n) {
     // base case
     if (n == 0) {
         return 1;
     }
 
-    // revursive cas
+    // recursive case
     return a * power(a, n - 1);
 }
 
@@ -22,9 +23,9 @@ int fastPower(int a, int n) {
         return 1;
     }
 
-    // revursive cas
+    // recursive case
     int temp = fastPower(a, n / 2);
-    temp *= temp;
+    temp *= temp;       // square the result
     return (n & 1 ? a * temp : temp);
 }
 

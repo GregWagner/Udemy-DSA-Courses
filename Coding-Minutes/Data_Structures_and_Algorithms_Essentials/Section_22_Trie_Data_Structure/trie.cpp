@@ -30,6 +30,7 @@ public:
                 Node* node = new Node(ch);
                 temp->map[ch] = node;
             }
+            // go to the next node
             temp = temp->map[ch];
         }
         temp->isTerminal = true;
@@ -41,6 +42,7 @@ public:
             if (temp->map.count(ch) == 0) {
                 return false;
             }
+            // go to the next node
             temp = temp->map[ch];
         }
         return temp->isTerminal;

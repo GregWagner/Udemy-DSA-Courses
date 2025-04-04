@@ -2,6 +2,7 @@
 
 template <typename T>
 class Vector {
+private:
     int current_size{};
     int max_size{ 1 };
     T* arr{};
@@ -57,7 +58,7 @@ public:
         return current_size == 0;
     }
 
-    T operator[](int index) {
+    T operator[](const int index) {
         return arr[index];
     }
 };
