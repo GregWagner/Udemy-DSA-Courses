@@ -16,7 +16,8 @@
  *    O(n^2)
  *    2 nested for loops
  * 2) Sort the array
- *    Binary search
+ *    Determine the number needed
+ *    Binary search for that number
  *    O(n log n)
  * 3) Hash table
  *    Can look up in O(1) time
@@ -28,7 +29,7 @@
  */
 #include <iostream>
 #include <unordered_set>
-#include <vector>\
+#include <vector>
 
 auto pairSumBad(const std::vector<int>& a, int totalSum) -> std::vector<int> {
     std::vector<int> results(2, 0);

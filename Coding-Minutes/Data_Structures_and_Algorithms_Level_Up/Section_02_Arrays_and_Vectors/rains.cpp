@@ -31,3 +31,39 @@
  * water  0 0 1 0 1 2 1 0 0 1 0 0 (min - height)
  *        sum = 6
  */
+#include <iostream>
+#include <vector>
+
+int trappedWater(std::vector<int>& heights) {
+    int n{ heights.size() };
+    if (n <= 2) {
+        return 0;
+    }
+
+    std::vector<int> left(n, 0), right(n, 0);
+    left[0] = heights[0];
+    for (int i{ 1 }; i < n; ++i) {
+        left[i] = std::max(left[i - 1], heights[i]);
+        right[n - i - 1] = std::max(right[n - i], heights[n - i - 1]);
+    }
+
+    int water{};
+    for (int i{}; i < n; ++i) {
+        water += std::min(left[i], right[i]) - heights[i];
+    }
+
+    return water;
+}
+
+int main() {
+    std::vector<int> heights{ 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+    std::cout << "Water trapped: " << trappedWater(heights) << '\n';
+}
+/*
+ * Time complexity: O(n)
+ * Space complexity: O(n)
+ *
+ * Note:
+ * 1) The above code is a simple implementation of the algorithm.
+ * 2) The code can be improved by using a single pass and two pointers.
+ */

@@ -1,27 +1,30 @@
 /*
  * String Window
- * Given 2 strings, one big string and one small string, find the smallest window
- * in the big string that contains all the ccharaccters of the small string. 
- *   - Window can have additional chanacters
- *   - If small string has duplicates, then those duplicates must be present with
- *     the same or higher count.
+ * Given 2 strings, one big string and one small string,
+ * find the smallest window in the big string that contains
+ * all the ccharaccters of the small string.
+ * - Window can have additional chanacters
+ * - If small string has duplicates, then those duplicates
+ *    in the window must be present with the same or higher
+ *    count.
  * Input:
- *      s1 = helo_world             fizzbuzz        <= string
- *      s2 = lol                    fuzz            <= pattern
+ *      s1 = helo_world    fizzbuzz        <= string
+ *      s2 = lol           fuzz            <= pattern
  * Output:
- *      llo                         fizzbu
+ *      llo                fizzbu
  *
- * Need to create a frequency map of the patteern
- * if pattern = ocl then frequency map is
+ * Need to create a frequency map of the pattern
+ * if pattern = oel then frequency map is
  *      o   1
  *      e   1
  *      l   1
- * Start going to the left on the big string one character at a time. and maintain
- * a hashmap of your window and check if the pattern is in the window. Once that
- * is found, look for the smallest window by moving from the start and removing
- * characters that aren't in the pattern. Once your window does not include the
- * pattern, restart expannding from the end.
- * Expansion then contraction
+ * Start going to the left on the big string one character
+ * at a time and maintain a hashmap of your window and
+ * check if the pattern is in the window. Once that is
+ * found, look for the smallest window by moving from the
+ * start and removing characters that aren't in the pattern.
+ * Once your window does not include the pattern, restart
+ * expanding from the end. Expansion then contraction
  */
 #include <cstdint>
 #include <iostream>
@@ -29,7 +32,7 @@
 
 std::string find_window(const std::string &s, const std::string &pattern) {
     const int MAX_COUNT {256};
-    // using array as a frequencce map
+    // using array as a frequency map
     std::vector<int> freq_pattern(MAX_COUNT, 0);
     std::vector<int> freq_string(MAX_COUNT, 0);
 
@@ -56,7 +59,7 @@ std::string find_window(const std::string &s, const std::string &pattern) {
         // check if all characters in the pattern have been matched
         // in the current window. If so, then start contracting
         if (count == pattern.size()) {
-            // start contracing from the left to remove unneeded characters
+            // start contracting from the left to remove unneeded characters
             // Note: an unneeded character is either not in the pattern or
             //       the frequency is higher than required
             while (freq_pattern[s[start]] == 0 || freq_string[s[start]] > freq_pattern[s[start]]) {
@@ -72,10 +75,9 @@ std::string find_window(const std::string &s, const std::string &pattern) {
             }
         }
     }
-    if (startIndex == -1) {
-        return "No window found";
-    }
-    return s.substr(startIndex, minSoFar);
+    return (startIndex == -1 ?
+            "No window found" :
+            s.substr(startIndex, minSoFar));
 }
 
 int main() {

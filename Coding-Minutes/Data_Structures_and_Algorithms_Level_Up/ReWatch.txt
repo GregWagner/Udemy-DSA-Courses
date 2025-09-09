@@ -12,15 +12,17 @@ Solution to Exercise 4 Section 2 (mine was O(n^2))
 
 Section 3 - String Problems
 ---------------------------
-35-36   String Sort
-37-38   Check Subsets
-39-40   Sort Subsequences
+29-30   Space20
+31-33   Tokenisation
+34-35   String Sort
+36-37   Check Subsets
+38-39   Sort Subsequences
 
-Section 4 - Bit Manipulation
+Section 5 - Sliding Window Problems
 -----------------------------
-57-58   Housing and find the smallest window that contains the required sum
-59-60   Unique Substring
-61-62   String Window
+56-57   Housing and find the smallest window that contains the required sum
+58-59   Unique Substring
+60-61   String Window
 
 Section 5 - Sorting & Searching
 -------------------------------

@@ -19,11 +19,11 @@
  *      this Si is considered strickly smaller since it commes first.
  *
  * Sample Input:
- * 3
- * 92 022
- * 82 12
- * 77 13
- * 2 false numeric
+ * 3                    // number of strings
+ * 92 022               // string 1
+ * 82 12                // string 2
+ * 77 13                // string 3
+ * 2 false numeric      // column 2, not reversed, numeric
  *
  * Output
  * 82 12
@@ -31,7 +31,7 @@
  * 92 022
  *
  * Logic:
- * 1) Extract keys from eveery string using tokenization and save as
+ * 1) Extract keys from every string using tokenization and save as
  *      pair(string, key)
  * 2) Do the sort
  * 3) Reverse if needed

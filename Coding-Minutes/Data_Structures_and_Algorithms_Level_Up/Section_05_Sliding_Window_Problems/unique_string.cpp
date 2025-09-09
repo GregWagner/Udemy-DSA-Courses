@@ -11,7 +11,7 @@
  *      ekbhaiy
  *      abc
  *
- * Brute Force 
+ * Brute Force
  *
  * Optimze by storing the last occurence of the current charactter
  * Move left and if the character @ j+1 is part of the window, start
@@ -21,9 +21,10 @@
  *
  * Example
  * a b c a e b a
- * a b c            3
+ * a b c            3  a, b, c and not in the window so move left
+ *   b c a          3 Since a is in the window, start new window
  *   b c a e        4
- *     c a e b      4
+ *     c a e b      4 Since b is in the window, start new window
  *       a e b      3
  *         e b a    3
  *           b a    2
@@ -34,17 +35,19 @@
 
 std::string uniqueSubstring(const std::string &str) {
     size_t i {};
-    size_t j {};
-    size_t windowLength {};
-    size_t maxWindowLength {};
-    int windowStart {-1};
-    std::unordered_map<char, size_t> hash; 
+    size_t j{};
+
+    size_t windowLength{};
+    size_t maxWindowLength{};
+
+    int windowStart{ -1 };
+    std::unordered_map<char, size_t> hash;
 
     while (j < str.size()) {
         char c = str[j];
 
         // check if this character is part of the current window
-        if (hash.count(c) != 0 && hash[c] >= i) {
+       if (hash.count(c) != 0 && hash[c] >= i) {
             // start a new window at the location after the duplicaate character
             i = hash[c] + 1;
             windowLength = j - i;   // exclude the current character it will be included below
@@ -53,6 +56,7 @@ std::string uniqueSubstring(const std::string &str) {
         ++windowLength;
         ++j;
 
+        // update max window length at every step
         if (windowLength > maxWindowLength) {
             maxWindowLength = windowLength;
             windowStart = i;

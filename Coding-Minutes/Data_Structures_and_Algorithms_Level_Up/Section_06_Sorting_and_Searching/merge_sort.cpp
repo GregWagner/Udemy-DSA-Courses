@@ -2,7 +2,7 @@
  * Merge Sort
  * Divide and Conquere Algorithm
  * 1) Divided into 2 parts
- * 2) Merge sort the left and the right part
+ * 2) MergeSort the left and the right part
  * 3) Merge the left and right into the final array
  *
  * Input    10, 5, 2, 0, 7, 6, 4
@@ -22,9 +22,9 @@ void merge(std::vector<int> &a, int start, int end) {
     std::cout << "\nEntering merge, start: " << start << ", end: " << end << '\n';
     printVector(a);
 
-    int left = start;
-    int middle = (start + end) / 2;
-    int right = middle + 1;
+    int left{ start };
+    int middle{ (start + end) / 2 };
+    int right{ middle + 1 };
 
     std::vector<int> temp;
     while (left <= middle && right <= end) {
@@ -53,7 +53,7 @@ void mergesort(std::vector<int> &a, int start, int end) {
     if (start >= end) {
         return;
     }
-    int middle = (start + end) / 2;
+    int middle{ (start + end) / 2 };
     mergesort(a, start, middle);
     mergesort(a, middle + 1, end);
     merge(a, start, end);

@@ -43,7 +43,6 @@ void usingStrtok() {
     }
 }
 
-
 // doing tokenization ourself
 char* mystrtok(char* str, char delimiter) {
     static char* input {};
@@ -73,6 +72,6 @@ char* mystrtok(char* str, char delimiter) {
 }
 
 int main() {
-    //  usingSstream();
+//  usingSstream();
     usingStrtok();
 }

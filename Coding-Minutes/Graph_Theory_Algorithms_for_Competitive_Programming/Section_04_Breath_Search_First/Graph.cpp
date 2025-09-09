@@ -35,6 +35,7 @@ class Graph {
             }
         }
 
+        // BFS - Video 18 and 19
         void bfs(int source) {
             std::queue<int> q;
             bool *visited = new bool[mNumberOfVertices] {};
@@ -58,6 +59,7 @@ class Graph {
             }
         }
 
+        // BFS Shortest Path (in an undirected graph) - Video 20 and 21
         void bfsShortestPath(int source, int destination = -1) {
             std::queue<int> q;
             bool *visited = new bool[mNumberOfVertices] {};

@@ -1,10 +1,10 @@
 /*
  * Inversion Count
- * 
- * Given an array containing integers, you need to return the total 
- * number of inversions. In inversion is when 2 elements a[i] and a[j]
- * form and inversion if a[i] > a[j] and i < j.
- * 
+ *
+ * Given an array containing integers, you need to return the total
+ * number of inversions. 2 elements a[i] and a[j] form an inversion
+ * if a[i] > a[j] and i < j.
+ *
  * input:
  *  0 5 2 3 1
  * Output
@@ -19,7 +19,7 @@
  *  Brute force: compare every element i with every element after i which
  *  take O(n^2)
  *
- *  Calculate how many inversions each element will form 
+ *  Calculate how many inversions each element will form
  *  Try a D&C algorithm
  *  Split in 2 and calculate
  *  1) number of inversions in left
@@ -30,7 +30,7 @@
  *  right = 3, 1            Inversions (3, 1)
  *                          Cross inversions (5, 3), (5, 1), (2, 1)
  * To calculate cross inversions:
- *      During the merge, an inversion occurs when you move an element from the 
+ *      During the merge, an inversion occurs when you move an element from the
  *      right array into the left array (not including those moved after the left
  *      array is done)
  *      left   0, 3, 8, 10

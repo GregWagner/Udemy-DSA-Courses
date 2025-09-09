@@ -86,7 +86,7 @@ std::pair<int, int> subarrySort(std::vector<int> a) {
         return { -1, -1 };
     }
 
-    // now find the right index where the smallest and largest are
+    // now find the index where the smallest and largest are
     int left {};
     while (smallest > a[left]) {
         ++left;

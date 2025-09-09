@@ -2,7 +2,7 @@
  * Housing
  *
  * Along one side of a road there is a sequence of vacanent plots of land. Each
- * plot has a different non-zero area. So the areas form a sequence A[1], A[2], 
+ * plot has a different non-zero area. So the areas form a sequence A[1], A[2],
  * ...A{N}.
  * You want to buy K acres of land to build a house. You want to find all
  * seqments of contingous plots (i.e. subsection in the sequencce) of whose
@@ -31,6 +31,9 @@
  *  Move one index and keep track of current sum until sum is greater than K,
  *  then move the other index and subtract until current sum is less than K.
  *  Repeat until the current sum is equal to K
+ *
+ * TODO: find smallest window that contains the required sum
+ * also how to handle if you have negative integers in the arry
  *
  */
 #include <iostream>
