@@ -4,6 +4,20 @@
  */
 #include <iostream>
 #include <vector>
+#include <algorithm>
+template <typename T>
+int maxSumSubarray1(const std::vector<T> &a)
+{
+    int largest_sum{ a[0] };
+    int current_sum {};
+
+    for (const auto &ele : a) {
+        current_sum += ele;
+        largest_sum = std::max(largest_sum, current_sum);
+        current_sum = std::max(current_sum, 0);
+    }
+    return largest_sum;
+}
 
 template <typename T>
 int maxSumSubarray(const std::vector<T>& a) {

@@ -14,7 +14,8 @@ int lowerBound(const std::vector<int>& a, int value) {
     int left{};
     int right = a.size() - 1;
     while (left <= right) {
-        int middle = (left + right) / 2;
+        // to avoid overflow
+        int middle{left + ((right - left) / 2)};
         if (a[middle] > value) {
             right = middle - 1;
         } else {
