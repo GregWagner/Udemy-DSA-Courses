@@ -1,4 +1,5 @@
 /*
+ * Firends Pairing Problem - Video 18
  * Given n friends who want to go to a party, each one
  * can remain single or can be paired up with somme other
  * friend. Each friend can be paired only once. Found out
@@ -21,7 +22,7 @@ int pair(int n) {
     // pair(n-1) => all friends remain single
     // (n-1) => this firend can be paired with any of the remaining friends
     // pair(n-2) => remaining friends
-    return pair(n - 1) + (n - 1) * pair(n - 2);
+    return pair(n - 1) + ((n - 1) * pair(n - 2));
 }
 
 int main() {

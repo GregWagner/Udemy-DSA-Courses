@@ -1,5 +1,5 @@
 /*
- * Example 3
+ * Example 3 - Video 12
  * Write a function to check if an array is sorted
  */
 #include <iostream>

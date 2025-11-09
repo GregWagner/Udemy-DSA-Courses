@@ -1,5 +1,5 @@
 /*
- * Example 2
+ * Example 2 - Video 11
  * Compute the nth fibonacci number
  */
 #include <iostream>

@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    int a[]{2, 4, 6, 8, 10};
+    int a[] {2, 4, 6, 8, 10};
 
     a[0] = 12;
     a[1] = 12;

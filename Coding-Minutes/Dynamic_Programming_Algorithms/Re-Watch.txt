@@ -6,6 +6,7 @@ Basics of Recursion
 
 Backtracking
 22 - Finding Subsets
+25 - N Queens
 27 - Generating Brackets
 
 Intro to Dynamic Programming

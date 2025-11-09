@@ -1,5 +1,5 @@
 /*
- * Example 5
+ * Example 5 - Video 14
  * Write a function to find the power of a number,
  * both number and power are given as inputs.
  */
