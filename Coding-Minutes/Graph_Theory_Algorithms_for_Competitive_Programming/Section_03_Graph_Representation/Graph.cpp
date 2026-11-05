@@ -4,52 +4,50 @@
  */
 #include <iostream>
 #include <list>
-#include <memory>
 
 class Graph {
 
 public:
-    explicit Graph(int numberOfVertices)
-        : mNumberOfVertices { numberOfVertices }
-        , mAdjacencyList { new std::list<int>[mNumberOfVertices] } {
-    }
+  explicit Graph(int numberOfVertices)
+      : mNumberOfVertices{numberOfVertices},
+        mAdjacencyList{new std::list<int>[mNumberOfVertices]} {}
 
-    // i and j are the connected nodes
-    void addEdge(int i, int j, bool undirectional = true) {
-        mAdjacencyList[i].push_back(j);
-        if (undirectional) {
-            mAdjacencyList[j].push_back(i);
-        }
+  // srcNode and destNode are the connected nodes
+  void addEdge(int srcNode, int destNode, bool undirectional = true) {
+    mAdjacencyList[srcNode].push_back(destNode);
+    if (undirectional) {
+      mAdjacencyList[destNode].push_back(srcNode);
     }
+  }
 
-    void printAdjacencyList() {
-        for (int i {}; i < mNumberOfVertices; ++i) {
-            std::cout << i << " --> ";
-            bool first { true };
-            for (const auto& vertice : mAdjacencyList[i]) {
-                std::cout << (first ? "" : ", ");
-                first = false;
-                std::cout << vertice;
-            }
-            std::cout << '\n';
-        }
+  void printAdjacencyList() {
+    for (int i{}; i < mNumberOfVertices; ++i) {
+      std::cout << i << " --> ";
+      bool first{true};
+      for (const auto &vertice : mAdjacencyList[i]) {
+        std::cout << (first ? "" : ", ");
+        first = false;
+        std::cout << vertice;
+      }
+      std::cout << '\n';
     }
+  }
 
 private:
-    int mNumberOfVertices {};
-    // this could also be an array/vector of lists or a hashmaap
-    std::list<int>* mAdjacencyList;
+  int mNumberOfVertices{};
+  // this could also be an array/vector of lists or a hashmaap
+  std::list<int> *mAdjacencyList;
 };
 
 int main() {
-    Graph g(6);
-    g.addEdge(0, 1);
-    g.addEdge(0, 4);
-    g.addEdge(2, 1);
-    g.addEdge(3, 4);
-    g.addEdge(4, 5);
-    g.addEdge(2, 3);
-    g.addEdge(3, 5);
+  Graph graph(6);
+  graph.addEdge(0, 1);
+  graph.addEdge(0, 4);
+  graph.addEdge(2, 1);
+  graph.addEdge(3, 4);
+  graph.addEdge(4, 5);
+  graph.addEdge(2, 3);
+  graph.addEdge(3, 5);
 
-    g.printAdjacencyList();
+  graph.printAdjacencyList();
 }
